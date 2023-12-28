@@ -1,0 +1,98 @@
+Cutscene 11
+NumScenes 8
+Scene 1
+NumberOfPics = 1
+Pic1Name = BLANK
+Pic1Hires = 1
+Pic1Duration = 20
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 1
+TextYPos = 320
+Music = BADEND
+SceneText =                      
+      #
+Scene 2
+NumberOfPics = 1
+Pic1Name = FCREDIT0
+Pic1Hires = 1
+Pic1Duration = 150
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 1
+TextYPos = 320
+Music = BADEND
+SceneText =                      
+      #
+Scene 3
+NumberOfPics = 1
+Pic1Name = BLANK
+Pic1Hires = 1
+Pic1Duration = 40
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 1
+TextYPos = 320
+Music = BADEND
+SceneText =
+      #
+Scene 4
+NumberOfPics = 1
+Pic1Name = FCREDIT1
+Pic1Hires = 1
+Pic1Duration = 150
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 320
+Music = BADEND
+SceneText = 
+	#
+Scene 5
+NumberOfPics = 1
+Pic1Name = BLANK
+Pic1Hires = 1
+Pic1Duration = 40
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 1
+TextYPos = 320
+Music = BADEND
+SceneText =
+      #
+Scene 6
+NumberOfPics = 1
+Pic1Name = FCREDIT2
+Pic1Duration = 150
+Pic1Hires = 1
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 320
+Music = BADEND
+SceneText = 
+      #
+Scene 7
+NumberOfPics = 1
+Pic1Name = BLANK
+Pic1Hires = 1
+Pic1Duration = 40
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 1
+TextYPos = 320
+Music = BADEND
+SceneText =
+      #
+Scene 8
+NumberOfPics = 1
+Pic1Name = FCREDIT3
+Pic1Duration = 777
+Pic1Hires = 1
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 8
+TextYPos = 320
+Music = BADEND
+SceneText = 
+      #

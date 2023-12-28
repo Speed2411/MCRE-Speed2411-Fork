@@ -1,0 +1,92 @@
+Freeslot
+S_GOOPERCRAWLA_STND
+S_GOOPERCRAWLA_RUN1
+S_GOOPERCRAWLA_RUN2
+S_GOOPERCRAWLA_RUN3
+S_GOOPERCRAWLA_RUN4
+S_GOOPERCRAWLA_RUN5
+S_GOOPERCRAWLA_RUN6
+S_GOOPERCRAWLA_RUN7
+SPR_GPOS
+
+State S_GOOPERCRAWLA_STND
+SpriteName = GPOS
+SpriteFrame = A
+Duration = 5
+Next = S_GOOPERCRAWLA_STND
+Action A_Look
+
+State S_GOOPERCRAWLA_RUN1
+SpriteName = GPOS
+SpriteFrame = A
+Duration = 3
+Next = S_GOOPERCRAWLA_RUN2
+Action = A_Chase
+
+State S_GOOPERCRAWLA_RUN2
+SpriteName = GPOS
+SpriteFrame = B
+Duration = 3
+Next = S_GOOPERCRAWLA_RUN3
+Action = A_Chase
+
+State S_GOOPERCRAWLA_RUN3
+SpriteName = GPOS
+SpriteFrame = C
+Duration = 3
+Next = S_GOOPERCRAWLA_RUN4
+Action = A_Chase
+
+State S_GOOPERCRAWLA_RUN4
+SpriteName = GPOS
+SpriteFrame = D
+Duration = 3
+Next = S_GOOPERCRAWLA_RUN5
+Action = A_Chase
+
+State S_GOOPERCRAWLA_RUN5
+SpriteName = GPOS
+SpriteFrame = E
+Duration = 3
+Next = S_GOOPERCRAWLA_RUN6
+Action = A_Chase
+
+State S_GOOPERCRAWLA_RUN6
+SpriteName = GPOS
+SpriteFrame = F
+Duration = 3
+Next = S_GOOPERCRAWLA_RUN7
+Action = A_Chase
+
+State S_GOOPERCRAWLA_RUN7
+SpriteName = GPOS
+SpriteFrame = F
+Duration = 0
+Next = S_GOOPERCRAWLA_RUN1
+Action A_DropMine
+
+Object MT_GOOPERCRAWLA
+MapThingNum = 3101
+SpawnState = S_GOOPERCRAWLA_STND
+SpawnHealth = 1
+SeeState = S_GOOPERCRAWLA_RUN1
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainState = S_NULL
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_pop
+ActiveSound = sfx_None
+RaiseState = MT_SLOWGOOP
+ReactionTime = 35
+PainChance = 200
+Speed = 8
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE

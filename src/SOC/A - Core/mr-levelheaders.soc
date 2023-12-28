@@ -1,0 +1,1013 @@
+# Level headers
+#  Explanation: https://wiki.srb2.org/wiki/Level_header
+
+# These are Mystic Realm's stages. The level headers have a ton of weird fields, 
+#  and many redundant ones, because I'd rather have redundant fields displayed for 
+#  my usage.
+
+# Also, you'll notice a lot of the stages have a NextLevel that doesn't seem to 
+#  coincide with what happens in-game. This is because most of the stages have a 
+#  custom exit, and hence, the NextLevel will only really apply in Race mode most 
+#  of the time.
+
+Level RD
+LevelName = Rebound Training
+Music = ERZ2
+Skynum = 22
+NextLevel = 1100
+LevelSelect = 0
+RecordAttack = false
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+
+Level 97
+Levelname = Credits
+Act = 0
+Music = BADEND
+NextLevel = AM
+TypeOfLevel = Singleplayer,Co-op
+FlickyList = Bluebird,Cat
+Weather = 0
+SkyNum = 9012
+SkyboxScale = 64
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+NoTitleCard = true
+PreCutsceneNum = 11
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+
+Level 98
+Levelname = Credits
+Act = 0
+Music = _CREDS
+NextLevel = 1101
+TypeOfLevel = Singleplayer,Co-op
+FlickyList = Bluebird,Cat
+Weather = 0
+SkyNum = 9012
+SkyboxScale = 64
+RecordAttack = false
+LevelSelect = 0
+SaveGame = false
+NoTitleCard = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+
+Level A0
+Levelname = Making of MR
+Act = 0
+NoZone = true
+NoTitleCard = true
+Hidden = true
+HideInStats = true
+Music = MP_WT2
+NextLevel = 1100
+TypeOfLevel = Singleplayer
+Weather = 0
+SkyNum = 2
+BonusType = None
+ForceCharacter = Sonic
+
+Level 99
+Levelname = Mystic HUB
+Act = 0
+NoZone = true
+NoTitleCard = true
+Hidden = true
+HideInStats = true
+Music = MP_WT2
+NextLevel = 1100
+SaveGame = false
+TypeOfLevel = Singleplayer
+BonusType = None
+
+Level A1
+Levelname = Jade Coast
+Act = 1
+Keywords = JCZ1
+Music = MP_COA
+NextLevel = A2
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Match,Tag
+FlickyList = Bluebird,Cat
+Weather = 0
+SkyNum = 501
+SkyboxScale = 64
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Ashi, AceLite, Dirk, Othius, Mystic"
+Lua.timerankings = 30, 45, 60, 90, 120, 150
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level A5
+Levelname = Jade Coast
+Act = 1
+Keywords = JCZ1
+Music = MP_COA
+NextLevel = A2
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Match,Tag
+FlickyList = Bluebird,Cat
+Weather = 0
+SkyNum = 501
+SkyboxScale = 64
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Ashi, AceLite, Dirk, Othius, Mystic"
+Lua.timerankings = 30, 45, 60, 90, 120, 150
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level A2
+Levelname = Jade Coast
+Lua.shrine = 83, 123
+Act = 2
+Keywords = JCZ2
+Music = JCZ2
+NextLevel = A3
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Match,Tag
+FlickyList = Bluebird,Cat
+Weather = 0
+SkyNum = 502
+SkyboxScale = 16
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "Marcos, clairebun"
+Lua.lcredits = "Ashi, AceLite, Dirk, Othius, Nami, Seaballer, Xian, Mystic"
+Lua.timerankings = 45, 60, 75, 90, 120, 150
+lua.levelrankings = 50000, 40000, 30000, 20000, 10000
+
+Level A3
+Levelname = Jade Coast
+Act = 3
+Keywords = JCZ3
+Music = VSALT
+MusicPostBoss = MP_COA
+NextLevel = A4
+TypeOfLevel = Singleplayer,Co-op,Match,Tag
+FlickyList = Bluebird,Cat
+Weather = 0
+SkyNum = 503
+SkyboxScale = 64
+RecordAttack = true
+LevelSelect = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+SaveGame = true
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Ashi, AceLite, Xian, Ordomandalore"
+Lua.timerankings = 15, 20, 25, 30, 35, 40
+lua.levelrankings = 35000, 25000, 20000, 10000, 5000
+
+Level A4
+Levelname = Tempest Valley
+Lua.shrine = 98, 124
+Act = 1
+Keywords = TVZ1
+Music = MP_RAI
+NextLevel = A6
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Match,Tag
+FlickyList = Rabbit,Ram
+Weather = 1
+SkyNum = 2950
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+SkyboxScale = 0
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Ashi, Dirk, Othius, Nami, Hajime, Xian, Inferno, Radicalicious, Mystic"
+Lua.timerankings = 75, 120, 150, 180, 210, 240
+lua.levelrankings = 50000, 40000, 30000, 20000, 10000
+
+Level A6
+Levelname = Tempest Valley
+Act = 3
+Keywords = TVZ3
+Music = VSALT
+MusicPostBoss = MP_RAI
+NextLevel = A7
+TypeOfLevel = Singleplayer,Co-op,Match,Tag
+FlickyList = Rabbit,Ram
+Weather = 1
+SkyNum = 295
+RecordAttack = true
+LevelSelect = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+RunSOC = SOC_TVZ3
+SaveGame = true
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Ashi, Radicalicious, Mystic"
+Lua.timerankings = 30, 45, 60, 75, 90, 120,
+lua.levelrankings = 35000, 25000, 20000, 10000, 5000
+
+Level A7
+Levelname = Verdant Forest
+Act = 1
+Keywords = VFZ1
+Music = MP_FOR
+NextLevel = 108
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Match,Tag
+FlickyList = Bear,Chipmunk
+Weather = 0
+SkyNum = 64
+SkyboxScale = 8
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Marcos, Othius, Ashi"
+Lua.timerankings = 40, 50, 60, 75, 90, 120,
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level A8
+Levelname = Verdant Forest
+Lua.shrine = 67, 125
+Act = 2
+Keywords = VFZ2
+Music = VFZ2
+NextLevel = A9
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Match,Tag
+FlickyList = Bear,Chipmunk
+Weather = 0
+SkyNum = 64
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "InferNOr"
+Lua.timerankings = 50, 60, 75, 90, 120, 150,
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level A9
+Levelname = Verdant Forest
+Act = 3
+Keywords = VFZ3
+Music = VSALT
+MusicPostBoss = MP_FOR
+NextLevel = AA
+TypeOfLevel = Singleplayer,Co-op,Match,Tag
+FlickyList = Bear,Chipmunk
+Weather = 0
+SkyNum = 64
+RecordAttack = true
+LevelSelect = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+SaveGame = true
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Radicalicious, Ketchupik, Mystic"
+Lua.timerankings = 15, 20, 25, 30, 35, 40
+lua.levelrankings = 35000, 25000, 20000, 10000, 5000
+
+Level AA
+Levelname = Flame Rift
+Act = 1
+Keywords = FRZ1
+Music = MP_FIR
+NextLevel = AB
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Match,Tag
+FlickyList = Chicken,Bat
+Weather = 0
+SkyNum = 1111
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Felicia.iso, Radicalicious, Hajime, Othius, Xian, STF, Mystic"
+Lua.timerankings = 60, 75, 90, 120, 150, 180
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level BQ
+Levelname = Flame Rift
+Act = 1
+Keywords = FRZ1
+Music = MP_FIR
+NextLevel = AB
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Match,Tag
+FlickyList = Chicken,Bat
+Weather = 0
+SkyNum = 1111
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Felicia.iso, Radicalicious, Hajime, Othius, Xian, STF, Mystic"
+Subtitle = ~demo version~
+Lua.timerankings = 60, 75, 90, 120, 150, 180
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AB
+Levelname = Flame Rift
+Lua.shrine = 37, 126
+Act = 2
+Keywords = FRZ2
+Music = MP_FIR
+NextLevel = AC
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Chicken,Bat
+Weather = 0
+SkyNum = 1111
+RecordAttack = true
+LevelSelect = 1
+SkyboxScale = 24
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian, STF"
+Lua.timerankings = 50, 60, 75, 90, 120, 150
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AC
+Levelname = Flame Rift
+Act = 3
+Keywords = FRZ3
+Music = VSALT
+MusicPostBoss = MP_FIR
+NextLevel = AD
+TypeOfLevel = Singleplayer,Co-op
+FlickyList = Chicken,Bat
+Weather = 0
+SkyNum = 1111
+RecordAttack = true
+LevelSelect = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+RunSOC = SOC_FRZ3
+SaveGame = true
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Zipper, Hajime"
+Lua.timerankings = 35, 45, 60, 75, 90, 120,
+lua.levelrankings = 35000, 25000, 20000, 10000, 5000
+
+Level AD
+Levelname = Midnight Freeze
+Act = 1
+Keywords = MFZ1
+Music = MP_ICE
+NextLevel = AE
+TypeOfLevel = Singleplayer,Co-op,Competition,Race,Match,Tag
+FlickyList = Penguin,Seal
+Weather = 2
+SkyNum = 1069
+RecordAttack = true
+LevelSelect = 1
+SkyboxScale = 64
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Inferno, Diego, AceLite, Xelork"
+Lua.timerankings = 90, 105, 120, 150, 190, 210
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AE
+Levelname = Midnight Freeze
+Lua.shrine = 76, 127
+Act = 2
+Keywords = MFZ2
+Music = MP_MF2
+NextLevel = AF
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Penguin,Seal
+Weather = 2
+SkyNum = 1069
+SaveGame = true
+RecordAttack = true
+LevelSelect = 1
+SkyboxScale = 4
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "Sonix, Marcos"
+Lua.lcredits = "Diego, Xian, Mystic"
+Lua.timerankings = 30, 45, 60, 75, 90, 120
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AF
+Levelname = Midnight Freeze
+Act = 3
+Keywords = MFZ3
+Music = VSALT
+MusicPostBoss = MP_ICE
+NextLevel = AG
+TypeOfLevel = Singleplayer,Co-op
+FlickyList = Penguin,Seal
+Weather = 2
+SkyNum = 1069
+SkyboxScale = 64
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+RunSOC = SOC_MFZ3
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Ashi, Felicia.iso, Diego, AceLite"
+Lua.timerankings = 35, 45, 60, 75, 90, 120,
+lua.levelrankings = 35000, 25000, 20000, 10000, 5000
+
+Level AG
+Levelname = Sunken Plant
+Act = 1
+Keywords = SPZ1
+Music = MP_WT2
+NextLevel = AH
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Fish,Fish,Rat
+Weather = 0
+SkyNum = 4
+SkyboxScale = 64
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Felicia.iso, InferNOr, Xian"
+Lua.timerankings = 75, 90, 120, 150, 180, 210
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level B0
+Levelname = Sunken Plant
+Act = 1
+Subtitle = ~demo version~
+Keywords = SPZ1
+Music = MP_WT2
+NextLevel = AH
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Fish,Fish,Rat
+Weather = 0
+SkyNum = 4
+SkyboxScale = 8
+RecordAttack = false
+LevelSelect = 1
+SaveGame = false
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "InferNOr"
+Lua.timerankings = 75, 90, 120, 150, 180, 210
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AH
+Levelname = Sunken Plant
+Lua.shrine = 49, 128
+Act = 2
+Keywords = SPZ2
+Music = MP_WT2
+NextLevel = AI
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Fish,Fish,Rat
+Weather = 0
+SkyNum = 4
+SaveGame = true
+RecordAttack = true
+LevelSelect = 1
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian, Mystic"
+Lua.timerankings = 75, 90, 120, 150, 180, 210
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AI
+Levelname = Sunken Plant
+Act = 3
+Keywords = SPZ3
+Music = VSALT
+MusicPostBoss = MP_WT2
+NextLevel = AJ
+TypeOfLevel = Singleplayer,Co-op
+FlickyList = Fish,Fish,Rat
+Weather = 0
+SkyNum = 4
+RecordAttack = true
+SaveGame = true
+LevelSelect = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+RunSOC = SOC_SPZ3
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Felicia.iso, Ketchupik, Xian"
+Lua.timerankings = 30, 45, 60, 75, 90, 120,
+lua.levelrankings = 35000, 25000, 20000, 10000, 5000
+
+Level AJ
+Levelname = Aerial Garden
+Act = 1
+Keywords = AGZ1
+Music = AGZ
+NextLevel = AK
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Puffin,Dove
+Weather = 0
+SkyNum = 9001
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+Lua.FakeUDMF = 25
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Ashi, Xian"
+Lua.timerankings = 30, 45, 60, 75, 90, 120
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AK
+Levelname = Aerial Garden
+Lua.shrine = 11, 129
+Act = 2
+Keywords = AGZ2
+Music = AGZ
+NextLevel = AL
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Puffin,Dove
+Weather = 0
+SkyNum = 9003
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+NoReload = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Ashi, Xian, Spectrum, Mystic"
+Lua.timerankings = 105, 120, 135, 150, 180, 210
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AL
+Levelname = Aerial Garden
+Act = 3
+Keywords = AGZ3
+Music = VSAGZ
+NextLevel = 97
+TypeOfLevel = Singleplayer,Co-op
+FlickyList = Puffin,Dove
+Weather = 0
+SkyNum = 9012
+RecordAttack = true
+LevelSelect = 1
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+Lua.flamesize = 50
+SaveGame = true
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian, Marcos, Neon, Prime 2.0"
+Lua.timerankings = 30, 45, 60, 75, 90, 120,
+lua.levelrankings = 35000, 25000, 20000, 10000, 5000
+
+Level AM
+Levelname = Aerial Garden
+Act = 4
+Keywords = AGZ4
+Music = AGZALT
+NextLevel = AN
+TypeOfLevel = Singleplayer,Co-op
+FlickyList = Puffin,Dove
+Weather = 0
+SkyNum = 40
+RecordAttack = false
+LevelSelect = 0
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian"
+
+Level AN
+Levelname = Mudhole Karst
+Act = 0
+Keywords = MKZ
+Music = MP_MUD
+NextLevel = A3
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Bluebird,Cat
+Weather = 3
+SkyNum = 505
+SkyboxScale = 32
+RecordAttack = true
+LevelSelect = 2
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "Marcos"
+Lua.lcredits = "Marcos, Radicalicious, Mystic"
+
+Level AO
+Levelname = Rainstorm Keep
+Act = 0
+Keywords = RKZ
+Music = MP_RAI
+NextLevel = A6
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Rabbit,Ram
+Weather = 1
+SkyNum = 20
+RecordAttack = true
+LevelSelect = 2
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Ashi, Radicalicious, SilverVortex, Mystic"
+Lua.timerankings = 60, 75, 90, 120, 150, 180
+lua.levelrankings = 50000, 40000, 30000, 20000, 10000
+
+Level AP
+LevelName = Labyrinth Woods
+SubTitle = Question Marks Of Death
+Act = 0
+Keywords = LWZ
+Music = QUSTNC
+NextLevel = A9
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyboxScale = 64
+StartRings = 0
+FlickyList = Bear,Chipmunk
+Weather = 0
+SkyNum = 4
+RecordAttack = true
+LevelSelect = 2
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Evertone, Mystic"
+Lua.timerankings = 45, 60, 90, 120, 150, 180
+lua.levelrankings = 50000, 40000, 30000, 20000, 10000
+
+Level AQ
+Levelname = Vulkan Forge
+Act = 0
+Keywords = BFZ
+Music = MP_VUL
+NextLevel = AC
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Chicken,Bat
+Weather = 0
+SkyNum = 1
+RecordAttack = true
+LevelSelect = 2
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "Marcos ,clairebun"
+Lua.lcredits = "Mystic" 
+#"Kanna" if their work is added they replace "Mystic"
+Lua.timerankings = 90, 105, 120, 150, 180, 210
+lua.levelrankings = 35000, 30000, 25000, 20000, 10000
+
+Level AR
+Levelname = Silver Cavern
+Act = 0
+Keywords = SCZ
+Music = MP_ICE
+NextLevel = AF
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Penguin,Seal
+Weather = 2
+SkyNum = 11
+RecordAttack = true
+LevelSelect = 2
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Mystic"
+Lua.timerankings = 105, 120, 135, 150, 180, 210
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level B1
+Levelname = Silver Cavern
+Subtitle = ~demo version~
+Act = 0
+Keywords = SCZ
+Music = MP_ICE
+NextLevel = AF
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Penguin,Seal
+Weather = 2
+SkyNum = 11
+RecordAttack = true
+LevelSelect = 2
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Radicalicious"
+Lua.timerankings = 105, 120, 135, 150, 180, 210
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AS
+Levelname = Nitric Citadel
+Act = 0
+Keywords = NCZ
+Music = MP_WT2
+NextLevel = AI
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Fish,Fish,Rat
+Weather = 0
+SkyNum = 503
+RecordAttack = true
+LevelSelect = 2
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian, Mystic"
+Lua.timerankings = 90, 105, 120, 150, 180, 210
+lua.levelrankings = 35000, 30000, 25000, 20000, 10000
+
+Level AT
+Levelname = Starlight Palace
+Lua.shrine = 43, 130
+Act = 0
+Keywords = STZ
+Music = AGZ
+NextLevel = AL
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Puffin,Dove
+Weather = 0
+SkyNum = 9012
+RecordAttack = true
+LevelSelect = 2
+noreload = true
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian, Mystic"
+Lua.timerankings = 105, 120, 135, 150, 180, 210
+lua.levelrankings = 40000, 30000, 25000, 20000, 10000
+
+Level AU
+Levelname = Inner Sanctum
+Act = 0
+Keywords = ISZ
+Music = AGZALT
+NextLevel = AL
+TypeOfLevel = Singleplayer,Co-op
+Weather = 0
+SkyNum = 9012
+Hidden = true
+RecordAttack = true
+LevelSelect = 0
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Othius, Krabs, AceLite, Marcos"
+
+Level AV
+Levelname = Spatial Void
+Act = 0
+Keywords = SVZ
+Music = _INTER
+NextLevel = AZ
+TypeOfLevel = Singleplayer,Co-op
+Weather = 0
+SkyNum = 6
+Hidden = true
+RecordAttack = true
+LevelSelect = 2
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian, STF"
+
+Level AW
+Levelname = Prismatic Angel
+Act = 1
+Keywords = PAZ1
+Music = BHZ
+NextLevel = AX
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+Weather = 0
+SkyNum = 9
+Hidden = true
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian, Mystic"
+Lua.timerankings = 90, 105, 120, 150, 180, 210
+lua.levelrankings = 35000, 30000, 25000, 20000, 10000
+
+Level AX
+Levelname = Prismatic Angel
+Lua.shrine = 62, 131
+Act = 2
+Keywords = PAZ2
+Music = BHZ
+NextLevel = AZ
+TypeOfLevel = Singleplayer,Co-op
+Weather = 0
+SkyNum = 499
+Hidden = true
+RecordAttack = true
+LevelSelect = 1
+SaveGame = true
+NoReload = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian, Mystic"
+Lua.timerankings = 90, 105, 120, 150, 180, 210
+lua.levelrankings = 35000, 30000, 25000, 20000, 10000
+
+Level AZ
+Levelname = Mystic Realm
+Act = 0
+Keywords = MRZ
+Music = MP_MRZ
+NextLevel = BS
+TypeOfLevel = Singleplayer,Co-op
+Weather = 0
+SkyNum = 498
+RecordAttack = true
+BonusType = Boss
+StartRings = 10
+WarningTitle = true
+SelectHeading = The Mystic Realm
+NoSSMusic = true
+LevelSelect = 1
+SaveGame = true
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Xian, Zipper"
+Lua.timerankings = 100, 120, 135, 150, 180, 210
+lua.levelrankings = 35000, 30000, 25000, 20000, 10000
+Lua.GammaTimeLimit = 150
+
+Level BS
+Levelname = Dimension Warp
+Act = 0
+Keywords = DWZ
+Music = DWZ1
+NextLevel = 98
+TypeOfLevel = Singleplayer,Co-op
+Weather = 0
+SkyNum = 58
+RecordAttack = true
+BonusType = ERZ3
+WarningTitle = true
+SelectHeading = The Mystic Realm
+NoSSMusic = true
+LevelSelect = 1
+SaveGame = true
+ForceResetMusic = On
+Lua.mcredits = "Marcos"
+Lua.lcredits = "Xian, Mystic"
+
+Level BT
+Levelname = Golden Sands
+Subtitle = ~Challenge~
+Music = MP_DES
+NextLevel = 1101
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+SkyNum = 15
+NoSSMusic = true
+RecordAttack = false
+SelectHeading = Bonus Stages
+LevelSelect = 0
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+FlickyList = MT_CUSTOMSEED
+Lua.mcredits = "SSNTails, Arrow"
+Lua.lcredits = "Ashi, Othius, Radicalicious"
+Lua.flowerlist = MT_GSZ_FLOWER
+
+Level BU
+Levelname = Primordial Abyss
+Act = 0
+Keywords = PAZ4
+Music = BHZ
+NextLevel = 1100
+TypeOfLevel = Singleplayer
+Weather = 0
+SkyNum = 5004
+RecordAttack = true
+LevelSelect = 2
+Subtitle = ~Challenge~
+SelectHeading = Bonus Stages
+RecordAttack = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+SaveGame = false
+Lua.mcredits = "clairebun"
+Lua.lcredits = "Othius, So2ro, Xian"
+
+Level BV
+Levelname = Mystic Slope
+Act = 0
+Keywords = MSZ
+Music = NOWAY
+NextLevel = 1101
+TypeOfLevel = Singleplayer
+Weather = 0
+SkyNum = 5004
+LevelSelect = 0
+HideInStats = true
+Hidden = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.lcredits = "Xian"
+
+Level X0
+LevelName = Lime Isle
+Subtitle = Jade Coast Race
+TypeOfLevel = Race
+Music = MP_COA
+NextLevel = X1
+SkyNum = 1112
+SkyboxScale = 64
+Lua.Author = JJames19119
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+
+Level X2
+Levelname = Green Upheaval
+Subtitle = Jade Coast Match
+Act = 0
+Music = MP_COA
+NextLevel = 20
+TypeOfLevel = Match,Tag
+Weather = 0
+SkyNum = 501
+
+Level X3
+LevelName = Hydro Plant
+Act = 0
+Music = MP_WT2
+NextLevel = A1
+TypeOfLevel = Match,Tag
+SkyNum = 4
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+
+
+Level X6
+LevelName = Techno Isle
+Act = 0
+SkyNum = 95
+Music = TIZ
+NextLevel = 96
+Weather = PRECIP_STORM
+SkyboxScale = 48
+TypeOfLevel = Match,Tag
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "Marcos"
+Lua.lcredits = "Marcos"
+
+Level T0
+Act = 0
+Keywords = TITL
+Music = MP_MRZ
+TypeOfLevel = Singleplayer,Co-op
+Weather = 0
+SkyNum = 499
+Hidden = true
+RecordAttack = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1

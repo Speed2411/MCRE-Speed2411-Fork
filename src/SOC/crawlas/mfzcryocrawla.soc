@@ -1,0 +1,121 @@
+Freeslot
+S_CRYOCRAWLA_STND
+S_CRYOCRAWLA_RUN1
+S_CRYOCRAWLA_RUN2
+S_CRYOCRAWLA_RUN3
+S_CRYOCRAWLA_RUN4
+S_CRYOCRAWLA_RUN5
+S_CRYOCRAWLA_RUN6
+S_CRYOCRAWLA_RUN7
+S_CRYOCRAWLA_ATK1
+S_CRYOCRAWLA_ATK2
+S_CRYOCRAWLA_ATK3
+
+State S_CRYOCRAWLA_STND
+SpriteName = POSS
+SpriteFrame = A
+Duration = 5
+Next = S_CRYOCRAWLA_STND
+Action A_Look
+
+State S_CRYOCRAWLA_RUN1
+SpriteName = POSS
+SpriteFrame = A
+Duration = 5
+Next = S_CRYOCRAWLA_RUN2
+Action = A_Chase
+
+State S_CRYOCRAWLA_RUN2
+SpriteName = POSS
+SpriteFrame = B
+Duration = 5
+Next = S_CRYOCRAWLA_RUN3
+Action = A_Chase
+
+State S_CRYOCRAWLA_RUN3
+SpriteName = POSS
+SpriteFrame = C
+Duration = 5
+Next = S_CRYOCRAWLA_RUN4
+Action = A_Chase
+
+State S_CRYOCRAWLA_RUN4
+SpriteName = POSS
+SpriteFrame = D
+Duration = 5
+Next = S_CRYOCRAWLA_RUN5
+Action = A_Chase
+
+State S_CRYOCRAWLA_RUN5
+SpriteName = POSS
+SpriteFrame = E
+Duration = 5
+Next = S_CRYOCRAWLA_RUN6
+Action = A_Chase
+
+State S_CRYOCRAWLA_RUN6
+SpriteName = POSS
+SpriteFrame = F
+Duration = 5
+Next = S_CRYOCRAWLA_RUN7
+Action = A_Chase
+
+State S_CRYOCRAWLA_RUN7
+SpriteName = POSS
+SpriteFrame = F
+Duration = 5
+Next = S_CRYOCRAWLA_ATK1
+Action A_Repeat
+Var1 = 4
+Var2 = S_CRYOCRAWLA_RUN1
+
+State S_CRYOCRAWLA_ATK1
+SpriteName = POSS
+SpriteFrame = F
+Duration = 0
+Next = S_CRYOCRAWLA_ATK2
+Action A_FaceTarget
+
+State S_CRYOCRAWLA_ATK2
+SpriteName = POSS
+SpriteFrame = F
+Duration = 5
+Next = S_CRYOCRAWLA_ATK3
+Action A_FireShot
+Var1 = MT_ICEBEAM
+Var2 = -10
+
+State S_CRYOCRAWLA_ATK3
+SpriteName = POSS
+SpriteFrame = F
+Duration = 5
+Next = S_CRYOCRAWLA_RUN1
+Action A_Repeat
+Var1 = 10
+Var2 = S_CRYOCRAWLA_ATK2
+
+Object MT_CRYOCRAWLA
+MapThingNum = 3104
+SpawnState = S_CRYOCRAWLA_STND
+SpawnHealth = 1
+SeeState = S_CRYOCRAWLA_RUN1
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainState = S_NULL
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_pop
+ActiveSound = sfx_None
+RaiseState = S_NULL
+ReactionTime = 35
+PainChance = 200
+Speed = 5
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE

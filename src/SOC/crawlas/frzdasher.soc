@@ -1,0 +1,83 @@
+Freeslot
+S_DASHERCRAWLA_STND
+S_DASHERCRAWLA_JUMP1
+S_DASHERCRAWLA_JUMP2
+S_DASHERCRAWLA_DASH1
+S_DASHERCRAWLA_DASH2
+S_DASHERCRAWLA_DASH3
+MT_DASHERCRAWLA
+
+State S_DASHERCRAWLA_STND
+SpriteName = MNUD
+SpriteFrame = E
+Duration = 5
+Next = S_DASHERCRAWLA_STND
+Action A_JetJawRoam
+
+State S_DASHERCRAWLA_JUMP1
+SpriteName = MNUD
+SpriteFrame = F
+Duration = 1
+Next = S_DASHERCRAWLA_JUMP2
+Action A_NapalmScatter
+Var1 = MT_FALLINGROCK
+Var2 = 100 >> 80
+
+State S_DASHERCRAWLA_JUMP2
+SpriteName = POSS
+SpriteFrame = B
+Duration = 50
+Next = S_DASHERCRAWLA_DASH1
+Action = A_ZThrust
+Var1 = 13
+Var2 = 1
+
+State S_DASHERCRAWLA_DASH1
+SpriteName = NULL
+SpriteFrame = F
+Duration = 0
+Next = S_DASHERCRAWLA_DASH2
+Action = A_BossJetFume
+Var1 = 2
+
+State S_DASHERCRAWLA_DASH2
+SpriteName = POSS
+SpriteFrame = F
+Duration = 20
+Next = S_DASHERCRAWLA_DASH3
+Action A_Thrust
+Var1 = 55
+Var2 = 1
+
+State S_DASHERCRAWLA_DASH3
+SpriteName = POSS
+SpriteFrame = F
+Duration = 10
+Next = S_DASHERCRAWLA_DASH2
+Action A_FaceTarget
+
+Object MT_DASHERCRAWLA
+MapThingNum = 3103
+SpawnState = S_DASHERCRAWLA_STND
+SpawnHealth = 1
+SeeState = S_DASHERCRAWLA_JUMP1
+SeeSound = sfx_None
+AttackSound = sfx_spndsh
+PainState = S_NULL
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_pop
+ActiveSound = sfx_None
+RaiseState = S_NULL
+ReactionTime = 0
+PainChance = 30
+Speed = 0
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE

@@ -1,0 +1,5 @@
+# TVZ Egg Slimer that shoots different goop
+
+Object MT_EGGMOBILE2
+AttackSound = sfx_begoop
+PainChance = MT_SLOWGOOP

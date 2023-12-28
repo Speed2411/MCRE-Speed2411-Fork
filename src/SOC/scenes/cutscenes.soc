@@ -1,0 +1,468 @@
+
+# Cutscenes. Actually, it's just the display at the beginning that shows my name 
+#  and the credits.
+# Explanation: http://wiki.srb2.org/wiki/Cutscenes
+
+Cutscene 1
+NumScenes 1
+Scene 1
+NumberOfPics = 1
+Pic1Name = TMPRSM
+Pic1Hires = 1
+Pic1Duration = 125
+Pic1XCoord = 0
+Pic1YCoord = 0
+TextXPos = 1
+TextYPos = 320
+Music = _STJR
+SceneText =                      
+      #
+
+
+
+# Making of Mystic Realm's text.
+
+# This uses the prompt system from the main game's tutorial.
+# While the information is incomplete as of writing this, the wiki page for this feature is here:
+#  https://wiki.srb2.org/wiki/Text_prompt
+
+PROMPT 1
+NumPages 71
+PAGE 1
+Tag = Opening
+Name = 
+Icon = 0
+Lines = 15
+PageText = Welcome to Mystic Realm's developer commentary. Over the years since the pack was released, I've gotten a lot of questions and moderate interest in how the package was made and why some of the decisions I made were made. If this type of thing interests you, read on for a rambling description of what I remember of my thought processes from fifteen years ago. This text takes about twenty minutes to read in full for a reasonably fast reader. It also contains heavy spoilers.
+        #
+PAGE 2
+Name = 
+Icon = 0
+Lines = 15
+PageText = Mystic Realm was never conceived as what it became. When I started mapping for SRB2, level headers did not exist, meaning that any MAP01 would have Greenflower 1's music and title card, which was not a font but instead a graphic of the text for each zone's card. To make a custom stage name I had to make a graphic and replace Greenflower's title card graphics. The idea of making a full mod of the game was not remotely feasible, never mind something I was thinking about. Before Final Demo, all of my releases were one-shot acts or zones.
+        #
+PAGE 3
+Name = 
+Icon = 0
+Lines = 15
+PageText = Final Demo introduced the concept of level headers, which suddenly made it easy to string together levels as a package. With the release of "Mystic Level Pack" v.1.0, which contained Crawla Isle (later renamed to Jade Coast), Verdant Forest, and Aerial Garden. Instead of being standalone, the levels were set up to follow the vanilla campaign like an expansion.
+        #
+PAGE 4
+Name = 
+Icon = 0
+Lines = 15
+PageText = Version 2.0 added Flame Rift and renamed the pack to "Mystic Way", where I clearly was trying to make it sound like a place but not doing a great job. Version 3.0 added Midnight Freeze and renamed it again to "Mystic Realm", which at least accomplishes the goal but still makes me cringe a little bit inside about putting my screen name in the title. Both of those updates continued to act like the original version, with the new stages appearing after the vanilla stages.
+        #
+PAGE 5
+Name = 
+Icon = 0
+Lines = 15
+PageText = Version 4.0 is when I finally realized I could create a standalone game, and planned out a full level rotation. The original plan was as follows:
+
+Crawla Isle (Jade Coast)
+Tempest Valley [new]
+Sunken Plant [new]
+Verdant Forest
+Flame Rift
+Midnight Freeze
+Vulcan Forge [new] (Blazing Forge)
+Aerial Garden
+<unnamed space station> [new]
+Mystic Realm
+        #
+PAGE 6
+Name = 
+Icon = 0
+Lines = 15
+PageText = The space station concept was killed extremely early, and an early concept for unlockables was added: "temple" stages themed around the Sonic 3 shields. The Fire Temple, Lightning Temple and Water Temple would unlock at 50 emblems (of 60 planned at the time), and the Armageddon Temple was going to unlock after beating the first three. These stages remained in the plans for quite a long time in development, but were never made. Mystic Realm Zone also became the all emeralds unlockable, although it wasn't for Super Sonic yet.
+        #
+PAGE 7
+Name = 
+Icon = 0
+Lines = 15
+PageText = The two full new zones that were created are both written down at the beginning of the level roster. This is because they were planned to both be easy as the rest of the stages were pretty mean. When both stages were finished and as I started planning out Blazing Forge (which was originally planned as a three act zone), I ended up having both a lack of inspiration for the new stage and also it became very apparent that the difficulty curve was beyond awful.
+        #
+PAGE 8
+Name = 
+Icon = 0
+Lines = 15
+PageText = Sunken Plant was moved to zone 6, pushing everything else forward. Verdant Forest was then heavily nerfed and rearranged to try to make it fit better, as it was still heavily difficult. The rest of the campaign was cleaned up at the time to try to make things more reasonable. Prismatic Angel was also added around this time to make the all emerald secret more interesting than just a standard boss over a pit, which Mystic Realm Zone still was. 
+        #
+PAGE 9
+Name = 
+Icon = 0
+Lines = 15
+PageText = At this point I started to realize that this was a pretty complete package to set up for release, even without Blazing Forge and the temple concept. After the function to warp to different AGZ4s based on emeralds was added to SRB2 v.1.09, the package was close enough to release-ready, but there was a problem: SRB2 v.1.09 itself was not remotely ready. 
+        #
+PAGE 10
+Name = 
+Icon = 0
+Lines = 15
+PageText = During the wait for the main game, I came up with the idea of using normal stages as a replacement for special stages and the shrine mechanic. Blazing Forge's concept was dug back up as one of them, and the first stage, Mudhole Karst, was quickly drafted up and tested. The concept worked, and the emerald stages were quickly thrown together as SRB2 v.1.09 was starting to approach completion. Even then, Starlight Temple didn't get done in time and had a placeholder until v.4.2.
+        #
+PAGE 11
+Name = 
+Icon = 0
+Lines = 15
+PageText = Prismatic Angel was expanded to a three act zone, using a placeholder for act 2 and a super obnoxious boss arena for act 3, and this is finally where Mystic Realm Zone became a Super Sonic stage, thanks to coding support added into SRB2 by SSNTails. New bosses for each were scripted up by Prime 2.0, and the package was released alongside SRB2 v.1.09.
+        #
+PAGE 12
+Name = 
+Icon = 0
+Lines = 15
+PageText = Upon release the package was well-received, but several issues had to be resolved in small patches. One major addition to help the package was added into v.4.2, which used a new SRB2 feature to make levels no longer reset upon dying. This made it way more reasonable to get all the emeralds because mystic shrines and switches didn't reset on death anymore. A few more modifications to fix various issues and add more unlockables pushed the version up to v.4.4, which was the last version to include new content for 14 years.
+        #
+PAGE 13
+Name = 
+Icon = 0
+Lines = 15
+PageText = After that release I concentrated my efforts in helping the main game, as SRB2 v.2.0's development was in full swing. Upon its release, I didn't initially bother porting Mystic Realm due to the massive amount of changes that SRB2 v.2.0 caused, making porting it a pain, but this led to a massive amount of unofficial ports popping up all over. Eventually due to the efforts of Ezer.Arch, Kaysakado, Prime 2.0 and MascaraSnake, a proper port was created and released as v.4.5.
+        #
+PAGE 14
+Name = 
+Icon = 0
+Lines = 15
+PageText = For SRB2 v.2.1's development, I actively ported Mystic Realm for the purposes of testing modding features. Many oversights had led to a lot of bugs in SRB2 v.2.0's modding features, including a bug that provided an extra emblem in all custom mods, leading to v.4.5 having a maximum of 76 out of 75 emblems. When SRB2 v.2.1 released I released the port as v.4.6, with no significant changes beyond porting everything and fixing a couple of known bugs.
+        #
+PAGE 15
+Name = 
+Icon = 0
+Lines = 15
+PageText = Of course, as all of this time has gone by, it's not like the major flaws of the package hadn't become super obvious. For SRB2 v.2.2's port, I decided to finally fix many of the things that had been bothering me for over a decade. For instance, I moved some shrines to make them on the common route so the other routes are no longer useless, renamed a few things (like shrines), removed some really bad unlockables, and changed some areas so the new characters could complete the package.
+        #
+PAGE 16
+Name = 
+Icon = 0
+Lines = 15
+PageText = However, the most important change was making hazards consistent. Mystic Realm contained no consistency in how hazards behave. Mudhole Karst featured mud that hurt because it was "toxic", but Verdant Forest features dirty, brown water that doesn't hurt. Midnight Freeze's water was painful because it was cold, despite looking exactly the same as the water in other stages that doesn't hurt. The end result is that there was no way to know what something would do without touching it and finding out the hard way.
+        #
+PAGE 17
+Name = 
+Icon = 0
+Lines = 15
+PageText = Even worse, due to the popularity of Mystic Realm, many of these bad ideas ended up being copied by the community at large. For a long time it was impossible to determine if water in a custom stage was safe to enter or not. Instant death green slime even managed to sneak into vanilla for a bit. While it's a bit late, I hope these corrections can finally put these old bad ideas to bed for good.
+        #
+PAGE 18
+Name = 
+Icon = 0
+Lines = 15
+PageText = Obviously, the main point of the pack is the levels. Next I'll go through the levels in the package and give some commentary on each.
+        #
+PAGE 19
+Name = 
+Icon = 0
+Lines = 15
+PageText = Jade Coast Zone Act 1 was originally released as Crawla Valley Zone, my first completed single player level, on July 27, 2001 for SRB2 Demo 3. The original version was made with zero understanding of tags, which is why all the water in the stage is the same height, as I copy-pasted the water control sector from Meadow Match. There are a lot of hallmarks of a new level designer still visible even today, with weird secrets super high up and some cramped passages that are actually larger than they originally were. The bottom level of grass was replaced with sand to fit act 2's theme for Mystic Realm.
+        #
+PAGE 20
+Name = 
+Icon = 0
+Lines = 15
+PageText = In v.4.0, the secret room at the end of the elevated tunnel had a special mystic shrine, taking the player to a Warp Zone stage that allowed selection of any zone. Warp Zone was taken out in later releases when the ability to properly save in mods was implemented, but this is why that room and its entry method are so large and dramatic. This secret actually predates the shrine system in development, and originally there were three portals that would teleport you to zone 3, 5, or 7.
+        #
+PAGE 21
+Name = 
+Icon = 0
+Lines = 15
+PageText = Jade Coast Zone Act 2 was originally released as Coastal Shores Zone on February 17, 2003. It was originally designed to demonstrate the translucent water and the Crawla Commander, both of which were new at the time. The original intent was to have the water go out to the horizon, but obviously that wasn't a feature in SRB2:2K3.
+        #
+PAGE 22
+Name = 
+Icon = 0
+Lines = 15
+PageText = A particularly bad issue with the original design was the passage to the right of the springs near the end, which let you go out over the start of the map and spring to a 1-Up. Many players got heavily confused when they fell and ended up looping around without realizing that there was a passage to the left that went to the exit.
+        #
+PAGE 23
+Name = 
+Icon = 0
+Lines = 15
+PageText = When v.4.0 came out, the shrine was only accessible via flight or spindashing through the hole in the cave. Later on many characters without the ability to spindash were created and a method of getting up there without spinning was requested, so in v.4.1 the floating platforms were added, all but replacing the original method for a lot of players who didn't notice the little hole.
+        #
+PAGE 24
+Name = 
+Icon = 0
+Lines = 15
+PageText = Tempest Valley Zone was created for v.4.0 and was intended to be an easier version of the painful slime mechanic that existed at the time in Techno Hill. The pits of slime were shallow enough to jump out of, unlike vanilla at the time. The deeper slime in the first room of the second act was to handle the falling platforms above, which at the time would act in a glitchy manner if they actually touched the bottom of the pool when bobbing. 
+        #
+PAGE 25
+Name = 
+Icon = 0
+Lines = 15
+PageText = Previous versions added an extra platform to skip the platforming in that room for easy mode because it was obviously too much, but more should have been done to make the first room in particular more reasonable. A notable secret was the invisible platform in this room that could only be seen by the rain drops landing on them. I still think this is a super neat idea, but SRB2's engine made it impractical and I don't think I know of many people that actually found it the intended way.
+        #
+PAGE 26
+Name = 
+Icon = 0
+Lines = 15
+PageText = The moving slime room was often quite problematic in the original version as well, with many players not being remotely prepared to go through it fast enough with the little practice they have had with the controls. Overall the difficulty of TVZ was way higher than it should have been for the second zone, even with my intent to be more reasonable with the slime than THZ. Using the bouyant slime goes a long way towards making it way less difficult, but at the cost of nothing much actually being in the slime to go find since it was originally painful.
+        #
+PAGE 27
+Name = 
+Icon = 0
+Lines = 15
+PageText = Verdant Forest Zone was my second three act zone design, and was released on February 17, 2003 to go with the SRB2:2K3 match beta and show off the new bobbing platform functionality. I've long talked about how awful VFZ is and how it's by far the worst zone in Mystic Realm, but the original release was even worse. The water in act 2 had death pits underneath it and no platforms except for the logs, which were even smaller. Jetty-syns were spammed massively, and it even had obnoxiously placed Detons everywhere, complete with a gimmick room that was somehow way worse than vanilla's.
+        #
+PAGE 28
+Name = 
+Icon = 0
+Lines = 15
+PageText = For v.4.0 the original second act was cut in half, with the first half being attached to the end of act 1, and a new area in the treetops that let you see the sky was added. None of these changes did a thing to help how generally uninteresting the stage as a whole is, but as time went on more and more of the obnoxiously difficult stuff was removed.
+        #
+PAGE 29
+Name = 
+Icon = 0
+Lines = 15
+PageText = For v.5.0 I tried to make it clearer which direction to go because getting lost in this stage was always super easy, with the terrible texturing and maze-like layout, but I don't think there's any getting around the fact that VFZ is just not a good design.
+        #
+PAGE 30
+Name = 
+Icon = 0
+Lines = 15
+PageText = Flame Rift Zone was the first zone actually designed with the intent of including it in Mystic Realm in June 2003. Unlike my previous maps, this zone was drawn out on graph paper before implementation, with a rather large grid size of 256, which is why the zone has a weirdly rigid look with only 45 degree angles. Lava had not been done in SRB2 yet, so the texture rips from classic Sonic were still being used, and I intentionally made it shallow to prevent the punishing effect that lava and slime had in vanilla. 
+        #
+PAGE 31
+Name = 
+Icon = 0
+Lines = 15
+PageText = Unlike a lot of the other maps, this zone hasn't actually changed a whole lot other than visuals and the addition of extra secrets. In v.5.0, the shrine was moved because of a long-term issue with act 2: the shrine was on one of the route selections and therefore the other route was never used. I removed the breakable wall in front of an old secret and placed the shrine there, with the secret that used to be there moved to where the shrine used to be.
+        #
+PAGE 32
+Name = 
+Icon = 0
+Lines = 15
+PageText = Midnight Freeze Zone was made for v.3.0 on January 1, 2004. This stage introduces probably the worst mechanic ever conceived in SRB2: painful water. The original idea was that the water is cold and therefore hurts to touch, but there's absolutely nothing to tell the player this and Sonic jumps into cold water in Sonic 3 just fine, so it's just completely out of left field and obnoxious. Even worse, due to Mystic Realm's popularity this mechanic was emulated in other work, with some stages even including both harmless and painful water in the same map.
+        #
+PAGE 33
+Name = 
+Icon = 0
+Lines = 15
+PageText = If there are any level designers out there reading this, learn from my mistake: if something hurts, it should look clearly hazardous to the player, like lava or brightly colored slime. Version 5.0 finally fixes this and hopefully we'll never see painfully cold water again in SRB2.
+        #
+PAGE 34
+Name = 
+Icon = 0
+Lines = 15
+PageText = The level design itself used friction as the main gimmick, along with using the fake floor feature to make snow that you step in. In the original release, the snow was deep enough that it wasn't really possible to see the face of monitors, but with the new monitor sprites this is no longer true and the Eggman monitor in act 1 is no longer a legitimate trap.
+        #
+PAGE 35
+Name = 
+Icon = 0
+Lines = 15
+PageText = Sunken Plant Zone was created for v.4.0 along with TVZ. Unlike TVZ, this zone was actually intended to be difficult, with collapsing platforms underwater and heavy usage of Skim. Another goal was to use thing spikes appropriately, as at the time SRB2 was mainly using sector spikes, which were a lot more difficult to use.
+        #
+PAGE 36
+Name = 
+Icon = 0
+Lines = 15
+PageText = Version 4.0 originally had rooms with water that rose and fell with boxes floating on it. They'd hit the ceiling and crush the player if they were still standing on them, so the player had to jump through quickly. One of the boxes had a hole in the ceiling above it that led to the shrine. Unfortunately, this room caused regular crashes in 1.09, and the room was replaced in v.4.1. 
+        #
+PAGE 37
+Name = 
+Icon = 0
+Lines = 15
+PageText = This replacement put the shrine in the same location, but accessed by a spring under an illusionary floor, which made no sense since that's not a mechanic SRB2 uses anymore, and was the only instance of it in Mystic Realm. Similarly to Flame Rift, the shrine was moved entirely in v.5.0 to both get it off of a specific path and remove the old illusory floor issue.
+        #
+PAGE 38
+Name = 
+Icon = 0
+Lines = 15
+PageText = Aerial Garden Zone Act 1 is a merged version of my first three act zone, which was released on January 14, 2002. The starting room was act 1 and the exit room was act 2. While there were bottomless pits in the SRB2 Xmas series, at some point after that the support broke and needed to be fixed again. AGZ was made to release with Demo 4, which fixed bottomless pits and also introduced Jetty-syns, which were prominently used.
+        #
+PAGE 39
+Name = 
+Icon = 0
+Lines = 15
+PageText = The large fountain in the center of the exit room was originally placed to put one-sided linedefs in the center of it, in order to prevent a consistent crash that occurred when looking from one corner of the room to the opposite corner. When the acts were merged, instead of lining them up one after the other, the entrance to the second act was placed halfway through the first act and a new room was created to connect the original first act's end to the second act. 
+        #
+PAGE 40
+Name = 
+Icon = 0
+Lines = 15
+PageText = That new room, along with a room in acts 2 and 3, originally used a blue spring gimmick that was incredibly unfair due to a combination of not using blue springs significantly elsewhere in the campaign and blue springs not being a classic Sonic mechanic. The player couldn't guess what they'd do without jumping on them and probably dying a couple times since they're introduced over a pit. This room was replaced in vanilla's merge of the AGZ acts twice, originally with much-hated diagonal springs and now with polyobjects, both in vanilla's merge and in v.5.0.
+        #
+PAGE 41
+Name = 
+Icon = 0
+Lines = 15
+PageText = Aerial Garden Zone Act 2 was created all-new for v.4.0, and way more time was spent on it than any of the rest of the stages for that release. The stage ended up large enough that it broke WadAuthor's limitations, needing to have a long hallway for turning around at the start to avoid being larger than 16Kx16K.
+        #
+PAGE 42
+Name = 
+Icon = 0
+Lines = 15
+PageText = One of the major elements of the stage is the switches that open up doors. Originally the design only had the large, four switch door near the end with the shrine hidden behind it. This proved way too difficult, especially with the fact that the switches reset upon death, so a treasure room was placed there and a new, easier two switch door was created near the center of the stage to house the shrine. This was still pretty incredibly difficult as Sonic until v.4.2 prevented the switches from resetting upon death.
+        #
+PAGE 43
+Name = 
+Icon = 0
+Lines = 15
+PageText = Aerial Garden Zone Act 3 was also created for v.4.0. It was intended to invoke Metropolis Zone's third act in adding a challenge the player wasn't expecting beforehand. The stage itself uses teleports to access small, self-contained challenge rooms using four mechanics from earlier in the zone.
+        #
+PAGE 44
+Name = 
+Icon = 0
+Lines = 15
+PageText = This design wasn't the first one I tried. Originally I attempted to create what was essentially an autoscroller. The player stood on a rising floor and moved around to dodge hazards or the floor would crush them against the ceiling. The original ideas of using enemies on it didn't work due to renderer problems, and a lot of other things just made it not very fun, so that idea was scrapped and the teleporter hub was created instead. There was also a concept for another normal stage like AGZ2 at one point, although that never went beyond the conceptual stage.
+        #
+PAGE 45
+Name = 
+Icon = 0
+Lines = 15
+PageText = Mudhole Karst was actually released as a standalone preview of Mystic Realm v.4.0 four months early. Otherwise the stage isn't particularly remarkable outside of being another example of terrible pain water usage that doesn't make sense. In the documentation it was labeled as "toxic mud", but there's no way a player could know that without getting hit first. Since this was the first emerald stage actually completed, it set the standard I would follow of a simple concept with an extra gimmick on top of the normal stage setup. The mud no longer hurts in v.5.0 and looks like VFZ's water.
+        #
+PAGE 46
+Name = 
+Icon = 0
+Lines = 15
+PageText = Unlike Mudhole Karst, Rainstorm Keep Zone deviated quite dramatically from the main zone, both in design and gimmicks. The only real thing shared between the normal zone and emerald stage is the heavy use of purple slime. The little flavor scenery rooms with beds and chairs and such ended up getting reused a lot, in vanilla CEZ2 for 2.1 and in the match stage Thunder Citadel, along with the crushers that block an emblem.
+        #
+PAGE 47
+Name = 
+Icon = 0
+Lines = 15
+PageText = Crushers were relatively unused in Mystic Realm overall so having a stage based around them made sense when putting together the emerald stages. In development this stage was named Rainstorm Castle, but was changed before release.
+        #
+PAGE 48
+Name = 
+Icon = 0
+Lines = 15
+PageText = Labyrinth Woods Zone is a gimmick stage designed to use the then-new teleport features that allow for the relatively seamless transitions between rooms. Inspired by the Lost Woods from Zelda, I'm still generally proud of this gimmick as it's completely reasonable to figure out without help, but still requires some observation and thought to do so. The hidden room with the three extra lives is something I'm particularly proud of because a lot of players wouldn't think of doing that, but those that do are heavily rewarded for doing so.
+        #
+PAGE 49
+Name = 
+Icon = 0
+Lines = 15
+PageText = This concept wasn't the first one tried, though; in development the first attempt at a VFZ emerald stage was named Fungus Canopy Zone, which was designed around the areas of VFZ2 where the player goes up into the trees and bounces on bouncy fungus platforms, but over a pit this time. The stage didn't make it very far before it was clear the idea wasn't working out well and was replaced with the new design.
+        #
+PAGE 50
+Name = 
+Icon = 0
+Lines = 15
+PageText = Unlike the rest of the emerald stages, Blazing Forge Zone was a pre-existing concept from the beginning of development of version 4.0. The idea was always a technological lava stage, and it was originally intended to be the Scrap Brain equivalent of Mystic Realm, being a technological end-game stage. When repurposed for an emerald stage, the core gimmick I found to add in was the steam jets from THZ, which are used heavily and there are very few normal springs in the stage at all. 
+        #
+PAGE 51
+Name = 
+Icon = 0
+Lines = 15
+PageText = In the original version, while going through the tunnel at the end, the lava would start to rise and start a chase mechanic through the next room. Unfortunately, not only did this not play all that great, it kept getting desynched because Mystic Realm's lava involved two surfaces: a liquid FOF and a solid FOF underneath it to prevent you from sinking into the lava. 
+        #
+PAGE 52
+Name = 
+Icon = 0
+Lines = 15
+PageText = Another quirk of the original design is that a lot of the rooms were designed to be challenging in reverse for some reason that I've long since forgotten. In v.5.0 I've finally arranged all the rooms such that the rooms are challenging in the direction you're supposed to go through them. The stage was also renamed from Vulcan Forge Zone to fix having two stages with the same VFZ abbreviation.
+        #
+PAGE 53
+Name = 
+Icon = 0
+Lines = 15
+PageText = Silver Cavern Zone has long been problematic for being way too difficult. Especially the final segment, with super cheap, impossible to see little pits that the player will slide into if they thok towards the wall. The springs that have enemies ready to snipe you into a pit if you aren't paying attention are a close second. The intended gimmick for this stage was simply having no water in the stage, only ice, but I doubt many players noticed with how absurdly mean many of the jumps were. This stage was named Frost Cavern in development, and also changed before release.
+        #
+PAGE 54
+Name = 
+Icon = 0
+Lines = 15
+PageText = Right behind painful cold water on the list of my terrible ideas that were emulated by the community at large, Nitric Citadel Zone's instant kill green slime was awful. It even managed to sneak into a room of Egg Rock in SRB2 v.2.0. Beyond the bad gimmick, the stage's use of turrets was quite different from vanilla, forcing the player to actually run past them for large stretches and probably even get fired at without cover. Considering how lazy the gimmick design was, the actual layout encouraging fast movement made this work out way better than expected in hindsight.
+        #
+PAGE 55
+Name = 
+Icon = 0
+Lines = 15
+PageText = Starlight Temple Zone was simply a single room with the emerald at the top of the fountain in v.4.0. I didn't get around to actually making it a proper stage until v.4.2, but I put in a lot of effort and tried to do things that I didn't previously. The large elevator in the stage was originally intended to be a Sky Sanctuary teleporter, but that ended up being too difficult to make at the time so I simply created a fast elevator instead.
+        #
+PAGE 56
+Name = 
+Icon = 0
+Lines = 15
+PageText = The initial version's distance to the first star post was incredibly high, which ended up being fixed in the merged version of AGZ for vanilla. The final jumps on the conveyor belt area were originally absolutely insane, and have long since been nerfed into the ground. Finally, since this stage was being implemented in a patch and I had a lot of time to think about it, the stage had a shrine of its own, hidden behind a gargoyle switch that I suspect very few people found on their own.
+        #
+PAGE 57
+Name = 
+Icon = 0
+Lines = 15
+PageText = After opening the gate, the player entered a gimmick room of invisible platforms shown by gargoyles, but most players just flew up as Tails and hit the bottom of the invisible passage above them, making the whole gimmick pointless. The stage was known as Starlight Temple in development, but the name was changed to Starlight Palace to avoid using the word "temple" which had gameplay meaning at the time. In v.5.0, the name was changed back because it caused an abbreviation conflict with Sunken Plant and the temples were renamed.
+        #
+PAGE 58
+Name = 
+Icon = 0
+Lines = 15
+PageText = Inner Sanctum contained the black emerald in the initial release, allowing the player to become Hyper Sonic. Later on the black emerald was changed via SOC into the master emerald, which could be climbed on to collect an emblem. Amusingly the master emerald is solid via an invisible solid FOF, because the collision was a pain back then. For 5.0 the stage was expanded and a challenge was added for record attack to get a perfect bonus in under 30 seconds.
+        #
+PAGE 59
+Name = 
+Icon = 0
+Lines = 15
+PageText = Prismatic Angel Zone Act 1 was created very late in the pre-emerald stage part of development, and was originally conceived as a single act zone. It had zero rings and was originally planned to be built around a shield gimmick, taken from the temple idea early in development that was scrapped. The problem became cooperative mode, because there was no way to get the shields to respawn so other players could continue. The platform intended to hold the whirlwind shield is still visible in the second room, to the left when the path turns right to the first spring in that room.
+        #
+PAGE 60
+Name = 
+Icon = 0
+Lines = 15
+PageText = The final room originally ended with an absolutely unfair section involving repetitive long jumps on tiny 128x128 platforms that were so mean that if the player stopped on a platform, they wouldn't have enough momentum to jump to the next platform without thokking, and thokking before trying to land on a 128x128 platform is about as advisable as it sounds. 
+        #
+PAGE 61
+Name = 
+Icon = 0
+Lines = 15
+PageText = To make matters even worse, these tiny platforms used the rainbow texture set, and thus were thin and nearly impossible to see at the distances the jumps required. Originally the absurdly unfair version was moved to hard mode and a new, way easier normal mode-only section was added. The original version was removed for good in v.4.5 as SRB2 had removed difficulty levels.
+        #
+PAGE 62
+Name = 
+Icon = 0
+Lines = 15
+PageText = Prismatic Angel Zone Act 2 was put in as a placeholder, similar to Starlight Temple, but two attempts at a complete version were never finished. The first version teleported the player through rooms that were harder versions of each zone's gimmick. For instance, the Verdant Forest room had the little logs over a pit, like VFZ originally had. This got scrapped pretty quickly as it wasn't working out as remotely fun. 
+        #
+PAGE 63
+Name = 
+Icon = 0
+Lines = 15
+PageText = The second version teleported the player into rooms that looked like PAZ1, but were underwater, requiring the use of the underwater physics to handle the jumps from one platform to the next. This version was actually working out decently but was lost to a hard drive crash, and was never rebuilt. A few of the ideas in this version were eventually used for Azure Temple Zone in the base game.
+        #
+PAGE 64
+Name = 
+Icon = 0
+Lines = 15
+PageText = For version 5.0 I finally created a proper PAZ2 on January 20, 2020, using three different old ideas for the stage, one for each room. The placeholder room was always intended to be a hub room, like AGZ3. I'm quite looking forward to seeing the community reactions to finally having the missing piece added fifteen years later.
+        #
+PAGE 65
+Name = 
+Icon = 0
+Lines = 15
+PageText = Prismatic Angel Zone Act 3 contained the same boss as AGZ4 originally, which was skipped if the player didn't have all of the emeralds previously. Since MRZ's boss was updated to actually be interesting, this stage was changed to a simple transition area with a record attack challenge like Inner Sanctum.
+        #
+PAGE 66
+Name = 
+Icon = 0
+Lines = 15
+PageText = Dimension Warp Zone was created for version 5.0 to go along with PAZ2 as a reference to v.4.0's Warp Zone. It has a similar layout with 1-Ups as a reward for finding it. The layout was also designed to create a silly challenge for record attack: getting all the rings and 1-Ups within thirty seconds for the 50K time bonus and perfect bonus. I'm quite curious how the three score emblem challenges will be received.
+        #
+PAGE 67
+Name = 
+Icon = 0
+Lines = 15
+PageText = Originally Mystic Realm Zone was just a standard boss room, with the standard Eggmobile blocked from moving away from the center, which was entirely a pit, requiring the player to jump out over the pit and bounce back after hitting him. This remained true until late in development, when the idea for a Super Sonic gimmick stage was considered and run past SSNTails, who implemented the sector type for the mechanic to work. 
+        #
+PAGE 68
+Name = 
+Icon = 0
+Lines = 15
+PageText = The intent was to copy Doomsday's design, with a moderately short area to get the hang of the controls and setup, and then a boss that the player's rings become time to fight. The ring spread in the pre-boss area was set up to make sure that it was possible to get a good number of rings before the boss, but not get 100, triggering an extra life and interrupting the music.
+        #
+PAGE 69
+Name = 
+Icon = 0
+Lines = 15
+PageText = Unfortunately, the boss design we settled on was absolutely unfair in every way, as we had clearly gotten way too good at it in development. The eventual strategy that most players used to beat it was to get stunlocked into the boss, hitting him repetitively, and at this point now that I haven't repetitively tested it over and over again recently, I can't do it the intended way either.
+        #
+PAGE 70
+Name = 
+Icon = 0
+Lines = 15
+PageText = For 5.0, I decided that since PAZ was being changed to handle all characters, the final boss should as well. Thanks to Zipper, MRZ now has a new boss entirely built in pure SOC. The design is a reference to Culex from Super Mario RPG, which came up when thinking about the crystal theme, adding a few extra attacks based on some of the spells from the 16-bit Final Fantasy games. After some back and forth to fix the cheese and make sure the guard bonus emblem is fair, I'm really happy with how it came out.
+        #
+PAGE 71
+Name = 
+Icon = 0
+Lines = 15
+PageText = It's genuinely hard to overstate how much time and effort I put into Mystic Realm fifteen years ago. While SRB2 itself has expanded dramatically and become a way more amazing game than it was back in the Final Demo era Mystic Realm is from, it continues to amaze me how popular this pack continues to be, warts and all. I hope anyone who actually made it all the way to the end of this commentary was at least entertained by my rambling down memory lane and I guess I'll see you all in 2035 when it's time to give it another polish pass.
+        #

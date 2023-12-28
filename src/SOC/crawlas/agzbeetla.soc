@@ -1,0 +1,82 @@
+Freeslot
+SPR_BPOS
+S_BEET_STND
+S_BEET_STND2
+S_BEET_STAB1
+S_BEET_STAB2
+S_BEET_STAB3
+S_BEET_STAB4
+
+State S_BEET_STND
+SpriteName = BPOS
+SpriteFrame = A
+Duration = 1
+Next = S_BEET_STND2
+Action = A_JetJawRoam
+Var1 = 0
+
+State S_BEET_STND2
+SpriteName = BPOS
+SpriteFrame = B
+Duration = 1
+Next = S_BEET_STND
+Action = A_JetbThink
+Var1 = 0
+
+State S_BEET_STAB1
+SpriteName = BPOS
+SpriteFrame = C
+Duration = 1
+Next = S_BEET_STAB2
+Action = A_PlayAttackSound
+
+State S_BEET_STAB2
+SpriteName = BPOS
+SpriteFrame = D
+Duration = 1
+Next = S_BEET_STAB3
+Action = A_FaceTarget
+
+State S_BEET_STAB3
+SpriteName = BPOS
+SpriteFrame = E
+Duration = 1
+Next = S_BEET_STAB4
+Action = A_Thrust
+
+State S_BEET_STAB4
+SpriteName = BPOS
+SpriteFrame = A
+Duration = 20
+Next = S_BEET_STND
+Action = A_Thrust
+Var1 = 20
+
+Object MT_BEETLE
+#$Name Beetla
+#$Sprite BPOSA1
+#$Category Mystic Realm Enemies
+MapThingNum = 1337
+SpawnState = S_BEET_STND
+SpawnHealth = 1
+SeeState = S_BEET_STAB1
+SeeSound = sfx_None
+ReactionTime = 90
+AttackSound = sfx_shrpgo
+PainState = S_NULL
+PainChance = 200
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_pop
+Speed = 10
+Radius = 20*FRACUNIT
+Height = 20*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
+RaiseState = S_NULL

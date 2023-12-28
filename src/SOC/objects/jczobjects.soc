@@ -1,0 +1,386 @@
+# "soc script for the Jade Coast Zone badniks in Mystic Realm v6"
+# "Coconuts sprites by Dave Lite soc by Zippy_Zolton"
+
+freeslot
+SPR_MUNK
+S_COCONUTS_IDLE1
+S_COCONUTS_IDLE2
+S_COCONUTS_IDLE3
+S_COCONUTS_IDLE4
+S_COCONUTS_IDLE5
+S_COCONUTS_IDLE6
+S_COCONUTS_HOSTILE1
+S_COCONUTS_HOSTILE2
+S_COCONUTS_HOSTILE3
+S_COCONUTS_HOSTILE4
+S_COCONUTS_HOSTILE5
+S_COCONUTS_HOSTILE6
+MT_COCONUTS_BALL
+S_COCONUTS_BALL
+SPR_GOGA
+S_JOSS_STND
+S_JOSS_WALK1
+S_JOSS_WALK2
+S_JOSS_WALK3
+S_JOSS_WALK4
+S_JOSS_WALK5
+S_JOSS_WALK6
+S_JOSS_CHARGE1
+S_JOSS_CHARGE2
+S_JOSS_RUN1
+S_JOSS_RUN2
+S_JOSS_RUN3
+S_JOSS_RUN4
+S_JOSS_RUN5
+S_JOSS_RUN6
+S_JOSS_STOP
+
+# "Coconuts"
+
+Object MT_COCONUTS
+#$Name Coconuts
+#$Sprite MUNKALAR
+#$Category Mystic Realm Enemies
+MapThingNum = 2301
+SpawnState = S_COCONUTS_IDLE1
+SpawnHealth = 1
+SeeState = S_COCONUTS_HOSTILE1
+SeeSound = sfx_none
+ReactionTime = 32
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 200
+PainSound = sfx_none
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD_FLICKY
+XDeathState = S_NULL
+DeathSound = sfx_pop
+Speed = 3
+Radius = 15*FRACUNIT
+Height = 50*FRACUNIT
+DispOffset = 1
+Mass = 100
+Damage = 0
+ActiveSound = sfx_none
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY
+RaiseState = S_NULL
+
+# "Idling around"
+
+State S_COCONUTS_IDLE1
+SpriteName = MUNK
+SpriteFrame = A
+Duration = 35
+Next = S_COCONUTS_IDLE2
+Action = A_Look
+Var1 = (2048<<16)|1
+Var2 = 0
+
+State S_COCONUTS_IDLE2
+SpriteName = MUNK
+SpriteFrame = B
+Duration = 35
+Next = S_COCONUTS_IDLE3
+Action = A_ZThrust
+Var1 = 1
+Var2 = (1<<16)|1
+
+State S_COCONUTS_IDLE3
+SpriteName = MUNK
+SpriteFrame = A
+Duration = 35
+Next = S_COCONUTS_IDLE4
+Action = A_ZThrust
+Var1 = 0
+Var2 = (1<<16)|1
+
+State S_COCONUTS_IDLE4
+SpriteName = MUNK
+SpriteFrame = B
+Duration = 35
+Next = S_COCONUTS_IDLE5
+Action = A_Look
+Var1 = (2048<<16)|1
+Var2 = 0
+
+State S_COCONUTS_IDLE5
+SpriteName = MUNK
+SpriteFrame = A
+Duration = 35
+Next = S_COCONUTS_IDLE6
+Action = A_ZThrust
+Var1 = -1
+Var2 = (1<<16)|1
+
+State S_COCONUTS_IDLE6
+SpriteName = MUNK
+SpriteFrame = B
+Duration = 35
+Next = S_COCONUTS_IDLE1
+Action = A_ZThrust
+Var1 = 0
+Var2 = (1<<16)|1
+
+# "Hostile Mode, triggers when a player is around it and stops soon after it is out of sight"
+
+State S_COCONUTS_HOSTILE1
+SpriteName = MUNK
+SpriteFrame = B
+Duration = 35
+Next = S_COCONUTS_HOSTILE2
+Action = A_ZThrust
+Var1 = 0
+Var2 = (1<<16)|1
+
+State S_COCONUTS_HOSTILE2
+SpriteName = MUNK
+SpriteFrame = C
+Duration = 1
+Next = S_COCONUTS_HOSTILE3
+Action = A_BrakLobShot
+Var1 = MT_COCONUTS_BALL
+Var2 = 32+(1<<16)
+
+State S_COCONUTS_HOSTILE3
+SpriteName = MUNK
+SpriteFrame = A
+Duration = 35
+Next = S_COCONUTS_HOSTILE4
+Action = A_ZThrust
+Var1 = 1
+Var2 = (1<<16)|1
+
+State S_COCONUTS_HOSTILE4
+SpriteName = MUNK
+SpriteFrame = B
+Duration = 35
+Next = S_COCONUTS_HOSTILE5
+Action = A_ZThrust
+Var1 = 0
+Var2 = (1<<16)|1
+
+State S_COCONUTS_HOSTILE5
+SpriteName = MUNK
+SpriteFrame = C
+Duration = 1
+Next = S_COCONUTS_HOSTILE6
+Action = A_BrakLobShot
+Var1 = MT_COCONUTS_BALL
+Var2 = 32+(1<<16)
+
+State S_COCONUTS_HOSTILE6
+SpriteName = MUNK
+SpriteFrame = A
+Duration = 35
+Next = S_COCONUTS_IDLE1
+Action = A_ZThrust
+Var1 = -1
+Var2 = (1<<16)|1
+
+# "he finally has a projectile, after like half a year of using MT_CANNONBALL!"
+
+Object MT_COCONUTS_BALL
+MapThingNum = -1
+SpawnState = S_COCONUTS_BALL
+SpawnHealth = 1
+SeeState = S_NULL
+SeeSound = sfx_s3k51
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 0
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_s3k4e
+Speed = 20*FRACUNIT
+Radius = 24*FRACUNIT
+Height = 48*FRACUNIT
+DispOffset = 0
+Mass = 0
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOBLOCKMAP|MF_MISSILE
+RaiseState = S_NULL
+
+State S_COCONUTS_BALL
+SpriteName = MUNK
+SpriteFrame = D
+Duration = 1
+Next = S_COCONUTS_BALL
+Action = A_GhostMe
+
+# "Goggles Crawla, may have colored variants later"
+
+Object MT_GOGGLESCRAWLA_SLOW
+#$Name Goggles Crawla (Slow)
+#$Sprite GOGAA1
+#$Category Mystic Realm Enemies
+MapThingNum = 2302
+SpawnState = S_JOSS_STND
+SpawnHealth = 1
+SeeState = S_JOSS_WALK1
+SeeSound = sfx_none
+ReactionTime = 35
+AttackSound = sfx_s3kb6
+PainState = S_NULL
+PainChance = 5*TICRATE
+PainSound = sfx_none
+MeleeState = S_JOSS_STOP
+MissileState = S_JOSS_CHARGE1
+DeathState = S_XPLD_FLICKY
+XDeathState = S_JOSS_STOP
+DeathSound = sfx_pop
+Speed = 1
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+ActiveSound = sfx_s3k5a
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
+RaiseState = S_NULL
+
+Object MT_GOGGLESCRAWLA_FAST
+#$Name Goggles Crawla (Fast)
+#$Sprite GOGAA1
+#$Category Mystic Realm Enemies
+MapThingNum = 2303
+SpawnState = S_JOSS_STND
+SpawnHealth = 1
+SeeState = S_JOSS_WALK1
+SeeSound = sfx_none
+ReactionTime = 35
+AttackSound = sfx_s3kb6
+PainState = S_NULL
+PainChance = 5*TICRATE
+PainSound = sfx_none
+MeleeState = S_JOSS_STOP
+MissileState = S_JOSS_CHARGE1
+DeathState = S_XPLD_FLICKY
+XDeathState = S_JOSS_STOP
+DeathSound = sfx_pop
+Speed = 1
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+ActiveSound = sfx_s3k5a
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
+RaiseState = S_NULL
+
+State S_JOSS_STND
+SpriteName = GOGA
+SpriteFrame = A
+Duration = 5
+Next = S_JOSS_STND
+Action = A_Look
+Var1 = 0
+Var2 = 0
+
+State S_JOSS_WALK1
+SpriteName = GOGA
+SpriteFrame = A
+Duration = 3
+Next = S_JOSS_WALK2
+Action = A_SharpChase
+Var1 = 0
+Var2 = 0
+
+State S_JOSS_WALK2
+SpriteName = GOGA
+SpriteFrame = B
+Duration = 3
+Next = S_JOSS_WALK3
+Action = A_SharpChase
+Var1 = 0
+Var2 = 0
+
+State S_JOSS_WALK3
+SpriteName = GOGA
+SpriteFrame = C
+Duration = 3
+Next = S_JOSS_WALK4
+Action = A_SharpChase
+Var1 = 0
+Var2 = 0
+
+State S_JOSS_WALK4
+SpriteName = GOGA
+SpriteFrame = D
+Duration = 3
+Next = S_JOSS_WALK1
+Action = A_SharpChase
+Var1 = 0
+Var2 = 0
+
+# "Charging state because A_SharpSpin sucks ass"
+
+State S_JOSS_CHARGE1
+SpriteName = GOGA
+SpriteFrame = A
+Duration = 1
+Next = S_JOSS_CHARGE1
+Action = A_FaceStabRev
+Var1 = 35
+Var2 = S_JOSS_CHARGE2
+
+State S_JOSS_CHARGE2
+SpriteName = GOGA
+SpriteFrame = A
+Duration = 0
+Next = S_JOSS_RUN1
+Action = A_PlayAttackSound
+Var1 = 0
+Var2 = 0
+
+State S_JOSS_RUN1
+SpriteName = GOGA
+SpriteFrame = A
+Duration = 1
+Next = S_JOSS_RUN2
+Action = A_SharpSpin
+Var1 = 0
+Var2 = 0
+
+State S_JOSS_RUN2
+SpriteName = GOGA
+SpriteFrame = B
+Duration = 1
+Next = S_JOSS_RUN3
+Action = A_SharpSpin
+Var1 = 0
+Var2 = 0
+
+State S_JOSS_RUN3
+SpriteName = GOGA
+SpriteFrame = C
+Duration = 1
+Next = S_JOSS_RUN4
+Action = A_SharpSpin
+Var1 = 0
+Var2 = 0
+
+State S_JOSS_RUN4
+SpriteName = GOGA
+SpriteFrame = D
+Duration = 1
+Next = S_JOSS_RUN1
+Action = A_SharpSpin
+Var1 = 0
+Var2 = 0
+
+# "Stop state for the same fucking reason"
+
+State S_JOSS_STOP
+SpriteName = GOGA
+SpriteFrame = A
+Duration = 1
+Next = S_JOSS_STND
+Action = none
+Var1 = 0
+Var2 = 0

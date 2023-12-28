@@ -1,0 +1,11 @@
+Character 1
+Status = 0
+SkinName = sonic
+DisplayName = Sonic
+PlayerText = ^4Sonic^0 can blast through zones with his rebound dash ability, although he can't easily bypass obstacles.
+
+^4Ability:^0 Rebound Dash
+Double jump to dash forwards. Hold the button to dash farther and bounce off walls and other objects. After a bounce, Sonic can dash one more time for a higher bounce!
+
+^4Tip:^0 The dash can be shortened by quickly releasing the jump button.
+#

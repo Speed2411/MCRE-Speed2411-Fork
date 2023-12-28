@@ -1,0 +1,4 @@
+name = sonic
+actionspd = 50
+ability = 18
+shieldscale = 1.15

@@ -1,0 +1,147 @@
+Lump _TITLE
+Title = Titlescreen
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 0
+BPM = 140
+
+Lump MP_COA
+Title = Jade_Coast_Act_1
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 101
+BPM = 100
+
+Lump JCZ2
+Title = Jade_Coast_Act_2
+Authors = Marcos
+Soundtestpage = 2
+Soundtestcond = 102
+BPM = 105
+
+Lump MP_MUD
+Title = Mudhole_Karst
+Authors = Marcos
+Soundtestpage = 2
+Soundtestcond = 123
+BPM = 110
+
+Lump VSALT
+Title = VS_Dr._Eggman
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 103
+BPM = 160
+
+Lump MP_RAI
+Title = Tempest_Valley
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 104
+BPM = 140
+
+Lump MP_FOR
+Title = Verdant_Forest
+Authors = Clairebun
+Soundtestpage = 2
+Soundtestcond = 107
+BPM = 130
+
+Lump MP_FIR
+Title = Flame_Rift
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 110
+BPM = 206
+
+Lump MP_VUL
+Title = Vulkan_Forge
+Authors = Marcos
+Soundtestpage = 2
+Soundtestcond = 126
+BPM = 125
+
+Lump MP_ICE
+Title = Midnight_Freeze_Act_1
+Authors = Clairebun,_Arrow
+Soundtestpage = 2
+Soundtestcond = 113
+BPM = 130
+
+Lump MP_MF2
+Title = Midnight_Freeze_Act_2
+Authors = Clairebun,_Arrow
+Soundtestpage = 2
+Soundtestcond = 114
+BPM = 150
+
+Lump MP_WT2
+Title = Sunken_Plant
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 116
+BPM = 95
+
+Lump AGZ
+Title = Aerial_Garden
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 119
+BPM = 120
+
+Lump AGZALT
+Title = The_Inner_Sanctum
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 121
+BPM = 100
+
+Lump VSAGZ
+Title = Aerial_Garden_Boss
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 121
+BPM = 100
+
+Lump BADEND
+Title = Bad_Ending
+Authors = ???
+Soundtestpage = 2
+Soundtestcond = 122
+BPM = 10
+
+Lump BHZ
+Title = Prismatic_Angel
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 132
+BPM = 84
+
+Lump MP_MRZ
+Title = Mystic_Realm
+Authors = Clairebun,_RedXVI
+Soundtestpage = 2
+Soundtestcond = 135
+BPM = 165
+
+Lump DWZ1
+Title = Vs_Jade_Sentience
+Alttitle = Dimension_Warp
+Authors = Marcos
+Soundtestpage = 2
+Soundtestcond = 135
+BPM = 150
+
+Lump SSHYP
+Title = Hyper_Sonic!
+Authors = Marcos,_clairebun,_Akinori_Minami,_Jun_Senoue
+Soundtestpage = 2
+Soundtestcond = -11
+BPM = 200
+
+Lump TIZ
+Title = Techno_Isle
+Authors = Marcos
+Soundtestpage = 2
+Soundtestcond = 123
+BPM = 110

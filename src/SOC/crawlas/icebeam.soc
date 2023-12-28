@@ -1,0 +1,198 @@
+Freeslot
+S_ICEBEAM1
+S_ICEBEAM2
+S_ICEBEAM3
+S_ICEBEAM4
+S_ICEBEAM5
+S_ICEBEAM6
+S_ICEBEAM7
+S_ICEBEAM8
+S_ICEBEAMSHARD1
+S_ICEBEAMSHARD2
+S_ICEBEAMSHARD3
+S_ICEBEAMSHARD4
+S_ICEBEAMPARTICLE
+
+State S_ICEBEAM1
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 1
+Next = S_ICEBEAM2
+Action None
+
+State S_ICEBEAM2
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 1
+Next = S_ICEBEAM3
+Action A_FindTracer
+Var1 = MT_PLAYER
+Var2 = 0
+
+State S_ICEBEAM3
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 1
+Next = S_ICEBEAM4
+Action A_DualAction
+Var1 = S_ICEBEAM6
+Var2 = S_ICEBEAM7
+
+State S_ICEBEAM4
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 30
+Next = S_ICEBEAM8
+Action A_Repeat
+Var1 = 5
+Var2 = S_ICEBEAM3
+
+State S_ICEBEAM5
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 1
+Next = S_ICEBEAM8
+Action None
+
+State S_ICEBEAM6
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 1
+Next = S_NULL
+Action A_HomingChase
+Var1 = 30*FRACUNIT
+Var2 = 1
+
+State S_ICEBEAM7
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 1
+Next = S_NULL
+Action A_CheckTrueRange
+Var1 = 65536+1
+Var2 = S_ICEBEAM5
+
+State S_ICEBEAM8
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 1
+Next = S_NULL
+Action A_DropMine
+
+Object MT_ICEBEAM
+MapThingNum = -1
+SpawnState = S_ICEBEAM1
+SpawnHealth = 1
+ReactionTime = 32
+SeeState = S_NULL
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 0
+PainSound = sfx_dmpain
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+RaiseState = MT_ICEBEAMSHARD
+DeathSound = sfx_s3kb4
+Speed = 5
+Radius = 10*FRACUNIT
+Height = 10*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 1
+ActiveSound = sfx_None
+Flags =	MF_NOBLOCKMAP|MF_NOGRAVITY|MF_SPECIAL
+
+State S_ICEBEAMSHARD1
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 100
+Next = S_ICEBEAMSHARD2
+Action None
+
+State S_ICEBEAMSHARD2
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 10
+Next = S_ICEBEAMSHARD3
+Action A_SetScale
+Var1 = FRACUNIT/2
+Var2 = 0,1
+
+State S_ICEBEAMSHARD3
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 10
+Next = S_ICEBEAMSHARD4
+Action A_SetScale
+Var1 = FRACUNIT/3
+Var2 = 0,1
+
+State S_ICEBEAMSHARD4
+SpriteName = FHZI
+SpriteFrame = B
+Duration = 10
+Next = S_NULL
+Action A_SetScale
+Var1 = FRACUNIT/4
+Var2 = 0,1
+
+Object MT_ICEBEAMSHARD
+MapThingNum = -1
+SpawnState = S_ICEBEAMSHARD1
+SpawnHealth = 1
+ReactionTime = 32
+SeeState = S_NULL
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 0
+PainSound = sfx_dmpain
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+RaiseState = S_NULL
+DeathSound = sfx_s3kb4
+Speed = 5
+Radius = 10*FRACUNIT
+Height = 10*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 1
+ActiveSound = sfx_None
+Flags =	MF_SPECIAL
+
+State S_ICEBEAMPARTICLE
+SpriteName = ROII
+SpriteFrame = A
+Duration = 30
+Next = S_NULL
+Action None
+
+Object MT_ICEBEAMPARTICLE
+MapThingNum = -1
+SpawnState = S_ICEBEAMPARTICLE
+SpawnHealth = 1
+ReactionTime = 32
+SeeState = S_NULL
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 0
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+RaiseState = S_NULL
+DeathSound = sfx_None
+Speed = 9
+Radius = 0*FRACUNIT
+Height = 0*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 1
+ActiveSound = sfx_None

@@ -1,0 +1,451 @@
+Freeslot
+S_JUMPERCRAWLA_STND1
+S_JUMPERCRAWLA_STND2
+S_JUMPERCRAWLA_STND3
+S_JUMPERCRAWLA_JUMPA
+S_JUMPERCRAWLA_JUMP1
+S_JUMPERCRAWLA_JUMP2
+S_JUMPERCRAWLA_JUMP3
+S_JUMPERCRAWLA_JUMP4
+S_JUMPERCRAWLA_JUMP5
+S_JUMPERCRAWLA_JUMP6
+S_JUMPERCRAWLA_JUMP7
+S_JUMPERCRAWLA_JUMP8
+S_JUMPERCRAWLA_JUMP9
+S_JUMPERCRAWLA_AMBUSH1
+S_JUMPERCRAWLA_AMBUSH2
+S_JUMPERCRAWLA_AMBUSH3
+S_JUMPERCRAWLA_AMBUSH4
+MT_JUMPERCRAWLA
+SPR_WDOR
+MT_WOODOOR
+S_WDOOR_STAND1
+S_WDOOR_SPIN1
+S_WDOOR_SPIN2
+S_WDOOR_SPIN3
+S_WDOOR_SPIN4
+S_WDOOR_SPIN5
+S_WDOOR_SPINREPEAT
+SPR_PCTU
+MT_SPIKYBOY
+S_SPIKYBOY_STND1
+S_SPIKYBOY_STND2
+S_SPIKYBOY_CHASE1
+S_SPIKYBOY_CHASE2
+S_SPIKYBOY_SPIKE1
+S_SPIKYBOY_SPIKE2
+S_SPIKYBOY_SPIKE3
+S_SPIKYBOY_SPIKE4
+S_SPIKYBOY_SPIKE5
+S_SPIKYBOY_SPIKEREPEAT
+S_SPIKYBOY_PAIN1
+S_SPIKYBOY_PAIN2
+S_SPIKYBOY_PAIN3
+S_SPIKYBOY_PAIN4
+S_SPIKYBOY_PAIN5
+MT_SPIKYITEM
+S_SPIKYITEM_PROTECT1
+MT_JUMPROCK
+S_JUMPROCK_1
+S_JUMPROCK_2
+S_JUMPROCK_3
+S_JUMPROCK_4
+S_JUMPROCK_5
+
+Object MT_JUMPROCK
+SpawnState = S_JUMPROCK_1
+AttackSound = sfx_spkdth
+SpawnHealth = 1000
+AttackSound = sfx_pogo
+ActiveSound = sfx_rocks1
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+Speed = 3
+Mass = 4
+PainChance = 255
+Flags = MF_BOUNCE|MF_PAIN|MF_GRENADEBOUNCE
+
+State S_JUMPROCK_1
+SpriteName = ROIB
+SpriteFrame = A
+Duration = 1
+Next = S_JUMPROCK_2
+
+State S_JUMPROCK_2
+SpriteName = ROIB
+SpriteFrame = FF_ANIMATE|A
+Duration = 2
+Action = A_NapalmScatter
+Var1 = 	MT_SPINDUST+(6<<16)
+Var2 = 64+(22<<16)
+Next = S_JUMPROCK_3
+
+State S_JUMPROCK_3
+SpriteName = ROIB
+SpriteFrame = A
+Duration = 2
+Action = A_ZThrust
+Var1 = 7
+Next = S_JUMPROCK_4
+
+State S_JUMPROCK_4
+SpriteName = ROIB
+SpriteFrame = FF_ANIMATE|A
+Duration = 50
+Action = A_PlayAttackSound
+Var1 = 4
+Var2 = 3
+Next = S_JUMPROCK_5
+
+State S_JUMPROCK_5
+SpriteName = ROIB
+SpriteFrame = FF_ANIMATE|A
+Duration = 1
+Action = A_NapalmScatter
+Var1 = 	MT_SPINDUST+(6<<16)
+Var2 = 64+(22<<16)
+Next = S_NULL
+
+Object MT_SPIKYITEM
+SpawnState = S_SPIKYITEM_PROTECT1
+AttackSound = sfx_spkdth
+SpawnHealth = 1000
+PainSound = sfx_spkdth
+DeathSound = sfx_spkdth
+Radius = 52*FRACUNIT
+Height = 62*FRACUNIT
+Speed = 3
+Mass = DMG_SPIKE
+Flags = MF_NOGRAVITY|MF_PAIN
+
+State S_SPIKYITEM_PROTECT1
+Duration = 5
+
+Object MT_SPIKYBOY
+MapThingNum = 4001
+SpawnState = S_SPIKYBOY_STND1
+SpawnHealth = 1
+PainState = S_SPIKYBOY_PAIN1
+PainSound = sfx_mario2
+SeeState = S_SPIKYBOY_CHASE1
+DeathState = S_SPIKYBOY_PAIN1
+MeleeState = S_SPIKYBOY_SPIKE1
+MissileState = S_SPIKYBOY_SPIKE1
+DeathSound = sfx_pop
+ActiveSound = sfx_s3k99
+Speed = 3
+Radius = 20*FRACUNIT
+Height = 18*FRACUNIT
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE
+
+State S_SPIKYBOY_PAIN1
+SpriteName = PCTU
+SpriteFrame = FF_VERTICALFLIP|A
+Duration = 20
+Action = A_DoNPCPain
+Var1 = 2*FRACUNIT
+Next = S_SPIKYBOY_PAIN2
+
+State S_SPIKYBOY_PAIN2
+SpriteName = PCTU
+SpriteFrame = FF_VERTICALFLIP|B
+Duration = 1
+Next = S_SPIKYBOY_PAIN3
+
+State S_SPIKYBOY_PAIN3
+SpriteName = PCTU
+SpriteFrame = FF_VERTICALFLIP|A
+Duration = 0
+Action = A_FlickySpawn
+Next = S_XPLD1
+
+State S_SPIKYBOY_SPIKE1
+SpriteName = PCTU
+SpriteFrame = C
+Duration = 5
+Next = S_SPIKYBOY_SPIKE2
+
+State S_SPIKYBOY_SPIKE2
+SpriteName = PCTU
+SpriteFrame = D
+Duration = 2
+Next = S_SPIKYBOY_SPIKE3
+
+State S_SPIKYBOY_SPIKE3
+SpriteName = PCTU
+SpriteFrame = E
+Duration = 24
+Next = S_SPIKYBOY_SPIKE4
+
+State S_SPIKYBOY_SPIKE4
+SpriteName = PCTU
+SpriteFrame = F
+Duration = 1
+Action = A_PlaySound
+Var1 = sfx_s3k64
+Var2 = 1
+Next = S_SPIKYBOY_SPIKE5
+
+State S_SPIKYBOY_SPIKE5
+SpriteName = PCTU
+SpriteFrame = G
+Duration = 5
+Action = A_SpawnObjectRelative
+Var1 = (0*65536)+0
+Var2 = (0*65536)+MT_SPIKYITEM
+Next = S_SPIKYBOY_SPIKEREPEAT
+
+State S_SPIKYBOY_SPIKEREPEAT
+SpriteName = PCTU
+SpriteFrame = E
+Duration = 1
+Action = A_Repeat
+Var1 = 35
+Var2 = S_SPIKYBOY_SPIKE5
+Next = S_SPIKYBOY_STND1
+
+State S_SPIKYBOY_STND1
+SpriteName = PCTU
+SpriteFrame = E
+Duration = 1
+Action = A_SetScale
+Var1 = 2*FRACUNIT
+Var2 = (0<<16)+0
+Next = S_SPIKYBOY_STND2
+
+State S_SPIKYBOY_STND2
+SpriteName = PCTU
+SpriteFrame = E
+Duration = 1
+Action = A_Look
+Next = S_SPIKYBOY_STND1
+
+State S_SPIKYBOY_CHASE1
+SpriteName = PCTU
+SpriteFrame = B
+Duration = 3
+Action = A_FaceStabChase
+Next = S_SPIKYBOY_CHASE2
+
+State S_SPIKYBOY_CHASE2
+SpriteName = PCTU
+SpriteFrame = A
+Duration = 3
+Action = A_FaceStabChase
+Next = S_SPIKYBOY_CHASE1
+
+Object MT_WOODOOR
+MapThingNum = 4000
+SpawnState = S_WDOOR_STAND1
+SpawnHealth = 1
+DeathState = S_WDOOR_SPIN1
+DeathSound = sfx_mspogo
+PainSound = sfx_mspogo
+ActiveSound = sfx_mspogo
+RaiseState = S_WDOOR_SPIN1
+Speed = 3
+Mass = 16*FRACUNIT
+PainChance = -1
+ReactionTime = 5
+Damage = 0
+Radius = 256*FRACUNIT
+Height = 512*FRACUNIT
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_PAPERCOLLISION|MF_SPRING|MF_NOGRAVITY|MF_SOLID
+
+State S_WDOOR_STAND1
+SpriteName = WDOR
+SpriteFrame = FF_PAPERSPRITE|A
+Duration = 1
+Next = S_WDOOR_STAND1
+
+State S_WDOOR_SPIN1
+SpriteName = WDOR
+SpriteFrame = FF_PAPERSPRITE|A
+Duration = 0
+Action = A_ChangeAngleRelative
+Var1 = 90
+Var2 = 90
+Next = S_WDOOR_SPIN2
+
+State S_WDOOR_SPIN2
+SpriteName = WDOR
+SpriteFrame = FF_PAPERSPRITE|A
+Duration = 0
+Action = A_DoNPCPain
+Var1 = 25*FRACUNIT
+Next = S_WDOOR_SPIN3
+
+State S_WDOOR_SPIN3
+SpriteName = WDOR
+SpriteFrame = FF_PAPERSPRITE|A
+Duration = 0
+Action = A_ChangeAngleRelative
+Var1 = 45
+Var2 = 45
+Next = S_WDOOR_SPIN4
+
+State S_WDOOR_SPIN4
+Duration = 1
+Next = S_WDOOR_SPIN5
+
+State S_WDOOR_SPIN5
+SpriteName = WDOR
+SpriteFrame = FF_PAPERSPRITE|A
+Duration = 2
+Next = S_WDOOR_SPINREPEAT
+
+State S_WDOOR_SPINREPEAT
+SpriteName = WDOR
+SpriteFrame = FF_PAPERSPRITE|A
+Duration = 0
+Action = A_Repeat
+Var1 = 18
+Var2 = S_WDOOR_SPIN3
+
+State S_JUMPERCRAWLA_STND1
+SpriteName = POSS
+SpriteFrame = A
+Duration = 1
+Next = S_JUMPERCRAWLA_STND2
+Action = A_Look
+
+State S_JUMPERCRAWLA_STND2
+SpriteName = POSS
+SpriteFrame = A
+Duration = 1
+Next = S_JUMPERCRAWLA_STND3
+Action A_ZThrust
+Var1 = 2
+
+State S_JUMPERCRAWLA_STND3
+SpriteName = POSS
+SpriteFrame = A
+Duration = 1
+Next = S_JUMPERCRAWLA_STND1
+Action A_SetObjectFlags
+Var1 = MF_NOGRAVITY
+Var2 = 2
+
+State S_JUMPERCRAWLA_JUMP1
+SpriteName = POSS
+SpriteFrame = A
+Duration = 1
+Next = S_JUMPERCRAWLA_JUMP2
+
+State S_JUMPERCRAWLA_JUMP2
+SpriteName = POSS
+SpriteFrame = A
+Duration = 2
+Next = S_JUMPERCRAWLA_JUMP3
+Action = A_NapalmScatter
+Var1 = 	MT_JUMPROCK+(6<<16)
+Var2 = 64+(22<<16)
+
+State S_JUMPERCRAWLA_JUMP3
+SpriteName = POSS
+SpriteFrame = A
+Duration = 2
+Next = S_JUMPERCRAWLA_JUMP4
+Action = A_FaceTarget
+
+State S_JUMPERCRAWLA_JUMP4
+SpriteName = POSS
+SpriteFrame = A
+Duration = 10
+Next = S_JUMPERCRAWLA_JUMP5
+Action A_BunnyHop
+Var1 = 20
+Var2 = 10
+
+State S_JUMPERCRAWLA_JUMP5
+SpriteName = POSS
+SpriteFrame = A
+Duration = 1
+Action A_MinusCheck
+Next = S_JUMPERCRAWLA_JUMP6
+
+State S_JUMPERCRAWLA_JUMP6
+SpriteName = POSS
+SpriteFrame = A
+Duration = 1
+Action = A_CheckHeight
+Next = S_JUMPERCRAWLA_JUMP7
+Var1 = 500<<0
+Var2 = S_JUMPERCRAWLA_JUMP5
+
+State S_JUMPERCRAWLA_JUMP7
+SpriteName = POSS
+SpriteFrame = A
+Duration = 1
+Action = A_CheckRange
+Var1 = 128+128+128+128+128<<0
+Var2 = S_JUMPERCRAWLA_JUMP8
+Next = S_JUMPERCRAWLA_JUMP5
+
+State S_JUMPERCRAWLA_JUMP9
+SpriteName = POSS
+SpriteFrame = A
+Duration = 1
+Action = A_SetObjectFlags
+Var1 = MF_NOGRAVITY
+Var2 = 1
+Next = S_JUMPERCRAWLA_JUMP5
+
+State S_JUMPERCRAWLA_JUMP8
+SpriteName = POSS
+SpriteFrame = A
+Duration = 1
+Action = A_ZThrust
+Next = S_JUMPERCRAWLA_JUMP9
+Var1 = -15
+
+Object MT_JUMPERCRAWLA
+MapThingNum = 3102
+SpawnState = S_JUMPERCRAWLA_STND3
+SpawnHealth = 1
+SeeState = S_JUMPERCRAWLA_JUMP1
+MeleeState = S_JUMPERCRAWLA_JUMP5
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+ActiveSound = sfx_s3k7b
+Speed = 3
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_SPAWNCEILING|MF_BOUNCE
+
+Object MT_CORONA
+#$Category Mystic Realm Objects
+#$Name Corona (Customizable)
+#$Sprite OILFA0
+MapThingNum = 972
+Radius = 16*FRACUNIT
+Height = 16*FRACUNIT
+
+Object MT_CORONALAMP
+#$Category Mystic Realm Objects
+#$Name Corona Lamp (Customizable)
+#$Sprite OILLA0
+MapThingNum = 973
+SpawnState = S_OILLAMP
+SpawnHealth = 1
+SeeState = S_NULL
+SeeSound = sfx_None
+ReactionTime = 0
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 0
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 22*FRACUNIT
+Height = 64*FRACUNIT
+DispOffset = 0
+Mass = 0
+Damage = 0
+ActiveSound = sfx_s3k4b
+Flags = MF_SCENERY|MF_NOBLOCKMAP|MF_NOGRAVITY|MF_SPAWNCEILING
+RaiseState = S_NULL

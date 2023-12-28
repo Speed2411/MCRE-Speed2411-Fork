@@ -1,0 +1,176 @@
+Freeslot
+MT_LASERDUDE
+S_LASERDUDE_LASER1
+S_LASERDUDE_LASER2
+S_LASERDUDE_LASER3
+S_LASERDUDE_LASER4
+MT_LASERTARGET
+S_LASERTARGET_STAND
+S_LASERTARGET_CHASE1
+S_LASERTARGET_CHASE2
+S_LASERTARGET_CHASE3
+S_LASERTARGET_CHASE4
+S_LASERTARGET_CHASE5
+S_LASERTARGET_CHASE6
+S_LASERTARGET_CHASE7
+S_LASERTARGET_RESET1
+S_LASERTARGET_RESET2
+S_LASERTARGET_PAIN
+
+Object MT_LASERTARGET
+MapThingNum = 3006
+SpawnState = S_LASERTARGET_STAND
+SeeState = S_LASERTARGET_CHASE1
+SpawnHealth = 1000
+PainState = S_LASERTARGET_PAIN
+PainSound = sfx_s3k7b
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+ActiveSound = sfx_s1b4
+RaiseState = S_LASERTARGET_PAIN
+ReactionTime = 5
+PainChance = -1
+Speed = 10
+Radius = 16*FRACUNIT
+Height = 16*FRACUNIT
+Mass = 8*FRACUNIT
+Flags = MF_ENEMY|MF_SHOOTABLE|MF_BOUNCE|MF_SPRING
+
+State S_LASERTARGET_PAIN
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_DoNPCPain
+Var1 = FRACUNIT
+Duration = 1
+Next = S_LASERTARGET_STAND
+
+State S_LASERTARGET_STAND
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_Look
+Duration = 1
+Next = S_LASERTARGET_STAND
+
+State S_LASERTARGET_CHASE1
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_Chase
+Duration = 4
+Next = S_LASERTARGET_CHASE2
+
+State S_LASERTARGET_CHASE2
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_Chase
+Duration = 3
+Next = S_LASERTARGET_CHASE3
+
+State S_LASERTARGET_CHASE3
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_CheckRange
+Var1 = 128+128+128+128<<0
+Var2 = S_LASERTARGET_CHASE4
+Duration = 1
+Next = S_LASERTARGET_CHASE1
+
+State S_LASERTARGET_CHASE4
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_FaceTarget
+Var1 = 8
+Var2 = 15
+Duration = 1
+Next = S_LASERTARGET_CHASE5
+
+State S_LASERTARGET_CHASE5
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_BunnyHop
+Var1 = 8
+Var2 = 15
+Duration = 2
+Next = S_LASERTARGET_CHASE6
+
+State S_LASERTARGET_CHASE6
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_Boss5CheckOnGround
+Var1 = S_LASERTARGET_CHASE1
+Duration = 1
+Next = S_LASERTARGET_CHASE7
+
+State S_LASERTARGET_CHASE7
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_Repeat
+Var1 = 70
+Var2 = S_LASERTARGET_CHASE6
+Duration = 1
+Next = S_LASERTARGET_RESET1
+
+State S_LASERTARGET_RESET1
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_SetObjectFlags
+Var1 = MF_STICKY
+Var2 = 1
+Duration = 35
+Next = S_LASERTARGET_RESET2
+
+State S_LASERTARGET_RESET2
+SpriteName = PNTY
+SpriteFrame = A
+Action = A_SetObjectFlags
+Var1 = MF_STICKY
+Var2 = 2
+Duration = 1
+Next = S_LASERTARGET_CHASE1
+
+Object MT_LASERDUDE
+MapThingNum = 3005
+SpawnState = S_LASERDUDE_LASER1
+SeeState = S_LASERDUDE_LASER2
+SpawnHealth = 1
+DeathState = S_XPLD1
+DeathSound = sfx_pop
+ActiveSound = sfx_s3k7b
+AttackSound = sfx_s3k53
+Speed = 3
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY
+
+State S_LASERDUDE_LASER1
+SpriteName = UNID
+SpriteFrame = A
+Action = A_BossJetFume
+Var1 = 4
+Duration = 1
+Next = S_LASERDUDE_LASER2
+
+State S_LASERDUDE_LASER2
+SpriteName = UNID
+SpriteFrame = A
+Action = A_PlaySound
+Var1 = sfx_s3k53
+Var2 = 1
+Duration = 35
+Next = S_LASERDUDE_LASER3
+
+State S_LASERDUDE_LASER3
+SpriteName = UNID
+SpriteFrame = A
+Action = A_FindTarget
+Var1 = MT_LASERTARGET
+Duration = 45
+Next = S_LASERDUDE_LASER4
+
+State S_LASERDUDE_LASER4
+SpriteName = UNID
+SpriteFrame = A
+Action = A_Boss1Laser
+Duration = 55
+Var1 = MT_LASER
+Var2 = (0*65536)+500
+Next = S_LASERDUDE_LASER1

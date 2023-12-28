@@ -1,0 +1,456 @@
+Freeslot
+S_EGGFREEZER_JET1
+S_EGGFREEZER_STND2
+S_EGGFREEZER_STND3
+S_EGGFREEZER_PAIN3
+S_EGGFREEZER_LATK1
+S_EGGFREEZER_LATK2
+S_EGGFREEZER_LATK3
+S_EGGFREEZER_LATK4
+S_EGGFREEZER_LATK5
+S_EGGFREEZER_LATK6
+S_EGGFREEZER_LATK7
+S_EGGFREEZER_LATK8
+S_EGGFREEZER_LATK9
+S_EGGFREEZER_LATK10
+S_EGGFREEZER_MATKE
+S_EGGFREEZER_MATK1
+S_EGGFREEZER_MATK2
+S_EGGFREEZER_MATK3
+S_EGGFREEZER_MATK4
+S_EGGFREEZER_MATK5
+S_EGGFREEZER_MATK6
+S_EGGFREEZER_MATK7
+S_EGGFREEZER_RATK1
+S_EGGFREEZER_RATK2
+S_EGGFREEZER_RATK3
+S_EGGFREEZER_RATK4
+S_EGGFREEZER_RATK5
+S_EGGFREEZER_RATK6
+S_EGGFREEZER_RATK7
+S_EGGFREEZER_RATK8
+S_EGGFREEZER_RATK9
+S_EGGFREEZER_RATK10
+S_EGGFREEZER_RATK11
+S_EGGFREEZER_RATK12
+S_EGGFREEZER_RATKE
+S_EGGFREEZER_PAIN1
+S_EGGFREEZER_PAIN2
+S_EGGFREEZER_DIE1
+S_EGGFREEZER_DIE2
+S_EGGFREEZER_DIE3
+S_EGGFREEZER_DIE4
+S_EGGFREEZER_DIE5
+S_EGGFREEZER_DIE6
+S_EGGFREEZER_DIE7
+S_EGGFREEZER_FLEE1
+S_EGGFREEZER_FLEE2
+MT_EGGFREEZER
+MT_JETSPAWN
+SPR_EGGF
+
+State S_EGGFREEZER_JET1
+SpriteName = EGGF
+SpriteFrame = A
+Duration = 1
+Next = S_NULL
+Action A_RemoteAction
+Var1 = MT_EGGFREEZER
+Var2 = S_EGGFREEZER_STND2
+
+State S_EGGFREEZER_STND2
+SpriteName = EGGF
+SpriteFrame = A
+Duration = 1
+Next = S_EGGFREEZER_STND3
+Action = A_BossJetFume
+
+State S_EGGFREEZER_STND3
+SpriteName = EGGF
+SpriteFrame = A
+Duration = 1
+Next = S_EGGFREEZER_STND3
+Action = A_Boss1Chase
+
+State S_EGGFREEZER_LATK1 #pressing the button
+SpriteName = EGGF
+SpriteFrame = B
+Duration = 3
+Next = S_EGGFREEZER_LATK2
+
+State S_EGGFREEZER_LATK2
+SpriteName = EGGF
+SpriteFrame = C
+Duration = 15
+Next = S_EGGFREEZER_LATK3
+
+State S_EGGFREEZER_LATK3
+SpriteName = EGGF
+SpriteFrame = D
+Duration = 2
+Next = S_EGGFREEZER_LATK4
+Action = A_FaceTarget
+
+State S_EGGFREEZER_LATK4
+SpriteName = EGGF
+SpriteFrame = E
+Duration = 2
+Next = S_EGGFREEZER_LATK5
+
+State S_EGGFREEZER_LATK5 #zooms up and shoots
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 0
+Next = S_EGGFREEZER_LATK7
+Action = A_ZThrust
+Var1 = 1*FRACUNIT
+Var2 = 1
+
+State S_EGGFREEZER_LATK6
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 5
+Next = S_EGGFREEZER_LATK7
+Action = A_BossFireShot
+Var1 = MT_ICEBEAM
+Var2 = 0
+
+State S_EGGFREEZER_LATK7
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 30
+Next = S_EGGFREEZER_LATK9
+Action = A_Repeat
+Var1 = 15
+Var2 = S_EGGFREEZER_LATK6
+
+State S_EGGFREEZER_LATK8
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 5
+Next = S_EGGFREEZER_LATK9
+Action = A_BossFireShot
+Var1 = MT_ROCKET
+Var2 = 1
+
+State S_EGGFREEZER_LATK9
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 25
+Next = S_EGGFREEZER_LATK10
+Action = A_Repeat
+Var1 = 5
+Var2 = S_EGGFREEZER_LATK8
+
+State S_EGGFREEZER_LATK10
+SpriteName = EGGF
+SpriteFrame = A
+Duration = 10
+Next = S_EGGFREEZER_STND3
+Action = A_SkullAttack
+Var1 = 0
+Var2 = 0
+
+State S_EGGFREEZER_MATK1 #zooms away
+SpriteName = EGGF
+SpriteFrame = A
+Duration = 2
+Next = S_EGGFREEZER_MATK2
+Action = A_SkullAttack
+Var1 = 2
+Var2 = 0
+
+State S_EGGFREEZER_MATK2 #*the same button animation as before*
+SpriteName = EGGF
+SpriteFrame = B
+Duration = 3
+Next = S_EGGFREEZER_MATK3
+
+State S_EGGFREEZER_MATK3
+SpriteName = EGGF
+SpriteFrame = C
+Duration = 3
+Next = S_EGGFREEZER_MATK4
+
+State S_EGGFREEZER_MATK4
+SpriteName = EGGF
+SpriteFrame = D
+Duration = 2
+Next = S_EGGFREEZER_MATK5
+Action = A_FaceTarget
+
+State S_EGGFREEZER_MATK5
+SpriteName = EGGF
+SpriteFrame = E
+Duration = 2
+Next = S_EGGFREEZER_MATKE
+
+State S_EGGFREEZER_MATKE
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 30
+Next = S_EGGFREEZER_MATK6
+Action = A_PlaySound
+Var1 = sfx_s3kc5s
+
+State S_EGGFREEZER_MATK6
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 20
+Next = S_EGGFREEZER_MATK7
+Action = A_MultiShot
+Var1 = MT_ICESCATTER*65536+30
+Var2 = -20
+
+State S_EGGFREEZER_MATK7
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 20
+Next = S_EGGFREEZER_LATK9
+Action = A_Repeat
+Var1 = 3
+Var2 = S_EGGFREEZER_MATK6
+
+State S_EGGFREEZER_RATK1 #***you can guess what this is***
+SpriteName = EGGF
+SpriteFrame = B
+Duration = 3
+Next = S_EGGFREEZER_RATK2
+
+State S_EGGFREEZER_RATK2
+SpriteName = EGGF
+SpriteFrame = C
+Duration = 5
+Next = S_EGGFREEZER_RATK3
+
+State S_EGGFREEZER_RATK3
+SpriteName = EGGF
+SpriteFrame = D
+Duration = 2
+Next = S_EGGFREEZER_RATK4
+Action = A_FaceTarget
+
+State S_EGGFREEZER_RATK4
+SpriteName = EGGF
+SpriteFrame = E
+Duration = 2
+Next = S_EGGFREEZER_RATKE
+
+State S_EGGFREEZER_RATK5
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 10
+Next = S_EGGFREEZER_RATK6
+Action = A_BrakLobShot
+Var1 = MT_ICEBOMB
+Var2 = 96
+
+State S_EGGFREEZER_RATK6
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 35
+Next = S_EGGFREEZER_RATK7
+Action = A_Repeat
+Var1 = 9
+Var2 = S_EGGFREEZER_RATK5
+
+State S_EGGFREEZER_RATK7
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 35
+Next = S_EGGFREEZER_RATK8
+Action = A_SkullAttack
+Var1 = 0
+Var2 = 1
+
+State S_EGGFREEZER_RATK8
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 35
+Next = S_EGGFREEZER_STND3
+Action = A_Repeat
+Var1 = 20
+Var2 = S_EGGFREEZER_RATK9
+
+State S_EGGFREEZER_RATK9 #more pewpew cause why not
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 5
+Next = S_EGGFREEZER_RATK8
+Action = A_BossFireShot
+Var1 = MT_ROCKET
+Var2 = 1
+
+State S_EGGFREEZER_RATK10
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 5
+Next = S_EGGFREEZER_RATKE
+Action = A_BossFireShot
+Var1 = MT_ICEBEAM
+Var2 = 1
+
+State S_EGGFREEZER_RATK11
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 5
+Next = S_EGGFREEZER_RATKE
+Action = A_BossFireShot
+Var1 = MT_ICEBEAM
+Var2 = 0
+
+State S_EGGFREEZER_RATK12
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 5
+Next = S_EGGFREEZER_RATKE
+Action = A_DualAction
+Var1 = S_EGGFREEZER_RATK10
+Var2 = S_EGGFREEZER_RATK11
+
+State S_EGGFREEZER_RATKE
+SpriteName = EGGF
+SpriteFrame = F
+Duration = 50
+Next = S_EGGFREEZER_RATK6
+Action = A_Repeat
+Var1 = 45
+Var2 = S_EGGFREEZER_RATK12
+
+State S_EGGFREEZER_PAIN1
+SpriteName = EGGF
+SpriteFrame = G
+Duration = 35
+Next = S_EGGFREEZER_PAIN2
+Action = A_Pain
+
+State S_EGGFREEZER_PAIN2
+SpriteName = EGGF
+SpriteFrame = G
+Duration = 10
+Next = S_EGGFREEZER_PAIN3
+Action = A_SkullAttack
+Var1 = 2
+Var2 = 1
+
+State S_EGGFREEZER_PAIN3
+SpriteName = EGGF
+SpriteFrame = G
+Duration = 0
+Action = A_SetObjectFlags2
+Var1 = MF2_FRET
+Var2 = 1
+Next = S_EGGFREEZER_STND3
+
+State S_EGGFREEZER_DIE1 #death animation
+SpriteName = EGGF
+SpriteFrame = H
+Duration = 2
+Next = S_EGGFREEZER_DIE2
+Action = A_Fall
+
+State S_EGGFREEZER_DIE2
+SpriteName = EGGF
+SpriteFrame = H
+Duration = 2
+Next = S_EGGFREEZER_DIE3
+Action = A_BossScream
+
+State S_EGGFREEZER_DIE3
+SpriteName = EGGF
+SpriteFrame = H
+Duration = 0
+Next = S_EGGFREEZER_DIE4
+Action = A_Repeat
+Var1 = 17
+Var2 = S_EGGFREEZER_DIE2
+
+State S_EGGFREEZER_DIE4 #makes the laser thingys fall
+SpriteName = EGGF
+SpriteFrame = I
+Duration = 0
+Next = S_EGGFREEZER_DIE5
+Action = A_BossFireShot
+Var1 = MT_BOSSJUNK
+Var2 = 0
+
+State S_EGGFREEZER_DIE5
+SpriteName = EGGF
+SpriteFrame = I
+Duration = 0
+Next = S_EGGFREEZER_DIE6
+Action = A_BossFireShot
+Var1 = MT_BOSSJUNK
+Var2 = 1
+
+State S_EGGFREEZER_DIE6
+SpriteName = EGGF
+SpriteFrame = I
+Duration = 0
+Next = S_EGGFREEZER_DIE7
+Action = A_BossFireShot
+Var1 = MT_BOSSJUNK
+Var2 = 1
+
+State S_EGGFREEZER_DIE7
+SpriteName = EGGF
+SpriteFrame = I
+Duration = -1
+Next = S_NULL
+Action = A_BossDeath
+
+State S_EGGFREEZER_FLEE1 #run away
+SpriteName = EGGF
+SpriteFrame = I
+Duration = 2
+Next = S_EGGFREEZER_FLEE2
+Action = A_BossScream
+
+State S_EGGFREEZER_FLEE2
+SpriteName = EGGF
+SpriteFrame = J
+Duration = 2
+Next = S_EGGFREEZER_FLEE1
+Action = A_BossScream
+
+Object MT_EGGFREEZER
+#$Name Egg Freezer
+#$Sprite EGGFA1
+#$Category Mystic Realm Objects
+MapThingNum = 3105
+SpawnState = S_EGGFREEZER_STND3
+SpawnHealth = 8
+ReactionTime = 20
+SeeState = S_EGGFREEZER_STND3
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainState = S_EGGFREEZER_PAIN1
+PainChance = 0
+PainSound = sfx_dmpain
+MeleeState = S_EGGFREEZER_LATK1
+MissileState = S_EGGFREEZER_MATK1					
+DeathState = S_EGGFREEZER_DIE1
+XDeathState = S_EGGFREEZER_FLEE1
+RaiseState = S_EGGFREEZER_RATK1
+DeathSound = sfx_s3kb4
+Speed = 5
+Radius = 32*FRACUNIT
+Height = 72*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_BOSS|MF_FLOAT
+
+Object MT_JETSPAWN
+MapThingNum = 3106
+SpawnState = S_EGGFREEZER_JET1
+SpawnHealth = 8
+ReactionTime = 20
+PainChance = 0
+Speed = 5
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_RUNSPAWNFUNC|MF_SPECIAL

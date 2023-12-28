@@ -1,0 +1,18 @@
+# Speccy
+PROMPT 230
+NumPages 2
+PAGE 1
+Tag = JCZ1Speccy
+Name = Speccy
+Icon = SPCANGY
+IconAlign = Left
+Lines = 2
+PageText = \AF. . . . . 
+        #
+PAGE 2
+Name = Speccy
+Icon = SPCANGY
+TimeToNext = TICRATE*2
+Lines = 2
+PageText = What?
+        #

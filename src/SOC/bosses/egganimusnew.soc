@@ -1,0 +1,3807 @@
+#Moving all new boss content here so that they don't mix up with the old ones. Hope it's okay.
+
+FREESLOT
+MT_EGGCRYSTAL_RED
+MT_EGGCRYSTAL_BLUE
+MT_EGGCRYSTAL_GREEN
+MT_EGGCRYSTAL_YELLOW
+MT_ULTRAFIRE
+MT_ULTRAEARTH
+MT_ULTRATHUNDER
+MT_ULTRATHUNDER2
+MT_ULTRAICE
+MT_ULTRAICEALT
+MT_ULTRARETALIATOR
+MT_PEARLSPIN
+MT_ULTRARETALIATORFREE
+MT_PEARL
+MT_EGGINVIS
+MT_ULTRAFIRE_EX
+MT_METEOR
+MT_ULTRAICE_EX
+MT_QUAKE
+MT_ULTRAROCK
+MT_ULTRAROCK2
+MT_ULTIMA
+MT_EGGINVIS_THUN
+MT_ULTRABOLT
+
+FREESLOT
+S_EGGANIMUS_START1
+S_EGGANIMUS_START1EX
+S_EGGANIMUS_START2
+S_EGGANIMUS_START3
+S_EGGANIMUS_START4
+S_EGGANIMUS_START5
+S_EGGANIMUS_START6
+S_EGGANIMUS_START7
+S_EGGANIMUS_START8
+S_EGGANIMUS_CHOOSE0
+S_EGGANIMUS_PAIN0
+S_EGGANIMUS_PAIN1
+S_EGGANIMUS_PAIN2
+S_EGGANIMUS_PAIN3
+S_EGGANIMUS_PAIN4
+S_EGGANIMUS_PAIN5
+S_EGGANIMUS_PAIN6
+S_EGGANIMUS_PAIN7
+S_EGGANIMUS_PAIN8
+S_EGGANIMUS_PAIN9
+S_EGGANIMUS_PAIN10
+S_EGGANIMUS_PAIN11
+S_EGGANIMUS_PAIN12
+S_EGGANIMUS_PAIN13
+S_EGGANIMUS_PAIN13EX
+S_EGGANIMUS_PAIN14
+S_EGGANIMUS_PAIN15
+S_EGGANIMUS_PAIN16
+S_EGGANIMUS_PAIN17
+S_EGGANIMUS_DIE1
+S_EGGANIMUS_DIE2
+S_EGGANIMUS_DIE3
+S_EGGANIMUS_DIE4
+S_EGGANIMUS_DIE5
+S_EGGANIMUS_DIE6
+S_EGGANIMUS_DIE7
+S_EGGANIMUS_DIE8
+S_EGGANIMUS_DIE9
+S_EGGANIMUS_DIE10
+S_EGGANIMUS_DIE11
+S_EGGANIMUS_DIE12
+S_EGGANIMUS_DIE13
+S_EGGANIMUS_FIRE0
+S_EGGANIMUS_FIRESTART
+S_EGGANIMUS_WATERSTART
+S_EGGANIMUS_WINDSTART
+S_EGGANIMUS_EARTHSTART
+S_EGGANIMUS_FIRE0
+S_EGGANIMUS_WATER0
+S_EGGANIMUS_EARTH0
+S_EGGANIMUS_WIND0
+S_EGGANIMUS_FIRE1
+S_EGGANIMUS_FIRE2
+S_EGGANIMUS_FIRE3
+S_EGGANIMUS_WATER1
+S_EGGANIMUS_WATER2
+S_EGGANIMUS_WATER3
+S_EGGANIMUS_EARTH1
+S_EGGANIMUS_EARTH2
+S_EGGANIMUS_EARTH3
+S_EGGANIMUS_WIND1
+S_EGGANIMUS_WIND2
+S_EGGANIMUS_WIND3
+S_EGGANIMUS_RESETREACT
+S_EGGANIMUS_ROAM0
+S_EGGANIMUS_ROAM1
+S_EGGANIMUS_ROAM2
+S_EGGANIMUS_ROAM2EX
+S_EGGANIMUS_ROAM3
+S_EGGANIMUS_ROAM4
+S_EGGANIMUS_ROAM5
+S_EGGANIMUS_ROAM6
+S_EGGANIMUS_ROAM7
+S_EGGANIMUS_EX_START1
+S_EGGANIMUS_EX_START2
+S_EGGANIMUS_EX_START3
+S_EGGANIMUS_EX_START4
+S_EGGANIMUS_EX_START5
+S_EGGANIMUS_EX_START6
+S_EGGANIMUS_EX_START7
+S_EGGANIMUS_EX_START8
+S_EGGANIMUS_EX_START9
+S_EGGANIMUS_EX_ROAM0
+S_EGGANIMUS_EX_ROAM1
+S_EGGANIMUS_EX_ROAM2
+S_EGGANIMUS_EX_CHOOSE0
+S_EGGANIMUS_EX_FIRE0
+S_EGGANIMUS_EX_EARTH0
+S_EGGANIMUS_EX_WIND0
+S_EGGANIMUS_EX_FIRE1
+S_EGGANIMUS_EX_FIRE2
+S_EGGANIMUS_EX_FIRE3
+S_EGGANIMUS_EX_FIRE4
+S_EGGANIMUS_EX_FIRE5
+S_EGGANIMUS_EX_FIRE6
+S_EGGANIMUS_EX_FIRE7
+S_EGGANIMUS_EX_FIRE7EX
+S_EGGANIMUS_EX_FIRE8
+S_EGGANIMUS_EX_FIRE9
+S_EGGANIMUS_EX_FIRE10
+S_EGGANIMUS_EX_METEOR
+S_EGGANIMUS_EX_EARTH1
+S_EGGANIMUS_EX_EARTH2
+S_EGGANIMUS_EX_EARTH3
+S_EGGANIMUS_EX_EARTH4
+S_EGGANIMUS_EX_EARTH5
+S_EGGANIMUS_EX_EARTH6
+S_EGGANIMUS_EX_EARTH7
+S_EGGANIMUS_EX_EARTH8
+S_EGGANIMUS_EX_QUAKE
+S_EGGANIMUS_EX_WIND1
+S_EGGANIMUS_EX_WIND2
+S_EGGANIMUS_EX_WIND3
+S_EGGANIMUS_EX_WIND4
+S_EGGANIMUS_EX_WIND5
+S_EGGANIMUS_EX_WIND6
+S_EGGANIMUS_EX_WIND7
+S_EGGANIMUS_EX_WIND8
+S_EGGANIMUS_EX_WIND9
+S_EGGANIMUS_EX_WIND10
+S_EGGANIMUS_EX_PAIN0
+S_EGGANIMUS_EX_PAIN1
+S_EGGANIMUS_EX_PAIN2
+S_EGGANIMUS_EX_PAIN3
+S_EGGANIMUS_EX_PAIN4
+S_EGGANIMUS_EX_PAIN5
+S_EGGANIMUS_EX_PAIN6
+S_EGGANIMUS_EX_PAIN7
+S_EGGANIMUS_EX_PAIN7EX1
+S_EGGANIMUS_EX_PAIN7EX2
+S_EGGANIMUS_EX_PAIN7EX3
+S_EGGANIMUS_EX_PAIN7EX4
+S_EGGANIMUS_EX_PAIN8
+S_EGGANIMUS_EX_PAIN9
+S_EGGANIMUS_EX_PAIN10
+S_EGGANIMUS_EX_PAIN11
+S_EGGANIMUS_EX_PAIN12
+S_EGGANIMUS_EX_PAIN13
+S_EGGANIMUS_EX_PAIN14
+S_EGGANIMUS_EX_PAIN15
+S_EGGANIMUS_EX_PAIN16
+S_EGGANIMUS_EX_PAIN17
+S_EGGANIMUS_EX_DIE1
+S_EGGANIMUS_EX_DIE1EX1
+S_EGGANIMUS_EX_DIE1EX2
+S_EGGANIMUS_EX_DIE2
+S_EGGANIMUS_EX_DIE3
+S_EGGANIMUS_EX_DIE4
+S_EGGANIMUS_EX_DIE5
+S_EGGANIMUS_EX_HAX1
+S_EGGANIMUS_EX_HAX2
+S_EGGANIMUS_EX_HAX3
+S_EGGANIMUS_EX_HAX4
+S_EGGANIMUS_EX_HAX5
+S_EGGANIMUS_EX_HAX6
+
+FREESLOT
+S_EGGCRYSTAL_SUPPORT1
+S_EGGCRYSTAL_SUPPORT2
+S_EGGCRYSTAL_SUPPORT3
+S_EGGCRYSTAL_SUPPORT4
+S_EGGCRYSTAL_SUPPORT5
+S_EGGCRYSTAL_RESET1
+S_EGGCRYSTAL_RESET2
+S_EGGCRYSTAL_RESET3
+S_EGGCRYSTAL_RED1
+S_EGGCRYSTAL_RED2
+S_EGGCRYSTAL_RED3
+S_EGGCRYSTAL_RED4
+S_EGGCRYSTAL_RED_A1
+S_EGGCRYSTAL_RED_A2
+S_EGGCRYSTAL_RED_A3
+S_EGGCRYSTAL_RED_A3EX
+S_EGGCRYSTAL_RED_A4
+S_EGGCRYSTAL_RED_A5
+S_EGGCRYSTAL_RED_A5EX
+S_EGGCRYSTAL_RED_A6
+S_EGGCRYSTAL_RED_A7
+S_EGGCRYSTAL_RED_A8
+S_EGGCRYSTAL_RED_A9
+S_EGGCRYSTAL_RED_A10
+S_EGGCRYSTAL_RED_A11
+S_EGGCRYSTAL_BLUE1
+S_EGGCRYSTAL_BLUE2
+S_EGGCRYSTAL_BLUE3
+S_EGGCRYSTAL_BLUE4
+S_EGGCRYSTAL_BLUE_A1
+S_EGGCRYSTAL_BLUE_A2
+S_EGGCRYSTAL_BLUE_A3
+S_EGGCRYSTAL_BLUE_A3EX
+S_EGGCRYSTAL_BLUE_A3EX1
+S_EGGCRYSTAL_BLUE_A3EX2
+S_EGGCRYSTAL_BLUE_A3EX3
+S_EGGCRYSTAL_BLUE_A4
+S_EGGCRYSTAL_BLUE_A5
+S_EGGCRYSTAL_BLUE_A6
+S_EGGCRYSTAL_BLUE_A7
+S_EGGCRYSTAL_BLUE_A7EX1
+S_EGGCRYSTAL_BLUE_A7EX2
+S_EGGCRYSTAL_BLUE_A7EX3
+S_EGGCRYSTAL_BLUE_A8
+S_EGGCRYSTAL_BLUE_A9
+S_EGGCRYSTAL_BLUE_A10
+S_EGGCRYSTAL_BLUE_A11
+S_EGGCRYSTAL_GREEN1
+S_EGGCRYSTAL_GREEN2
+S_EGGCRYSTAL_GREEN3
+S_EGGCRYSTAL_GREEN4
+S_EGGCRYSTAL_GREEN_A1
+S_EGGCRYSTAL_GREEN_A2
+S_EGGCRYSTAL_GREEN_A3
+S_EGGCRYSTAL_GREEN_A3UGLY1
+S_EGGCRYSTAL_GREEN_A3UGLY2
+S_EGGCRYSTAL_GREEN_A3UGLY3
+S_EGGCRYSTAL_GREEN_A3UGLY4
+S_EGGCRYSTAL_GREEN_A4
+S_EGGCRYSTAL_GREEN_A5
+S_EGGCRYSTAL_GREEN_A6
+S_EGGCRYSTAL_GREEN_A7
+S_EGGCRYSTAL_GREEN_A7EX
+S_EGGCRYSTAL_GREEN_A8
+S_EGGCRYSTAL_GREEN_A9
+S_EGGCRYSTAL_GREEN_A10
+S_EGGCRYSTAL_GREEN_A11
+S_EGGCRYSTAL_GREEN_A12
+S_EGGCRYSTAL_GREEN_A13
+S_EGGCRYSTAL_GREEN_A14
+S_EGGCRYSTAL_GREEN_A15
+S_EGGCRYSTAL_YELLOW1
+S_EGGCRYSTAL_YELLOW2
+S_EGGCRYSTAL_YELLOW3
+S_EGGCRYSTAL_YELLOW4
+S_EGGCRYSTAL_YELLOW_A1
+S_EGGCRYSTAL_YELLOW_A2
+S_EGGCRYSTAL_YELLOW_A3
+S_EGGCRYSTAL_YELLOW_A4
+S_EGGCRYSTAL_YELLOW_A5
+S_EGGCRYSTAL_YELLOW_A6
+S_EGGCRYSTAL_YELLOW_A6EX
+S_EGGCRYSTAL_YELLOW_A7
+S_EGGCRYSTAL_YELLOW_A8
+S_EGGCRYSTAL_YELLOW_A9
+S_EGGCRYSTAL_YELLOW_A9EX
+S_EGGCRYSTAL_YELLOW_A10
+S_EGGCRYSTAL_YELLOW_A11
+S_EGGCRYSTAL_YELLOW_A12
+S_EGGCRYSTAL_YELLOW_A13
+S_ULTRAFIRE1
+S_ULTRAFIRE2
+S_ULTRAFIRE3
+S_ULTRAEARTH1
+S_ULTRAEARTH2
+S_ULTRAEARTH3
+S_ULTRAICE1
+S_ULTRAICE2
+S_ULTRAICE3
+S_ULTRAICE4
+S_ULTRAICE5
+S_ULTRAICE6
+S_ULTRAICE7
+S_ULTRAICEALT1
+S_ULTRAICEALT2
+S_ULTRATHUNDER0
+S_ULTRATHUNDER1
+S_ULTRATHUNDER2
+S_ULTRATHUNDER3
+S_ULTRATHUNDER4
+S_ULTRATHUNDER5
+S_ULTRATHUNDER6
+S_ULTRATHUNDER7
+S_ULTRARETALIATOR1
+S_ULTRARETALIATOR2
+S_ULTRARETALIATOR3
+S_PEARLSPIN1
+S_PEARLSPIN2
+S_PEARLSPIN3
+S_ULTRARETALIATORFREE1
+S_PEARL1
+S_PEARL2
+S_PEARL3
+S_PEARL4
+S_PEARL5
+S_PEARL6
+S_PEARL7
+S_PEARL8
+S_EGGINVIS
+S_EGGINVIS_T1
+S_EGGINVIS_T2
+S_EGGINVIS_HELPER
+S_ULTRAFIRE_EX1
+S_ULTRAFIRE_EX2
+S_ULTRAFIRE_EX3
+S_ULTRAFIRE_EX4
+S_ULTRAFIRE_EX5
+S_ULTRAFIRE_EX6
+S_METEOR1
+S_METEOR2
+S_METEOR3
+S_METEOR4
+S_METEOR5
+S_METEOR6
+S_METEOR7
+S_METEOR8
+S_ULTRAICE_EX1
+S_ULTRAICE_EX2
+S_ULTRAICE_EX3
+S_ULTRAICE_EX3INVIS
+S_ULTRAICE_EX3OFF
+S_ULTRAICE_EX3ON
+S_QUAKE1
+S_QUAKE2
+S_QUAKE3
+S_QUAKE4
+S_QUAKE5
+S_QUAKE6
+S_QUAKE7
+S_QUAKE8
+S_QUAKE_SCALE
+S_QUAKE_CHASE
+S_ULTRAROCK1
+S_ULTRAROCK2
+S_ULTRAROCK3
+S_ULTRAROCK4
+S_ULTIMA1
+S_ULTIMA2
+S_ULTIMA3
+S_ULTIMA4
+S_ULTIMA4EX
+S_ULTIMA4EX2
+S_ULTIMA5
+S_ULTIMA6
+S_ULTIMA7
+S_EGGINVIS_THUN
+S_EGGINVIS_THUN1
+S_EGGINVIS_THUN2
+S_EGGINVIS_THUN3
+S_EGGINVIS_THUN4
+S_EGGINVIS_THUN5
+S_EGGINVIS_THUN6
+S_EGGINVIS_THUN7
+S_ULTRABOLT1
+S_ULTRABOLT2
+S_ULTRABOLT3
+S_ULTRABOLT4
+S_ULTRABOLT5
+S_ULTRABOLT6
+
+FREESLOT
+SPR_AICE
+SPR_BUBZ
+SPR_ULTI
+SPR_THUN
+
+Object MT_EGGANIMUS
+#$Name Egg Animus
+#$Sprite EGGMA1
+#$Category Mystic Realm Objects
+MapThingNum = 253
+SpawnState = S_EGGANIMUS_START1
+SpawnHealth = 8
+SeeState = S_Boss_Stand
+SeeSound = sfx_None
+ReactionTime = 45
+AttackSound = 0
+PainState = S_EGGANIMUS_PAIN0
+PainChance = 71
+PainSound = sfx_dmpain
+MeleeState = S_EGGANIMUS_CHOOSE0
+MissileState = S_EGGANIMUS_CHOOSE0
+DeathState = S_EGGANIMUS_DIE1
+DeathSound = sfx_cybdth
+XDeathState = S_EGGMOBILE_FLEE1
+Speed = 5
+Radius = 48*FRACUNIT
+Height = 80*FRACUNIT
+Mass = 0
+Damage = 0
+ActiveSound = sfx_telept
+RaiseState = S_FBoss_Panic1
+Flags = MF_SPECIAL|MF_SHOOTABLE|MF_BOSS|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_EGGANIMUS_START1
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 4
+Next = S_EGGANIMUS_START1EX
+Action A_CheckCustomValue
+Var1 = 2
+Var2 = S_EGGANIMUS_ROAM1
+
+State S_EGGANIMUS_START1EX
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 0
+Next = S_EGGANIMUS_START2
+Action A_CheckCustomValue
+Var1 = 1
+Var2 = S_EGGANIMUS_CHOOSE0
+
+State S_EGGANIMUS_START2
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 16
+Next = S_EGGANIMUS_START3
+Action None
+Var1 = 3
+Var2 = 4
+
+State S_EGGANIMUS_START3
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 4
+Next = S_EGGANIMUS_START4
+Action A_PlaySound
+Var1 = sfx_litng1
+Var2 = 0
+
+State S_EGGANIMUS_START4
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 1
+Next = S_EGGANIMUS_START5
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_EGGCRYSTAL_RED
+
+State S_EGGANIMUS_START5
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 1
+Next = S_EGGANIMUS_START6
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_EGGCRYSTAL_BLUE
+
+State S_EGGANIMUS_START6
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 1
+Next = S_EGGANIMUS_START7
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_EGGCRYSTAL_GREEN
+
+State S_EGGANIMUS_START7
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 16
+Next = S_EGGANIMUS_START8
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_EGGCRYSTAL_YELLOW
+
+State S_EGGANIMUS_START8
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 1
+Next = S_Boss_Stand
+Action A_SetCustomValue
+Var1 = 1
+Var2 = 0
+
+State S_EGGANIMUS_CHOOSE0
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 1
+Next = S_EGGANIMUS_CHOOSE0
+Action A_RandomStateRange
+Var1 = S_EGGANIMUS_FIRESTART
+Var2 = S_EGGANIMUS_EARTHSTART
+
+
+State S_EGGANIMUS_FIRESTART
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 1
+Next = S_EGGANIMUS_FIRE0
+Action A_SetCustomValue
+Var1 = 1
+Var2 = 0
+
+State S_EGGANIMUS_WATERSTART
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 1
+Next = S_EGGANIMUS_WATER0
+Action A_SetCustomValue
+Var1 = 2
+Var2 = 0
+
+State S_EGGANIMUS_WINDSTART
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 1
+Next = S_EGGANIMUS_WIND0
+Action A_SetCustomValue
+Var1 = 3
+Var2 = 0
+
+State S_EGGANIMUS_EARTHSTART
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 1
+Next = S_EGGANIMUS_EARTH0
+Action A_SetCustomValue
+Var1 = 4
+Var2 = 0
+
+#Fire Crystal Attack
+
+State S_EGGANIMUS_FIRE0
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_FIRE1
+Action A_FindTracer
+Var1 = MT_EGGCRYSTAL_RED
+Var2 = 0
+
+State S_EGGANIMUS_FIRE1
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_FIRE2
+Action A_SetObjectState
+Var1 = S_EGGCRYSTAL_RED_A1
+Var2 = 1
+
+State S_EGGANIMUS_FIRE2
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_FIRE3
+Action None
+Var1 = 2
+Var2 = 4
+
+State S_EGGANIMUS_FIRE3
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 22
+Next = S_EGGANIMUS_ROAM0
+Action A_PlaySound
+Var1 = sfx_fire
+Var2 = 0
+
+##Water Crystal Attack
+State S_EGGANIMUS_WATER0
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_WATER1
+Action A_FindTracer
+Var1 = MT_EGGCRYSTAL_BLUE
+Var2 = 0
+
+State S_EGGANIMUS_WATER1
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_WATER2
+Action A_SetObjectState
+Var1 = S_EGGCRYSTAL_BLUE_A1
+Var2 = 1
+
+State S_EGGANIMUS_WATER2
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_WATER3
+Action None
+Var1 = 2
+Var2 = 4
+
+State S_EGGANIMUS_WATER3
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 22
+Next = S_EGGANIMUS_ROAM0
+Action A_PlaySound
+Var1 = sfx_s3k39
+Var2 = 0
+
+##Wind Crystal Attack
+State S_EGGANIMUS_WIND0
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_WIND1
+Action A_FindTracer
+Var1 = MT_EGGCRYSTAL_GREEN
+Var2 = 0
+
+State S_EGGANIMUS_WIND1
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_WIND2
+Action A_SetObjectState
+Var1 = S_EGGCRYSTAL_GREEN_A1
+Var2 = 1
+
+State S_EGGANIMUS_WIND2
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_WIND3
+Action None
+Var1 = 2
+Var2 = 4
+
+State S_EGGANIMUS_WIND3
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 22
+Next = S_EGGANIMUS_ROAM0
+Action A_PlaySound
+Var1 = sfx_wdjump
+Var2 = 0
+
+##Earth Crystal Attack
+State S_EGGANIMUS_EARTH0
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_EARTH1
+Action A_FindTracer
+Var1 = MT_EGGCRYSTAL_YELLOW
+Var2 = 0
+
+State S_EGGANIMUS_EARTH1
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_EARTH2
+Action A_SetObjectState
+Var1 = S_EGGCRYSTAL_YELLOW_A1
+Var2 = 1
+
+State S_EGGANIMUS_EARTH2
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_EARTH3
+Action None
+Var1 = 2
+Var2 = 4
+
+State S_EGGANIMUS_EARTH3
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 22
+Next = S_EGGANIMUS_ROAM0
+Action A_PlaySound
+Var1 = sfx_pstop
+Var2 = 0
+
+##Post Attack stuff
+State S_EGGANIMUS_RESETREACT
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 0
+Next = S_Boss_Stand
+ACTION A_SetReactionTime
+Var1 = 1
+Var2 = 30
+
+State S_EGGANIMUS_ROAM0
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_ROAM1
+Action None
+Var1 = 0
+Var2 = 0
+
+State S_EGGANIMUS_ROAM1
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 1
+Next = S_EGGANIMUS_ROAM2
+ACTION A_DualAction
+VAR1 = S_EGGANIMUS_RESETREACT
+VAR2 = S_BossXChaseB
+
+State S_EGGANIMUS_ROAM2
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 0
+Next = S_EGGANIMUS_ROAM2EX
+ACTION A_Repeat
+VAR1 = 35
+VAR2 = S_EGGANIMUS_ROAM1
+
+State S_EGGANIMUS_ROAM2EX
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 40
+Next = S_EGGANIMUS_ROAM3
+Action A_PlaySound
+Var1 = sfx_s3k74
+
+State S_EGGANIMUS_ROAM3
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 0
+Next = S_EGGANIMUS_ROAM4
+ACTION A_FaceTarget
+
+State S_EGGANIMUS_ROAM4
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_ROAM5
+Action None
+Var1 = 2
+Var2 = 4
+
+State S_EGGANIMUS_ROAM5
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 8
+Next = S_EGGANIMUS_ROAM6
+Action A_FireShot
+Var1 = MT_CYBRAKDEMON_MISSILE
+Var2 = 24
+
+State S_EGGANIMUS_ROAM6
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_ROAM1
+ACTION A_Repeat
+VAR1 = 6
+VAR2 = S_EGGANIMUS_ROAM3
+
+
+##I guess this is a good way to cycle without waiting for the crystals?
+State S_EGGANIMUS_ROAM7
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 30
+Next = S_EGGANIMUS_PAIN15
+ACTION None
+
+##Boss 1 Hurt
+State S_EGGANIMUS_PAIN0
+SpriteName = EGGM
+SpriteFrame = V
+Duration = 1
+Next = S_EGGANIMUS_PAIN1
+Action A_FindTarget
+Var1 = MT_PLAYER
+
+##Boss 1 Hurt
+State S_EGGANIMUS_PAIN1
+SpriteName = EGGM
+SpriteFrame = T
+Duration = 24
+Next = S_EGGANIMUS_PAIN2
+Action A_DualAction
+Var1 = S_EGGMOBILE_PAIN
+Var2 = S_BossXChaseA
+
+State S_EGGANIMUS_PAIN2
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_PAIN3
+Action A_ForceStop
+
+State S_EGGANIMUS_PAIN3
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 2
+Next = S_EGGANIMUS_PAIN4
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_PEARL+60*FRACUNIT
+
+State S_EGGANIMUS_PAIN4
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 3
+Next = S_EGGANIMUS_PAIN5
+Action A_PlaySound
+Var1 = sfx_s3kb3
+
+State S_EGGANIMUS_PAIN5
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_PAIN6
+Action None
+
+State S_EGGANIMUS_PAIN6
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 105
+Next = S_EGGANIMUS_PAIN7
+Action A_PrepareRepeat
+Var1 = 12
+
+State S_EGGANIMUS_PAIN7
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 2
+Next = S_EGGANIMUS_PAIN8
+Action A_FaceTarget
+Var1 = 3
+Var2 = 4
+
+State S_EGGANIMUS_PAIN8
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_PAIN9
+Action None
+#Action A_FireShot
+#Var1 = MT_ROCKET
+#Var2 = 2
+
+State S_EGGANIMUS_PAIN9
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 1
+Next = S_EGGANIMUS_PAIN10
+Action None
+#Action A_FireShot
+#Var1 = MT_ROCKET
+#Var2 = 2
+
+State S_EGGANIMUS_PAIN10
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 0
+Next = S_EGGANIMUS_PAIN11
+Action A_Repeat
+Var1 = 12
+Var2 = S_EGGANIMUS_PAIN7
+
+State S_EGGANIMUS_PAIN11
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 4
+Next = S_EGGANIMUS_PAIN12
+Action A_FaceTarget
+
+State S_EGGANIMUS_PAIN12
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 2
+Next = S_EGGANIMUS_PAIN13
+Action A_ChangeAngleRelative
+Var1 = 75
+Var2 = 105
+
+State S_EGGANIMUS_PAIN13
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 35
+Next = S_EGGANIMUS_PAIN13EX
+Action A_Thrust
+Var1 = 20
+
+State S_EGGANIMUS_PAIN13EX
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 1
+Next = S_EGGANIMUS_PAIN14
+Action A_Thrust
+Var1 = 5
+Var2 = 1
+
+State S_EGGANIMUS_PAIN14
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_PAIN15
+Action A_Boss5Calm
+
+State S_EGGANIMUS_PAIN15
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_PAIN16
+Action A_CheckCustomValue
+Var1 = 4
+Var2 = S_EGGANIMUS_FIRESTART
+
+State S_EGGANIMUS_PAIN16
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_PAIN17
+Action A_CheckCustomValue
+Var1 = 3
+Var2 = S_EGGANIMUS_EARTHSTART
+
+State S_EGGANIMUS_PAIN17
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_WATERSTART
+Action A_CheckCustomValue
+Var1 = 2
+Var2 = S_EGGANIMUS_WINDSTART
+
+State S_EGGANIMUS_DIE1
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_DIE2
+Action A_FindTracer
+Var1 = MT_EGGCRYSTAL_RED
+
+State S_EGGANIMUS_DIE2
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_DIE3
+Action A_RemoteDamage
+Var1 = 2
+Var2 = 2
+
+State S_EGGANIMUS_DIE3
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_DIE4
+Action A_FindTracer
+Var1 = MT_EGGCRYSTAL_BLUE
+
+State S_EGGANIMUS_DIE4
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_DIE5
+Action A_RemoteDamage
+Var1 = 2
+Var2 = 2
+
+State S_EGGANIMUS_DIE5
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_DIE6
+Action A_FindTracer
+Var1 = MT_EGGCRYSTAL_GREEN
+
+State S_EGGANIMUS_DIE6
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_DIE7
+Action A_RemoteDamage
+Var1 = 2
+Var2 = 2
+
+State S_EGGANIMUS_DIE7
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_DIE8
+Action A_FindTracer
+Var1 = MT_EGGCRYSTAL_YELLOW
+
+State S_EGGANIMUS_DIE8
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_DIE9
+Action A_RemoteDamage
+Var1 = 2
+Var2 = 2
+
+##Hijacking the regular death because we gotta spawn in the BIG BOY
+State S_EGGANIMUS_DIE9
+SpriteName = EGGM
+SpriteFrame = W
+Duration = 0
+Next = S_EGGANIMUS_DIE10
+Action A_PrepareRepeat
+Var1 = 20
+
+State S_EGGANIMUS_DIE10
+SpriteName = EGGM
+SpriteFrame = W
+Duration = 8
+Next = S_EGGANIMUS_DIE11
+Action A_Fall
+
+State S_EGGANIMUS_DIE11
+SpriteName = EGGM
+SpriteFrame = W
+Duration = 4
+Next = S_EGGANIMUS_DIE12
+Action A_BossScream
+
+State S_EGGANIMUS_DIE12
+SpriteName = EGGM
+SpriteFrame = W
+Duration = 0
+Next = S_EGGANIMUS_DIE13
+Action A_Repeat
+Var1 = 20
+Var2 = S_EGGANIMUS_DIE11
+
+State S_EGGANIMUS_DIE13
+SpriteName = EGGM
+SpriteFrame = W
+Duration = 1
+Next = S_NULL
+Action A_SpawnObjectRelative
+Var2 = MT_EGGANIMUS_EX
+
+
+##Crystal Idle
+State S_EGGCRYSTAL_SUPPORT1
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_IVSP
+
+State S_EGGCRYSTAL_SUPPORT2
+Action A_CapeChase
+Var1 = 24*FRACUNIT
+Var2 = -60+90*FRACUNIT
+
+State S_EGGCRYSTAL_SUPPORT3
+Action A_CapeChase
+Var1 = 24*FRACUNIT
+Var2 = -30+60*FRACUNIT
+
+State S_EGGCRYSTAL_SUPPORT4
+Action A_CapeChase
+Var1 = 24*FRACUNIT
+Var2 = 30+60*FRACUNIT
+
+State S_EGGCRYSTAL_SUPPORT5
+Action A_CapeChase
+Var1 = 24*FRACUNIT
+Var2 = 60+90*FRACUNIT
+
+State S_EGGCRYSTAL_RESET1
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 8
+Next = S_EGGCRYSTAL_RESET2
+Action A_PlaySound
+Var1 = sfx_mixup
+Var2 = 0
+
+State S_EGGCRYSTAL_RESET2
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 0
+Next = S_EGGCRYSTAL_RESET3
+Action A_FindTarget
+Var1 = MT_EGGANIMUS
+Var2 = 0
+
+State S_EGGCRYSTAL_RESET3
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 0
+Next = S_SEESTATE
+Action None
+Var1 = 0
+Var2 = 0
+
+Object MT_EGGCRYSTAL_RED
+MapThingNum = -1
+SpawnState = S_EGGCRYSTAL_RED1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = S_EGGCRYSTAL_RED1
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainChance = 0
+PainSound = sfx_None
+DeathState = S_XPLD1
+DeathSound = sfx_None
+Speed = 0
+Radius = 9*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags =	MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT
+
+State S_EGGCRYSTAL_RED1
+SpriteName = WCRY
+SpriteFrame = B
+Duration = 1
+Next = S_EGGCRYSTAL_RED2
+Action A_FindTarget
+Var1 = MT_EGGANIMUS
+Var2 = 0
+
+State S_EGGCRYSTAL_RED2
+SpriteName = WCRY
+SpriteFrame = B
+Duration = 1
+Next = S_EGGCRYSTAL_RED3
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT2
+
+State S_EGGCRYSTAL_RED3
+SpriteName = WCRY
+SpriteFrame = C
+Duration = 1
+Next = S_EGGCRYSTAL_RED4
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT2
+
+State S_EGGCRYSTAL_RED4
+SpriteName = WCRY
+SpriteFrame = D
+Duration = 1
+Next = S_EGGCRYSTAL_RED2
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT2
+
+#make sure to revert the target back to the boss after you're done here
+State S_EGGCRYSTAL_RED_A1
+SpriteName = WCRY
+SpriteFrame = B
+Duration = 4
+Next = S_EGGCRYSTAL_RED_A2
+Action A_SetTargetsTarget
+Var1 = 0
+Var2 = 0
+
+State S_EGGCRYSTAL_RED_A2
+SpriteName = WCRY
+SpriteFrame = C
+Duration = 16
+Next = S_EGGCRYSTAL_RED_A3
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_EGGCRYSTAL_RED_A3
+SpriteName = WCRY
+SpriteFrame = D
+Duration = 24
+Next = S_EGGCRYSTAL_RED_A3EX
+Action A_HomingChase
+Var1 = 20*FRACUNIT
+Var2 = 0
+
+State S_EGGCRYSTAL_RED_A3EX
+SpriteName = WCRY
+SpriteFrame = D
+Duration = 1
+Next = S_EGGCRYSTAL_RED_A4
+Action A_ForceStop
+
+State S_EGGCRYSTAL_RED_A4
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 35
+Next = S_EGGCRYSTAL_RED_A5
+Action A_PlaySound
+Var1 = sfx_supert
+Var2 = 0
+
+State S_EGGCRYSTAL_RED_A5
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 0
+Next = S_EGGCRYSTAL_RED_A5EX
+Action A_SuperFireShot
+Var1 = MT_CYBRAKDEMON_FLAMESHOT
+Var2 = 0
+
+#set the missiles' targets to the boss so they don't hurt him
+State S_EGGCRYSTAL_RED_A5EX
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 2
+Next = S_EGGCRYSTAL_RED_A6
+Action A_RemoteAction
+Var1 = MT_CYBRAKDEMON_FLAMESHOT
+Var2 = S_EGGCRYSTAL_RESET2
+
+State S_EGGCRYSTAL_RED_A6
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 0
+Next = S_EGGCRYSTAL_RED_A7
+Action A_Repeat
+Var1 = 24
+Var2 = S_EGGCRYSTAL_RED_A5
+
+State S_EGGCRYSTAL_RED_A7
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 8
+Next = S_EGGCRYSTAL_RED_A8
+Action A_VileTarget
+Var1 = MT_CYBRAKDEMON_TARGET_RETICULE
+Var2 = 1
+
+State S_EGGCRYSTAL_RED_A8
+SpriteName = WCRY
+SpriteFrame = C
+Duration = 3
+Next = S_EGGCRYSTAL_RED_A9
+Action A_FaceTarget
+
+State S_EGGCRYSTAL_RED_A9
+SpriteName = WCRY
+SpriteFrame = D
+Duration = 0
+Next = S_EGGCRYSTAL_RED_A10
+Action A_Repeat
+Var1 = 24
+Var2 = S_EGGCRYSTAL_RED_A8
+
+State S_EGGCRYSTAL_RED_A10
+SpriteName = WCRY
+SpriteFrame = D
+Duration = 4
+Next = S_EGGCRYSTAL_RED_A11
+Action A_ChangeAngleRelative
+Var1 = 180
+Var2 = 180
+
+State S_EGGCRYSTAL_RED_A11
+SpriteName = WCRY
+SpriteFrame = C
+Duration = 35
+Next = S_EGGCRYSTAL_RESET1
+Action A_SuperFireShot
+Var1 = MT_ULTRAFIRE
+
+Object MT_EGGCRYSTAL_BLUE
+MapThingNum = -1
+SpawnState = S_EGGCRYSTAL_BLUE1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = S_EGGCRYSTAL_BLUE1
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainChance = 0
+PainSound = sfx_None
+DeathState = S_XPLD1
+DeathSound = sfx_None
+Speed = 0
+Radius = 9*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags =	MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT
+
+State S_EGGCRYSTAL_BLUE1
+SpriteName = WCRY
+SpriteFrame = F
+Duration = 1
+Next = S_EGGCRYSTAL_BLUE2
+Action A_FindTarget
+Var1 = MT_EGGANIMUS
+Var2 = 0
+
+State S_EGGCRYSTAL_BLUE2
+SpriteName = WCRY
+SpriteFrame = F
+Duration = 1
+Next = S_EGGCRYSTAL_BLUE3
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT3
+
+State S_EGGCRYSTAL_BLUE3
+SpriteName = WCRY
+SpriteFrame = G
+Duration = 1
+Next = S_EGGCRYSTAL_BLUE4
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT3
+
+State S_EGGCRYSTAL_BLUE4
+SpriteName = WCRY
+SpriteFrame = H
+Duration = 1
+Next = S_EGGCRYSTAL_BLUE2
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT3
+
+State S_EGGCRYSTAL_BLUE_A1
+SpriteName = WCRY
+SpriteFrame = F
+Duration = 4
+Next = S_EGGCRYSTAL_BLUE_A2
+Action A_SetTargetsTarget
+Var1 = 0
+Var2 = 0
+
+State S_EGGCRYSTAL_BLUE_A2
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 25
+Next = S_EGGCRYSTAL_BLUE_A3
+Action A_PlaySound
+Var1 = sfx_splish
+
+State S_EGGCRYSTAL_BLUE_A3
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 4
+Next = S_EGGCRYSTAL_BLUE_A3EX
+Action A_FaceTarget
+
+State S_EGGCRYSTAL_BLUE_A3EX
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 22
+Next = S_EGGCRYSTAL_BLUE_A3EX1
+Action A_PlaySound
+Var1 = sfx_s3k3f
+
+State S_EGGCRYSTAL_BLUE_A3EX1
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 15
+Next = S_EGGCRYSTAL_BLUE_A3EX2
+Action A_HomingChase
+Var1 = 20*FRACUNIT
+
+State S_EGGCRYSTAL_BLUE_A3EX2
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 8
+Next = S_EGGCRYSTAL_BLUE_A3EX3
+Action A_ForceStop
+
+State S_EGGCRYSTAL_BLUE_A3EX3
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 8
+Next = S_EGGCRYSTAL_BLUE_A4
+Action A_FaceTarget
+
+State S_EGGCRYSTAL_BLUE_A4
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 8
+Next = S_EGGCRYSTAL_BLUE_A5
+Action A_SuperFireShot
+Var1 = MT_ULTRAICE
+
+State S_EGGCRYSTAL_BLUE_A5
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 18
+Next = S_EGGCRYSTAL_BLUE_A6
+Action A_Thrust
+Var1 = 30*FRACUNIT
+
+State S_EGGCRYSTAL_BLUE_A6
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 0
+Next = S_EGGCRYSTAL_BLUE_A7
+Action A_Repeat
+Var1 = 4
+Var2 = S_EGGCRYSTAL_BLUE_A3
+
+State S_EGGCRYSTAL_BLUE_A7
+SpriteName = WCRY
+SpriteFrame = F
+Duration = 0
+Next = S_EGGCRYSTAL_BLUE_A7EX1
+Action A_ForceStop
+
+State S_EGGCRYSTAL_BLUE_A7EX1
+SpriteName = WCRY
+SpriteFrame = F
+Duration = 0
+Next = S_EGGCRYSTAL_BLUE_A7EX2
+Action A_FaceTarget
+
+State S_EGGCRYSTAL_BLUE_A7EX2
+SpriteName = WCRY
+SpriteFrame = F
+Duration = 12
+Next = S_EGGCRYSTAL_BLUE_A7EX3
+Action A_Thrust
+Var1 = 40*FRACUNIT
+
+State S_EGGCRYSTAL_BLUE_A7EX3
+SpriteName = WCRY
+SpriteFrame = F
+Duration = 8
+Next = S_EGGCRYSTAL_BLUE_A8
+Action A_ForceStop
+
+State S_EGGCRYSTAL_BLUE_A8
+SpriteName = WCRY
+SpriteFrame = F
+Duration = 35
+Next = S_EGGCRYSTAL_BLUE_A9
+Action A_PlaySound
+Var1 = sfx_bejet1
+
+State S_EGGCRYSTAL_BLUE_A9
+SpriteName = WCRY
+SpriteFrame = G
+Duration = 3
+Next = S_EGGCRYSTAL_BLUE_A10
+Action A_LobShot
+Var1 = MT_ULTRAICEALT
+Var2 = 70+20*FRACUNIT
+
+State S_EGGCRYSTAL_BLUE_A10
+SpriteName = WCRY
+SpriteFrame = G
+Duration = 0
+Next = S_EGGCRYSTAL_BLUE_A11
+Action A_Repeat
+Var1 = 20
+Var2 = S_EGGCRYSTAL_BLUE_A9
+
+State S_EGGCRYSTAL_BLUE_A11
+SpriteName = WCRY
+SpriteFrame = F
+Duration = 8
+Next = S_EGGCRYSTAL_RESET1
+
+
+Object MT_EGGCRYSTAL_GREEN
+MapThingNum = -1
+SpawnState = S_EGGCRYSTAL_GREEN1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = S_EGGCRYSTAL_GREEN1
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainChance = 200*FRACUNIT
+PainSound = sfx_None
+DeathState = S_XPLD1
+DeathSound = sfx_None
+Speed = 0
+Radius = 9*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags =	MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT
+
+State S_EGGCRYSTAL_GREEN1
+SpriteName = WCRY
+SpriteFrame = F
+Duration = J
+Next = S_EGGCRYSTAL_GREEN2
+Action A_FindTarget
+Var1 = MT_EGGANIMUS
+Var2 = 0
+
+State S_EGGCRYSTAL_GREEN2
+SpriteName = WCRY
+SpriteFrame = J
+Duration = 1
+Next = S_EGGCRYSTAL_GREEN3
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT4
+
+State S_EGGCRYSTAL_GREEN3
+SpriteName = WCRY
+SpriteFrame = K
+Duration = 1
+Next = S_EGGCRYSTAL_GREEN4
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT4
+
+State S_EGGCRYSTAL_GREEN4
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 1
+Next = S_EGGCRYSTAL_GREEN2
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT4
+
+State S_EGGCRYSTAL_GREEN_A1
+SpriteName = WCRY
+SpriteFrame = J
+Duration = 4
+Next = S_EGGCRYSTAL_GREEN_A2
+Action A_SetTargetsTarget
+Var1 = 0
+Var2 = 0
+
+State S_EGGCRYSTAL_GREEN_A2
+SpriteName = WCRY
+SpriteFrame = J
+Duration = 16
+Next = S_EGGCRYSTAL_GREEN_A3
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_EGGCRYSTAL_GREEN_A3
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 35
+Next = S_EGGCRYSTAL_GREEN_A3UGLY1
+Action A_PlaySound
+Var1 = sfx_s3k45
+Var2 = 0
+
+##hate hate hate
+State S_EGGCRYSTAL_GREEN_A3UGLY1
+SpriteName = WCRY
+SpriteFrame = J
+Duration = 2
+Next = S_EGGCRYSTAL_GREEN_A3UGLY2
+Action A_CapeChase
+
+##hate hate hate
+State S_EGGCRYSTAL_GREEN_A3UGLY2
+SpriteName = WCRY
+SpriteFrame = J
+Duration = 2
+Next = S_EGGCRYSTAL_GREEN_A3UGLY3
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_IVSP
+
+##hate hate hate
+State S_EGGCRYSTAL_GREEN_A3UGLY3
+SpriteName = WCRY
+SpriteFrame = J
+Duration = 2
+Next = S_EGGCRYSTAL_GREEN_A3UGLY4
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_IVSP+30*FRACUNIT
+
+##hate hate hate
+State S_EGGCRYSTAL_GREEN_A3UGLY4
+SpriteName = WCRY
+SpriteFrame = J
+Duration = 31
+Next = S_EGGCRYSTAL_GREEN_A4
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_IVSP-30*FRACUNIT
+
+State S_EGGCRYSTAL_GREEN_A4
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 8
+Next = S_EGGCRYSTAL_GREEN_A5
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_ULTRATHUNDER
+
+State S_EGGCRYSTAL_GREEN_A5
+SpriteName = WCRY
+SpriteFrame = K
+Duration = 4
+Next = S_EGGCRYSTAL_GREEN_A6
+Action A_HomingChase
+Var1 = 10*FRACUNIT
+
+State S_EGGCRYSTAL_GREEN_A6
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 4
+Next = S_EGGCRYSTAL_GREEN_A7
+Action A_HomingChase
+Var1 = 10*FRACUNIT
+
+State S_EGGCRYSTAL_GREEN_A7
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 4
+Next = S_EGGCRYSTAL_GREEN_A7EX
+Action A_HomingChase
+Var1 = 10*FRACUNIT
+Var2 = 0
+
+State S_EGGCRYSTAL_GREEN_A7EX
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 6
+Next = S_EGGCRYSTAL_GREEN_A8
+Action A_SplitShot
+Var1 = 20*FRACUNIT
+Var2 = MT_ULTRATHUNDER2+20*FRACUNIT
+
+State S_EGGCRYSTAL_GREEN_A8
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 0
+Next = S_EGGCRYSTAL_GREEN_A9
+Action A_Repeat
+Var1 = 12
+Var2 = S_EGGCRYSTAL_GREEN_A6
+
+State S_EGGCRYSTAL_GREEN_A9
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 16
+Next = S_EGGCRYSTAL_GREEN_A10
+#Action A_ZThrust
+#Var1 = 16*FRACUNIT
+#Var2 = 1+FRACUNIT
+
+State S_EGGCRYSTAL_GREEN_A10
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 0
+Next = S_EGGCRYSTAL_GREEN_A11
+Action A_ForceStop
+
+State S_EGGCRYSTAL_GREEN_A11
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 50
+Next = S_EGGCRYSTAL_GREEN_A12
+Action A_PlaySound
+Var1 = sfx_s3k5c
+
+State S_EGGCRYSTAL_GREEN_A12
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 50
+Next = S_EGGCRYSTAL_GREEN_A13
+Action A_HomingChase
+Var1 = 80*FRACUNIT
+Var2 = 0
+
+State S_EGGCRYSTAL_GREEN_A13
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 50
+Next = S_EGGCRYSTAL_GREEN_A14
+Action A_ForceStop
+
+State S_EGGCRYSTAL_GREEN_A14
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 0
+Next = S_EGGCRYSTAL_GREEN_A15
+Action A_FindTracer
+Var1 = MT_ULTRATHUNDER
+
+State S_EGGCRYSTAL_GREEN_A15
+SpriteName = WCRY
+SpriteFrame = L
+Duration = 0
+Next = S_EGGCRYSTAL_RESET1
+Action A_RemoteDamage
+Var1 = 2
+Var2 = 2
+
+Object MT_EGGCRYSTAL_YELLOW
+MapThingNum = -1
+SpawnState = S_EGGCRYSTAL_YELLOW1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = S_EGGCRYSTAL_YELLOW1
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainChance = 0
+PainSound = sfx_None
+DeathState = S_XPLD1
+DeathSound = sfx_None
+Speed = 0
+Radius = 9*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags =	MF_NOGRAVITY|MF_NOBLOCKMAP|MF_NOCLIP|MF_NOCLIPHEIGHT|MF_RUNSPAWNFUNC
+
+State S_EGGCRYSTAL_YELLOW1
+SpriteName = WCRY
+SpriteFrame = N
+Duration = J
+Next = S_EGGCRYSTAL_YELLOW2
+Action A_FindTarget
+Var1 = MT_EGGANIMUS
+Var2 = 0
+
+State S_EGGCRYSTAL_YELLOW2
+SpriteName = WCRY
+SpriteFrame = N
+Duration = 1
+Next = S_EGGCRYSTAL_YELLOW3
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT5
+
+State S_EGGCRYSTAL_YELLOW3
+SpriteName = WCRY
+SpriteFrame = O
+Duration = 1
+Next = S_EGGCRYSTAL_YELLOW4
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT5
+
+State S_EGGCRYSTAL_YELLOW4
+SpriteName = WCRY
+SpriteFrame = P
+Duration = 1
+Next = S_EGGCRYSTAL_YELLOW2
+Action A_DualAction
+Var1 = S_EGGCRYSTAL_SUPPORT1
+Var2 = S_EGGCRYSTAL_SUPPORT5
+
+State S_EGGCRYSTAL_YELLOW_A1
+SpriteName = WCRY
+SpriteFrame = N
+Duration = 4
+Next = S_EGGCRYSTAL_YELLOW_A2
+Action A_SetTargetsTarget
+Var1 = 0
+Var2 = 0
+
+State S_EGGCRYSTAL_YELLOW_A2
+SpriteName = WCRY
+SpriteFrame = N
+Duration = 16
+Next = S_EGGCRYSTAL_YELLOW_A3
+Action A_FaceTarget
+Var1 = 0
+Var2 = 0
+
+State S_EGGCRYSTAL_YELLOW_A3
+SpriteName = WCRY
+SpriteFrame = N
+Duration = 16
+Next = S_EGGCRYSTAL_YELLOW_A4
+#Action A_ZThrust
+#Var1 = -2*FRACUNIT
+#Var2 = 1+FRACUNIT
+
+State S_EGGCRYSTAL_YELLOW_A4
+SpriteName = WCRY
+SpriteFrame = N
+Duration = 1
+Next = S_EGGCRYSTAL_YELLOW_A5
+Action A_ForceStop
+
+State S_EGGCRYSTAL_YELLOW_A4
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 35
+Next = S_EGGCRYSTAL_YELLOW_A5
+Action A_PlaySound
+Var1 = sfx_s3kb3
+
+State S_EGGCRYSTAL_YELLOW_A5
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 4
+Next = S_EGGCRYSTAL_YELLOW_A6
+Action A_PlaySound
+Var1 = sfx_rocks1
+
+State S_EGGCRYSTAL_YELLOW_A6
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 4
+Next = S_EGGCRYSTAL_YELLOW_A7
+Action A_RemoteAction
+Var1 = -1
+Var2 = S_EGGCRYSTAL_YELLOW_A6EX
+
+State S_EGGCRYSTAL_YELLOW_A6EX
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_ULTRAEARTH+150*FRACUNIT
+
+State S_EGGCRYSTAL_YELLOW_A7
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 8
+Next = S_EGGCRYSTAL_YELLOW_A8
+Action A_Repeat
+Var1 = 12
+Var2 = S_EGGCRYSTAL_YELLOW_A5
+
+State S_EGGCRYSTAL_YELLOW_A8
+SpriteName = WCRY
+SpriteFrame = O
+Duration = 35
+Next = S_EGGCRYSTAL_YELLOW_A9
+Action A_PlaySound
+Var1 = sfx_bechrg
+
+State S_EGGCRYSTAL_YELLOW_A9
+SpriteName = WCRY
+SpriteFrame = O
+Duration = 2
+Next = S_EGGCRYSTAL_YELLOW_A9EX
+Action A_FaceTarget
+Var1 = 30
+Var2 = 1
+
+State S_EGGCRYSTAL_YELLOW_A9EX
+SpriteName = WCRY
+SpriteFrame = O
+Duration = 6
+Next = S_EGGCRYSTAL_YELLOW_A10
+Action A_Thrust
+Var1 = 20
+Var2 = 1
+
+State S_EGGCRYSTAL_YELLOW_A10
+SpriteName = WCRY
+SpriteFrame = O
+Duration = 8
+Next = S_EGGCRYSTAL_YELLOW_A11
+Action A_FaceTarget
+
+State S_EGGCRYSTAL_YELLOW_A11
+SpriteName = WCRY
+SpriteFrame = O
+Duration = 16
+Next = S_EGGCRYSTAL_YELLOW_A12
+Action A_NapalmScatter
+Var1 = MT_FALLINGROCK+8*FRACUNIT
+Var2 = 120+35*FRACUNIT
+
+State S_EGGCRYSTAL_YELLOW_A12
+SpriteName = WCRY
+SpriteFrame = O
+Duration = 4
+Next = S_EGGCRYSTAL_YELLOW_A13
+Action A_Repeat
+Var1 = 6
+Var2 = S_EGGCRYSTAL_YELLOW_A9
+
+State S_EGGCRYSTAL_YELLOW_A13
+SpriteName = WCRY
+SpriteFrame = O
+Duration = 1
+Next = S_EGGCRYSTAL_RESET1
+Action A_ForceStop
+
+Object MT_ULTRAFIRE
+MapThingNum = -1
+SpawnState = S_ULTRAFIRE1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_s3kc2s
+AttackSound = sfx_None
+PainChance = 0
+PainSound = sfx_None
+DeathState = S_ULTRAFIRE3
+DeathSound = sfx_None
+Speed = 80*FRACUNIT
+Radius = 24*FRACUNIT
+Height = 24*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_NOBLOCKMAP|MF_MISSILE|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_ULTRAFIRE1
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 1
+Next = S_ULTRAFIRE2
+Action A_FindTarget
+Var1 = MT_EGGANIMUS
+
+State S_ULTRAFIRE2
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 1
+Next = S_ULTRAFIRE1
+Action A_SetScale
+Var1 = 2*FRACUNIT
+
+State S_ULTRAFIRE3
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 1
+Next = S_NULL
+Action A_OldRingExplode
+Var1 = MT_FLAMEJETFLAME
+
+Object MT_ULTRAEARTH
+MapThingNum = -1
+SpawnState = S_ULTRAEARTH1
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_ambint
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 80*FRACUNIT
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_rocks1
+Flags = MF_ENEMY|MF_PAIN|MF_BOUNCE|MF_RUNSPAWNFUNC
+
+State S_ULTRAEARTH1
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 1
+Next = S_ULTRAEARTH2
+Action A_SetScale
+Var1 = 2*FRACUNIT
+
+State S_ULTRAEARTH2
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 0
+Next = S_ULTRAEARTH3
+Action None
+Var1 = 2
+
+State S_ULTRAEARTH3
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 0
+Next = S_ROCKCRUMBLEA
+Action A_SetFuse
+Var1 = 50
+
+Object MT_ULTRATHUNDER
+MapThingNum = -1
+SpawnState = S_ULTRATHUNDER0
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_s3k79
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_CYBRAKDEMONELECTRICBARRIER_DIE1
+DeathSound = sfx_None
+Speed = 80*FRACUNIT
+Radius = 10*FRACUNIT
+Height = 48*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_rocks1
+Flags = MF_PAIN|MF_FIRE|MF_RUNSPAWNFUNC
+
+State S_ULTRATHUNDER0
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 1
+Next = S_ULTRATHUNDER1
+Action A_SetFuse
+Var1 = 300
+
+State S_ULTRATHUNDER1
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 1
+Next = S_CYBRAKDEMONELECTRICBARRIER_PLAYSOUND
+Action A_FindTarget
+Var1 = MT_EGGCRYSTAL_GREEN
+
+Object MT_ULTRATHUNDER2
+MapThingNum = -1
+SpawnState = S_ULTRATHUNDER2
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_bexpld
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 20*FRACUNIT
+Radius = 10*FRACUNIT
+Height = 48*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_rocks1
+Flags = MF_PAIN|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_NOCLIP|MF_RUNSPAWNFUNC
+
+State S_ULTRATHUNDER2
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30
+Duration = 1
+Next = S_ULTRATHUNDER3
+Action A_SetFuse
+Var1 = 70
+
+State S_ULTRATHUNDER3
+SpriteName = NULL
+SpriteFrame = 0
+Duration = 1
+Next = S_ULTRATHUNDER4
+
+State S_ULTRATHUNDER4
+SpriteName = NULL
+SpriteFrame = 0
+Duration = 0
+Next = S_ULTRATHUNDER5
+Action A_Repeat
+Var1 = 16
+Var2 = S_ULTRATHUNDER2
+
+State S_ULTRATHUNDER5
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30
+Duration = 1
+Next = S_ULTRATHUNDER6
+Action A_FindTarget
+Var1 = MT_PLAYER
+
+State S_ULTRATHUNDER6
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30
+Duration = 16
+Next = S_ULTRATHUNDER7
+Action A_ForceStop
+Var1 = MT_PLAYER
+
+State S_ULTRATHUNDER7
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30
+Duration = -1
+Next = S_ULTRATHUNDER7
+Action A_HomingChase
+Var1 = 60*FRACUNIT
+
+#WHY would I choose this name
+Object MT_ULTRARETALIATOR
+MapThingNum = -1
+SpawnState = S_ULTRARETALIATOR1
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_bexpld
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 24*FRACUNIT
+Height = 48*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_rocks1
+Flags = MF_PAIN|MF_FIRE|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_NOCLIP|MF_RUNSPAWNFUNC
+
+State S_ULTRARETALIATOR1
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30
+Duration = 70
+Next = S_ULTRARETALIATOR2
+Action A_SetScale
+Var1 = 3*FRACUNIT
+Var2 = 1
+
+State S_ULTRARETALIATOR2
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30
+Duration = 1
+Next = S_ULTRARETALIATOR3
+Action A_FindTarget
+Var1 = MT_PLAYER
+
+State S_ULTRARETALIATOR3
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30
+Duration = 180
+Next = S_NULL
+Action A_HomingChase
+Var1 = 10*FRACUNIT
+
+
+Object MT_PEARLSPIN
+MapThingNum = -1
+SpawnState = S_PEARLSPIN1
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_bexpld
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 10*FRACUNIT
+Radius = 24*FRACUNIT
+Height = 48*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_rocks1
+Flags = MF_PAIN|MF_FIRE|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_NOCLIP|MF_RUNSPAWNFUNC
+
+State S_PEARLSPIN1
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS60
+Duration = 1
+Next = S_PEARLSPIN2
+Action A_SetScale
+Var1 = 3*FRACUNIT/2
+Var2 = 0
+
+State S_PEARLSPIN2
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS60
+Duration = 0
+Next = S_PEARLSPIN3
+Action A_FindTarget
+Var1 = MT_PEARL
+Var2 = 0
+
+State S_PEARLSPIN3
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS60
+Duration = 1
+Next = S_PEARLSPIN3
+Action A_RotateSpikeBall
+Var1 = 0
+
+#why
+Object MT_ULTRARETALIATORFREE
+MapThingNum = -1
+SpawnState = S_ULTRARETALIATORFREE1
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 30*FRACUNIT
+Radius = 24*FRACUNIT
+Height = 48*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_PAIN|MF_FIRE|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_NOCLIP|MF_RUNSPAWNFUNC
+
+State S_ULTRARETALIATORFREE1
+SpriteName = ENRG
+SpriteFrame = FF_FULLBRIGHT|FF_TRANS30
+Duration = 150
+Next = S_NULL
+Action A_SetScale
+Var1 = 3*FRACUNIT/2
+Var2 = 0
+
+
+Object MT_PEARL
+MapThingNum = -1
+SpawnState = S_PEARL1
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_bexpld
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 0
+Radius = 36*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+Flags = MF_NOGRAVITY|MF_NOCLIP
+
+State S_PEARL1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 5
+Next = S_PEARL2
+
+State S_PEARL2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 3
+Next = S_PEARL3
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_PEARLSPIN
+
+State S_PEARL3
+SpriteName = NULL
+SpriteFrame = A
+Duration = 0
+Next = S_PEARL4
+Action A_Repeat
+Var1 = 12
+Var2 = S_PEARL2
+
+State S_PEARL4
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_PEARL5
+Action A_ZThrust
+Var1 = -4
+Var2 = 1+FRACUNIT
+
+State S_PEARL5
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_PEARL6
+Action A_Repeat
+Var1 = 50
+Var2 = S_PEARL4
+
+State S_PEARL6
+SpriteName = NULL
+SpriteFrame = A
+Duration = 70
+Next = S_PEARL7
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_ULTRARETALIATOR
+
+#hijacking the sound playing because have you HEARD 12 explosions play at once
+State S_PEARL7
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_PEARL8
+Action A_PlaySound
+Var1 = sfx_bexpld
+Var2 = MT_ULTRARETALIATOR
+
+State S_PEARL8
+SpriteName = NULL
+SpriteFrame = A
+Duration = 50
+Next = S_NULL
+Action A_MultiShot
+Var1 = 12+MT_ULTRARETALIATORFREE*FRACUNIT
+Var2 = -36
+
+#it's not even ICE IT'S BUBBLES AAAAAAAAAAAAAAAA
+Object MT_ULTRAICE
+MapThingNum = -1
+SpawnState = S_ULTRAICE1
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_s3k44	
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 20*FRACUNIT
+Radius = 30*FRACUNIT
+Height = 60*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_s3k44
+Flags = MF_PAIN|MF_NOGRAVITY
+
+State S_ULTRAICE1
+SpriteName = BUBZ
+SpriteFrame = A|FF_ANIMATE|FF_TRANS30
+Duration = 30
+Next = S_ULTRAICE2
+Action None
+Var1 = 9
+Var2 = 3
+
+State S_ULTRAICE2
+SpriteName = BUBZ
+SpriteFrame = A|FF_TRANS30
+Duration = 1
+Next = S_ULTRAICE3
+Action A_NapalmScatter
+Var1 = MT_ULTRAICEALT+6*FRACUNIT
+Var2 = 150+35*FRACUNIT
+
+State S_ULTRAICE3
+SpriteName = BUBZ
+SpriteFrame = A|FF_TRANS30
+Duration = 1
+Next = S_ULTRAICE4
+Action A_FindTarget
+Var1 = MT_PLAYER
+
+State S_ULTRAICE4
+SpriteName = BUBZ
+SpriteFrame = A|FF_TRANS30
+Duration = 1
+Next = S_ULTRAICE5
+Action A_FaceTarget
+Var1 = MT_PLAYER
+
+State S_ULTRAICE5
+SpriteName = BUBZ
+SpriteFrame = A|FF_TRANS30
+Duration = 16
+Next = S_ULTRAICE6
+Action A_Thrust
+Var1 = 16
+
+State S_ULTRAICE6
+SpriteName = BUBZ
+SpriteFrame = A|FF_TRANS30
+Duration = 1
+Next = S_ULTRAICE7
+Action A_PlayActiveSound
+
+State S_ULTRAICE7
+SpriteName = BUBZ
+SpriteFrame = A|FF_TRANS30
+Duration = 0
+Next = S_NULL
+Action A_Repeat
+Var1 = 4
+Var2 = S_ULTRAICE1
+
+#it's not even ICE IT'S BUBBLES AAAAAAAAAAAAAAAA
+Object MT_ULTRAICEALT
+MapThingNum = -1
+SpawnState = S_ULTRAICEALT1
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_s3k44	
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 30*FRACUNIT
+Radius = 30*FRACUNIT
+Height = 60*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_s3k44
+Flags = MF_PAIN|MF_RUNSPAWNFUNC
+
+State S_ULTRAICEALT1
+SpriteName = BUBZ
+SpriteFrame = A|FF_TRANS30
+Duration = 1
+Next = S_ULTRAICEALT2
+Action A_SetScale
+Var1 = FRACUNIT/2
+
+State S_ULTRAICEALT2
+SpriteName = BUBZ
+SpriteFrame = A|FF_ANIMATE|FF_TRANS30
+Duration = 90
+Next = S_NULL
+Action None
+Var1 = 9
+Var2 = 3
+
+#hell
+Object MT_EGGANIMUS_EX
+MapThingNum = -1
+SpawnState = S_EGGANIMUS_EX_START1
+SpawnHealth = 8
+SeeState = S_Boss_Stand
+SeeSound = sfx_None
+ReactionTime = 50
+AttackSound = 0
+PainState = S_EGGANIMUS_EX_PAIN0
+PainChance = 71
+PainSound = sfx_dmpain
+MeleeState = S_EGGANIMUS_CHOOSE0
+MissileState = S_EGGANIMUS_CHOOSE0
+DeathState = S_EGGANIMUS_EX_DIE1
+DeathSound = sfx_cybdth
+XDeathState = S_EGGMOBILE_FLEE1
+Speed = 5
+Radius = 48*FRACUNIT
+Height = 80*FRACUNIT
+Mass = 0
+Damage = 0
+ActiveSound = sfx_telept
+RaiseState = S_FBoss_Panic1
+Flags = MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_EGGANIMUS_EX_START1
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 2
+Next = S_EGGANIMUS_EX_START2
+ACTION A_FindTarget
+Var1 = MT_PLAYER
+
+State S_EGGANIMUS_EX_START2
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 8
+Next = S_EGGANIMUS_EX_START3
+ACTION A_FaceTarget
+
+State S_EGGANIMUS_EX_START3
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_EX_START4
+Action None
+Var1 = 2
+Var2 = 4
+
+State S_EGGANIMUS_EX_START4
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 0
+Next = S_EGGANIMUS_EX_START5
+Action A_PlaySound
+Var1 = sfx_litng1
+
+State S_EGGANIMUS_EX_START5
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 35
+Next = S_EGGANIMUS_EX_START6
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_ULTRARETALIATOR
+
+State S_EGGANIMUS_EX_START6
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 23
+Next = S_EGGANIMUS_EX_START7
+Action A_SpawnObjectRelative
+Var2 = MT_ULTRAICE_EX
+
+#don't do the second one actually
+State S_EGGANIMUS_EX_START7
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 23
+Next = S_EGGANIMUS_EX_START8
+#Action A_SpawnObjectRelative
+#Var2 = MT_ULTRAICE_EX
+
+State S_EGGANIMUS_EX_START8
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_EX_START9
+Action None
+
+State S_EGGANIMUS_EX_START9
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 35
+Next = S_EGGANIMUS_EX_ROAM1
+Action A_SetObjectFlags
+Var1 = MF_SPECIAL|MF_SHOOTABLE|MF_BOSS|MF_NOGRAVITY
+Var2 = 4
+
+State S_EGGANIMUS_EX_ROAM0
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 1
+Next = S_EGGANIMUS_EX_ROAM1
+Action A_FindTarget
+Var1 = MT_PLAYER
+
+State S_EGGANIMUS_EX_ROAM1
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 1
+Next = S_EGGANIMUS_EX_ROAM2
+ACTION A_DualAction
+VAR1 = S_EGGANIMUS_RESETREACT
+VAR2 = S_BossXChaseB
+
+State S_EGGANIMUS_EX_ROAM2
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 1
+Next = S_EGGANIMUS_EX_CHOOSE0
+ACTION A_Repeat
+VAR1 = 30
+VAR2 = S_EGGANIMUS_EX_ROAM1
+
+State S_EGGANIMUS_EX_CHOOSE0
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 2
+Next = S_EGGANIMUS_EX_CHOOSE0
+Action A_RandomStateRange
+Var1 = S_EGGANIMUS_EX_FIRE0
+Var2 = S_EGGANIMUS_EX_WIND0
+
+State S_EGGANIMUS_EX_FIRE0
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 20
+Next = S_EGGANIMUS_EX_FIRE1
+Action A_PlaySound
+Var1 = sfx_doorb1
+
+State S_EGGANIMUS_EX_EARTH0
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 20
+Next = S_EGGANIMUS_EX_EARTH1
+Action A_PlaySound
+Var1 = 	sfx_crumbl
+
+State S_EGGANIMUS_EX_WIND0
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 20
+Next = S_EGGANIMUS_EX_WIND1
+Action A_PlaySound
+Var1 = sfx_wdjump
+
+State S_EGGANIMUS_EX_FIRE1
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_EX_FIRE2
+Action None
+Var1 = 2
+Var2 = 4
+
+State S_EGGANIMUS_EX_FIRE2
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 3
+Next = S_EGGANIMUS_EX_FIRE3
+Action A_FindTracer
+Var1 = MT_EGGINVIS
+Var2 = 0
+
+State S_EGGANIMUS_EX_FIRE3
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_FIRE4
+Action A_SetObjectState
+Var1 = S_EGGINVIS_T1
+Var2 = 1
+
+State S_EGGANIMUS_EX_FIRE4
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 3
+Next = S_EGGANIMUS_EX_FIRE5
+Action A_FindTracer
+Var1 = MT_EGGINVIS
+Var2 = 1
+
+State S_EGGANIMUS_EX_FIRE5
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_FIRE6
+Action A_SetObjectState
+Var1 = S_EGGINVIS_T1
+Var2 = 1
+
+State S_EGGANIMUS_EX_FIRE6
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 8
+Next = S_EGGANIMUS_EX_FIRE7
+Action A_RemoteAction
+Var1 = -2
+Var2 = S_EGGINVIS_HELPER
+
+State S_EGGANIMUS_EX_FIRE7
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 2
+Next = S_EGGANIMUS_EX_FIRE7EX
+Action A_FaceTarget
+
+State S_EGGANIMUS_EX_FIRE7EX
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 2
+Next = S_EGGANIMUS_EX_FIRE8
+Action A_FireShot
+Var1 = MT_ULTRAFIRE_EX
+Var2 = 80
+
+State S_EGGANIMUS_EX_FIRE8
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 4
+Next = S_EGGANIMUS_EX_FIRE9
+Action A_Thrust
+Var1 = 20
+
+State S_EGGANIMUS_EX_FIRE9
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 2
+Next = S_EGGANIMUS_EX_FIRE10
+Action A_FindTracer
+Var1 = MT_EGGINVIS
+Var2 = 1
+
+State S_EGGANIMUS_EX_FIRE10
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 4
+Next = S_EGGANIMUS_EX_ROAM0
+Action A_Repeat
+Var1 = 7
+Var2 = S_EGGANIMUS_EX_FIRE6
+
+State S_EGGANIMUS_EX_EARTH1
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_EX_EARTH2
+Action None
+Var1 = 2
+Var2 = 4
+
+State S_EGGANIMUS_EX_EARTH2
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 0
+Next = S_EGGANIMUS_EX_EARTH3
+Action A_PrepareRepeat
+Var1 = 5
+Var2 = 0
+
+State S_EGGANIMUS_EX_EARTH3
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 10
+Next = S_EGGANIMUS_EX_EARTH4
+Action A_PlaySound
+Var1 = sfx_crumbl
+Var2 = 0
+
+State S_EGGANIMUS_EX_EARTH4
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 3
+Next = S_EGGANIMUS_EX_EARTH5
+Action A_RemoteAction
+Var1 = -1
+Var2 = S_EGGANIMUS_EX_QUAKE
+
+State S_EGGANIMUS_EX_EARTH5
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_EARTH6
+Action A_FaceTarget
+
+State S_EGGANIMUS_EX_EARTH6
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 20
+Next = S_EGGANIMUS_EX_EARTH7
+Action A_Thrust
+Var1 = 20
+Var2 = 1
+
+State S_EGGANIMUS_EX_EARTH7
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 0
+Next = S_EGGANIMUS_EX_EARTH8
+Action A_Repeat
+Var1 = 5
+Var2 = S_EGGANIMUS_EX_EARTH3
+
+State S_EGGANIMUS_EX_EARTH8
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 30
+Next = S_EGGANIMUS_EX_ROAM0
+
+State S_EGGANIMUS_EX_QUAKE
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 2
+Next = S_EGGANIMUS_EX_FIRE9
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_QUAKE
+
+State S_EGGANIMUS_EX_WIND1
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_EX_WIND2
+Action None
+Var1 = 2
+Var2 = 4
+
+State S_EGGANIMUS_EX_WIND2
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 3
+Next = S_EGGANIMUS_EX_WIND3
+Action A_FindTracer
+Var1 = MT_EGGINVIS_THUN
+Var2 = 0
+
+State S_EGGANIMUS_EX_WIND3
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_WIND4
+Action A_SetObjectState
+Var1 = S_EGGINVIS_THUN1
+Var2 = 1
+
+State S_EGGANIMUS_EX_WIND4
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_WIND5
+Action None
+
+State S_EGGANIMUS_EX_WIND5
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 2
+Next = S_EGGANIMUS_EX_WIND6
+Action A_PrepareRepeat
+Var1 = 12
+
+State S_EGGANIMUS_EX_WIND6
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 2
+Next = S_EGGANIMUS_EX_WIND7
+Action A_FaceTarget
+
+State S_EGGANIMUS_EX_WIND7
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 17
+Next = S_EGGANIMUS_EX_WIND8
+Action A_FireShot
+Var1 = MT_ULTRATHUNDER2
+Var2 = 80
+
+State S_EGGANIMUS_EX_WIND8
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 6
+Next = S_EGGANIMUS_EX_WIND9
+Action A_Thrust
+Var1 = 20
+
+State S_EGGANIMUS_EX_WIND9
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 2
+Next = S_EGGANIMUS_EX_WIND10
+Action A_FindTracer
+Var1 = MT_EGGINVIS_THUN
+Var2 = 1
+
+State S_EGGANIMUS_EX_WIND10
+SpriteName = EGGM
+SpriteFrame = A
+Duration = 4
+Next = S_EGGANIMUS_EX_ROAM0
+Action A_Repeat
+Var1 = 12
+Var2 = S_EGGANIMUS_EX_WIND6
+
+State S_EGGANIMUS_EX_PAIN0
+SpriteName = EGGM
+SpriteFrame = T
+Duration = 1
+Next = S_EGGANIMUS_EX_PAIN1
+Action A_FindTarget
+Var1 = MT_PLAYER
+
+##Boss 2 Hurt
+State S_EGGANIMUS_EX_PAIN1
+SpriteName = EGGM
+SpriteFrame = T
+Duration = 24
+Next = S_EGGANIMUS_EX_PAIN2
+Action A_DualAction
+Var1 = S_EGGMOBILE_PAIN
+Var2 = S_BossXChaseA
+
+State S_EGGANIMUS_EX_PAIN2
+SpriteName = EGGM
+SpriteFrame = B|FF_ANIMATE
+Duration = 8
+Next = S_EGGANIMUS_EX_PAIN3
+Action A_ForceStop
+
+State S_EGGANIMUS_EX_PAIN3
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 2
+Next = S_EGGANIMUS_EX_PAIN4
+#Action A_SpawnObjectRelative
+#Var1 = 0
+#Var2 = MT_ULTIMA+60*FRACUNIT
+
+State S_EGGANIMUS_EX_PAIN4
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 20
+Next = S_EGGANIMUS_EX_PAIN5
+Action A_PlaySound
+Var1 = sfx_s3kb3
+
+State S_EGGANIMUS_EX_PAIN5
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 2
+Next = S_EGGANIMUS_EX_PAIN6
+Action A_FaceTarget
+Var1 = 3
+Var2 = 4
+
+State S_EGGANIMUS_EX_PAIN6
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_EX_PAIN7
+Action None
+Action A_PrepareRepeat
+Var1 = 17
+
+State S_EGGANIMUS_EX_PAIN7
+SpriteName = EGGM
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_PAIN7EX1
+Action None
+
+State S_EGGANIMUS_EX_PAIN7EX1
+SpriteName = NULL
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_PAIN7EX2
+Action None
+
+State S_EGGANIMUS_EX_PAIN7EX2
+SpriteName = NULL
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_HAX1
+Action A_Repeat
+Var1 = 17
+Var2 = S_EGGANIMUS_EX_PAIN7
+
+State S_EGGANIMUS_EX_HAX1
+SpriteName = NULL
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_HAX2
+Action A_FindTracer
+Var1 = MT_ULTRAICE_EX
+
+State S_EGGANIMUS_EX_HAX2
+SpriteName = NULL
+SpriteFrame = B
+Duration = 0
+Next = S_EGGANIMUS_EX_HAX3
+Action A_SetObjectState
+Var1 = S_ULTRAICE_EX3INVIS
+Var2 = 1
+
+State S_EGGANIMUS_EX_HAX3
+SpriteName = NULL
+SpriteFrame = B
+Duration = 0
+Next = S_EGGANIMUS_EX_PAIN7EX3
+Action A_RemoteAction
+Var1 = -2
+Var2 = S_ULTRAICE_EX3OFF
+
+State S_EGGANIMUS_EX_PAIN7EX3
+SpriteName = NULL
+SpriteFrame = B
+Duration = 40
+Next = S_EGGANIMUS_EX_PAIN7EX4
+Action A_PlaySound
+Var1 = sfx_bechrg
+
+State S_EGGANIMUS_EX_PAIN7EX4
+SpriteName = NULL
+SpriteFrame = B
+Duration = 30
+Next = S_EGGANIMUS_EX_HAX4
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_METEOR+700*FRACUNIT
+
+State S_EGGANIMUS_EX_HAX4
+SpriteName = NULL
+SpriteFrame = B
+Duration = 1
+Next = S_EGGANIMUS_EX_HAX5
+Action A_FindTracer
+Var1 = MT_ULTRAICE_EX
+
+State S_EGGANIMUS_EX_HAX5
+SpriteName = NULL
+SpriteFrame = B
+Duration = 0
+Next = S_EGGANIMUS_EX_HAX6
+Action A_SetObjectState
+Var1 = S_ULTRAICE_EX3
+Var2 = 1
+
+State S_EGGANIMUS_EX_HAX6
+SpriteName = NULL
+SpriteFrame = B
+Duration = 0
+Next = S_EGGANIMUS_EX_PAIN8
+Action A_RemoteAction
+Var1 = -2
+Var2 = S_ULTRAICE_EX3ON
+
+State S_EGGANIMUS_EX_PAIN8
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 2
+Next = S_EGGANIMUS_EX_PAIN12
+Action A_FaceTarget
+
+State S_EGGANIMUS_EX_PAIN9
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 2
+Next = S_EGGANIMUS_EX_PAIN10
+Action A_ChangeAngleRelative
+Var1 = 75
+Var2 = 105
+
+State S_EGGANIMUS_EX_PAIN10
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 16
+Next = S_EGGANIMUS_EX_PAIN11
+Action A_Thrust
+Var1 = 20
+
+State S_EGGANIMUS_EX_PAIN11
+SpriteName = EGGM
+SpriteFrame = E
+Duration = 1
+Next = S_EGGANIMUS_EX_PAIN12
+Action A_Thrust
+Var1 = 5
+Var2 = 1
+
+State S_EGGANIMUS_EX_PAIN12
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_EX_PAIN13
+Action A_Boss5Calm
+
+State S_EGGANIMUS_EX_PAIN13
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 1
+Next = S_EGGANIMUS_EX_CHOOSE0
+Action None
+
+##Hijacking the regular death because we gotta spawn in the BIG BOY
+State S_EGGANIMUS_EX_DIE1
+SpriteName = EGGM
+SpriteFrame = U
+Duration = 35
+Next = S_EGGANIMUS_EX_DIE1EX1
+Action A_PrepareRepeat
+Var1 = 50
+
+State S_EGGANIMUS_EX_DIE1EX1
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 35
+Next = S_EGGANIMUS_EX_DIE1EX2
+Action A_PlaySound
+Var1 = sfx_s3k7a
+
+State S_EGGANIMUS_EX_DIE1EX2
+SpriteName = EGGM
+SpriteFrame = F
+Duration = 4
+Next = S_EGGANIMUS_EX_DIE2
+Action A_SpawnObjectRelative
+Var2 = MT_ULTIMA-60*FRACUNIT
+
+State S_EGGANIMUS_EX_DIE2
+SpriteName = EGGM
+SpriteFrame = W
+Duration = 8
+Next = S_EGGANIMUS_EX_DIE3
+Action A_Fall
+
+State S_EGGANIMUS_EX_DIE3
+SpriteName = EGGM
+SpriteFrame = W
+Duration = 4
+Next = S_EGGANIMUS_EX_DIE4
+Action A_BossScream
+
+State S_EGGANIMUS_EX_DIE4
+SpriteName = EGGM
+SpriteFrame = W
+Duration = 0
+Next = S_EGGANIMUS_EX_DIE5
+Action A_Repeat
+Var1 = 50
+Var2 = S_EGGANIMUS_EX_DIE3
+
+State S_EGGANIMUS_EX_DIE5
+SpriteName = EGGM
+SpriteFrame = W
+Duration = -1
+Next = S_NULL
+Action A_ForceWin
+
+
+Object MT_ULTRAFIRE_EX
+MapThingNum = -1
+SpawnState = S_ULTRAFIRE_EX1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_s3kc2s
+AttackSound = sfx_None
+PainChance = 0
+PainSound = sfx_None
+DeathState = S_ULTRAFIRE_EX4
+DeathSound = sfx_None
+Speed = 20*FRACUNIT
+Radius = 15*FRACUNIT
+Height = 24*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_ULTRAFIRE_EX1
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 1
+Next = S_ULTRAFIRE_EX2
+Action A_FindTarget
+Var1 = MT_EGGANIMUS_EX
+Var2 = 0
+
+State S_ULTRAFIRE_EX2
+SpriteName = FLME
+SpriteFrame = A
+Duration = 1
+Next = S_ULTRAFIRE_EX3
+Action A_SetScale
+Var1 = 5*FRACUNIT/2
+Var2 = 0
+
+State S_ULTRAFIRE_EX3
+SpriteName = FLME
+SpriteFrame = J
+Duration = 65
+Next = S_ULTRAFIRE_EX4
+Action A_ZThrust
+Var1 = -10
+Var2 = 1+FRACUNIT
+
+State S_ULTRAFIRE_EX4
+SpriteName = FLME
+SpriteFrame = A
+Duration = 40
+Next = S_ULTRAFIRE_EX5
+Action A_SetObjectFlags
+Var1 = MF_PAIN|MF_FIRE|MF_SPECIAL
+Var2 = 2
+
+State S_ULTRAFIRE_EX5
+SpriteName = FLME
+SpriteFrame = D
+Duration = 35
+Next = S_ULTRAFIRE_EX6
+Action A_ForceStop
+
+State S_ULTRAFIRE_EX6
+SpriteName = FLME
+SpriteFrame = 0
+Duration = 1
+Next = S_NULL
+Action A_OldRingExplode
+Var1 = MT_FLAMEJETFLAME
+
+Object MT_METEOR
+MapThingNum = -1
+SpawnState = S_METEOR1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_s3kc2s
+AttackSound = sfx_None
+PainChance = 0
+PainSound = sfx_None
+DeathState = S_METEOR4
+DeathSound = sfx_cybdth
+Speed = 10*FRACUNIT
+Radius = 24*FRACUNIT
+Height = 24*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_NOBLOCKMAP|MF_MISSILE|MF_NOGRAVITY|MF_RUNSPAWNFUNC
+
+State S_METEOR1
+SpriteName = ROIG
+SpriteFrame = A
+Duration = 20
+Next = S_METEOR2
+Action A_FindTarget
+Var1 = MT_EGGANIMUS_EX
+
+State S_METEOR2
+SpriteName = ROIG
+SpriteFrame = A
+Duration = 1
+Next = S_METEOR3
+Action A_SetScale
+Var1 = 5*FRACUNIT
+
+State S_METEOR3
+SpriteName = ROIG
+SpriteFrame = A
+Duration = 1
+Next = S_METEOR3
+Action A_ZThrust
+Var1 = -20
+Var2 = 1+FRACUNIT
+
+State S_METEOR4
+SpriteName = ROIG
+SpriteFrame = A
+Duration = 1
+Next = S_METEOR5
+Action A_NapalmScatter
+Var1 = MT_CYBRAKDEMON_NAPALM_BOMB_SMALL+(2<<16)
+Var2 = 256+(48<<16)
+
+State S_METEOR5
+SpriteName = ROIG
+SpriteFrame = A
+Duration = 1
+Next = S_METEOR6
+Action A_NapalmScatter
+Var1 = MT_CYBRAKDEMON_NAPALM_BOMB_SMALL+(3<<16)
+Var2 = 32<<16
+
+State S_METEOR6
+SpriteName = ROIG
+SpriteFrame = A
+Duration = 2
+Next = S_METEOR7
+Action A_BossScream
+Var1 = 1
+
+State S_METEOR7
+SpriteName = ROIG
+SpriteFrame = A
+Duration = 0
+Next = S_METEOR8
+Action A_Repeat
+Var1 = 30
+Var2 = S_METEOR6
+
+State S_METEOR8
+SpriteName = ROIG
+SpriteFrame = A
+Duration = 1
+Next = S_NULL
+Action A_OldRingExplode
+Var1 = MT_FLAMEJETFLAME
+
+
+Object MT_EGGINVIS
+#$Name Egg Invis (idk what this does)
+#$Sprite EGGMA1
+#$Category Mystic Realm Objects
+MapThingNum = 1671
+SpawnState = S_EGGINVIS
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_s3kc2s
+AttackSound = sfx_None
+PainChance = 0
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 10*FRACUNIT
+Radius = 24*FRACUNIT
+Height = 24*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_NOGRAVITY
+
+State S_EGGINVIS
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_EGGINVIS
+Action None
+
+State S_EGGINVIS_T1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 140
+Next = S_EGGINVIS_T2
+Action A_Thrust
+Var1 = 18
+Var2 = 1
+
+State S_EGGINVIS_T2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_EGGINVIS
+Action A_Thrust
+Var1 = -18
+Var2 = 1
+
+State S_EGGINVIS_HELPER
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_EGGINVIS
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_ULTRAFIRE_EX+200*FRACUNIT
+
+Object MT_ULTRAICE_EX
+MapThingNum = -1
+SpawnState = S_ULTRAICE_EX1
+SpawnHealth = 1000
+ReactionTime = 4
+SeeState = 0
+SeeSound = sfx_bexpld
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 8*FRACUNIT
+Radius = 18*FRACUNIT
+Height = 48*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_rocks1
+Flags = MF_PAIN|MF_NOGRAVITY|MF_NOCLIPHEIGHT|MF_NOCLIP|MF_RUNSPAWNFUNC
+
+State S_ULTRAICE_EX1
+SpriteName = AICE
+SpriteFrame = H|FF_FULLBRIGHT
+Duration = 1
+Next = S_ULTRAICE_EX2
+Action None
+
+State S_ULTRAICE_EX2
+SpriteName = AICE
+SpriteFrame = H|FF_FULLBRIGHT
+Duration = 5
+Next = S_ULTRAICE_EX3
+Action A_FindTarget
+Var1 = MT_EGGANIMUS_EX
+Var2 = 0
+
+State S_ULTRAICE_EX3
+SpriteName = AICE
+SpriteFrame = H|FF_FULLBRIGHT
+Duration = 1
+Next = S_ULTRAICE_EX3
+Action A_RotateSpikeBall
+Var1 = 0
+
+State S_ULTRAICE_EX3INVIS
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_ULTRAICE_EX3INVIS
+Action A_RotateSpikeBall
+Var1 = 0
+
+State S_ULTRAICE_EX3OFF
+Action A_SetObjectFlags
+Var1 = MF_PAIN
+Var2 = 1
+
+State S_ULTRAICE_EX3ON
+Action A_SetObjectFlags
+Var1 = MF_PAIN
+Var2 = 2
+
+Object MT_QUAKE
+MapThingNum = -1
+SpawnState = S_QUAKE1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_s3kc2s
+AttackSound = sfx_None
+PainChance = 0
+PainSound = sfx_None
+DeathState = S_METEOR4
+DeathSound = sfx_cybdth
+Speed = 10*FRACUNIT
+Radius = 24*FRACUNIT
+Height = 24*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_NOBLOCKMAP|MF_RUNSPAWNFUNC|MF_NOCLIPTHING
+
+State S_QUAKE1
+SpriteName = MNUD
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 1
+Next = S_QUAKE2
+Action A_FindTarget
+Var1 = MT_PLAYER
+Var2 = 0
+
+State S_QUAKE2
+SpriteName = MNUD
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 1
+Next = S_QUAKE3
+Action A_SetScale
+Var1 = FRACUNIT/2
+Var2 = 0
+
+State S_QUAKE3
+SpriteName = MNUD
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 1
+Next = S_QUAKE4
+Action A_DualAction
+Var1 = S_QUAKE_CHASE
+Var2 = S_QUAKE_SCALE
+
+State S_QUAKE4
+SpriteName = MNUD
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 1
+Next = S_QUAKE5
+Action A_Repeat
+Var1 = 55
+Var2 = S_QUAKE3
+
+State S_QUAKE5
+SpriteName = MNUD
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 15
+Next = S_QUAKE6
+Action A_ForceStop
+
+State S_QUAKE6
+SpriteName = MNUD
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 25
+Next = S_QUAKE7
+Action A_PlaySound
+Var1 = sfx_rocks2
+
+State S_QUAKE7
+SpriteName = MNUD
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 20
+Next = S_QUAKE8
+Action A_NapalmScatter
+Var1 = MT_FALLINGROCK+5*FRACUNIT
+Var2 = 240+70*FRACUNIT
+
+State S_QUAKE8
+SpriteName = MNUD
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 20
+Next = S_NULL
+Action A_NapalmScatter
+Var1 = MT_ULTRAROCK+5*FRACUNIT
+Var2 = 240+105*FRACUNIT
+
+State S_QUAKE_SCALE
+Action A_SetScale
+Var1 = 3*FRACUNIT
+Var2 = 1
+
+State S_QUAKE_CHASE
+Action A_HomingChase
+Var1 = 10*FRACUNIT
+Var2 = 0
+
+Object MT_ULTRAROCK
+MapThingNum = -1
+SpawnState = S_ULTRAROCK1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 10*FRACUNIT
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 0
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_PAIN|MF_BOUNCE|MF_RUNSPAWNFUNC
+
+State S_ULTRAROCK1
+SpriteName = ROIK
+SpriteFrame = A|FF_ANIMATE
+Duration = 1
+Next = S_ULTRAROCK2
+Action A_FindTarget
+Var1 = MT_PLAYER
+Var2 = 0
+
+State S_ULTRAROCK2
+SpriteName = ROIK
+SpriteFrame = A|FF_ANIMATE
+Duration = 35
+Next = S_ULTRAROCK3
+Action None
+Var1 = 4
+Var2 = 3
+
+State S_ULTRAROCK3
+SpriteName = ROIK
+SpriteFrame = A|FF_ANIMATE
+Duration = 1
+Next = S_NULL
+Action A_FireShot
+Var1 = MT_ULTRAROCK2
+Var2 = 0
+
+Object MT_ULTRAROCK2
+MapThingNum = -1
+SpawnState = S_ULTRAROCK4
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 35*FRACUNIT
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 0
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_PAIN|MF_BOUNCE
+
+State S_ULTRAROCK4
+SpriteName = ROIK
+SpriteFrame = A|FF_ANIMATE
+Duration = 45
+Next = S_NULL
+Action None
+Var1 = 4
+Var2 = 3
+
+Object MT_ULTIMA
+MapThingNum = -1
+SpawnState = S_ULTIMA1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 40*FRACUNIT
+Radius = 20*FRACUNIT
+Height = 20*FRACUNIT
+DispOffset = 0
+Mass = 0
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_NOGRAVITY|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT
+
+State S_ULTIMA1
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 3
+Next = S_ULTIMA2
+Action None
+
+State S_ULTIMA2
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 5
+Next = S_ULTIMA3
+
+State S_ULTIMA3
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 1
+Next = S_ULTIMA4
+
+State S_ULTIMA4
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 5
+Next = S_ULTIMA4EX
+
+State S_ULTIMA4EX
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 0
+Next = S_ULTIMA4EX2
+Action A_SetScale
+Var1 = FRACUNIT/4
+
+State S_ULTIMA4EX2
+SpriteName = WCRY
+SpriteFrame = E
+Duration = 0
+Next = S_ULTIMA5
+Action A_SetObjectFlags
+Var1 = MF_PAIN
+Var2 = 2
+
+State S_ULTIMA5
+SpriteName = ULTI
+SpriteFrame = A
+Duration = 1
+Next = S_ULTIMA6
+Action A_SetScale
+Var1 = 6*FRACUNIT
+Var2 = 1
+
+State S_ULTIMA6
+SpriteName = ULTI
+SpriteFrame = A|FF_TRANS40|FF_ANIMATE
+Duration = 140
+Next = S_ULTIMA7
+Var1 = 3
+Var2 = 3
+
+State S_ULTIMA7
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_NULL
+Action A_PlaySound
+Var1 = sfx_bexpld
+Var2 = 0
+
+
+Object MT_EGGINVIS_THUN
+#$Name Egg invis thun (idk what this does)
+#$Sprite EGGMA1
+#$Category Mystic Realm Objects
+MapThingNum = 1672
+SpawnState = S_EGGINVIS_THUN
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_s3kc2s
+AttackSound = sfx_None
+PainChance = 0
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 10*FRACUNIT
+Radius = 24*FRACUNIT
+Height = 24*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags = MF_NOGRAVITY
+
+State S_EGGINVIS_THUN
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_EGGINVIS_THUN
+Action None
+
+State S_EGGINVIS_THUN1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_EGGINVIS_THUN2
+Action A_FindTarget
+Var1 = MT_EGGANIMUS_EX
+Var2 = 0
+
+State S_EGGINVIS_THUN2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_EGGINVIS_THUN3
+Action A_PlaySound
+Var1 = sfx_litng3
+Var2 = 0
+
+State S_EGGINVIS_THUN3
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_EGGINVIS_THUN4
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_ULTRABOLT
+
+State S_EGGINVIS_THUN4
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_EGGINVIS_THUN5
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_ULTRABOLT+100*FRACUNIT
+
+State S_EGGINVIS_THUN5
+SpriteName = NULL
+SpriteFrame = A
+Duration = 208
+Next = S_EGGINVIS_THUN6
+Action A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_ULTRABOLT+200*FRACUNIT
+
+State S_EGGINVIS_THUN6
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_EGGINVIS_THUN7
+Action A_PlaySound
+Var1 = sfx_rail1
+Var2 = 0
+
+State S_EGGINVIS_THUN7
+SpriteName = NULL
+SpriteFrame = A
+Duration = 70
+Next = S_EGGINVIS_THUN
+Action A_MultiShot
+Var1 = 8+MT_ULTRARETALIATORFREE*FRACUNIT
+Var2 = -36
+
+Object MT_ULTRABOLT
+MapThingNum = -1
+SpawnState = S_ULTRABOLT1
+SpawnHealth = 1000
+ReactionTime = 140
+SeeState = 0
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainChance = 255
+PainSound = sfx_None
+DeathState = S_NULL
+DeathSound = sfx_None
+Speed = 40*FRACUNIT
+Radius = 20*FRACUNIT
+Height = 130*FRACUNIT
+DispOffset = 0
+Mass = 0
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_PAIN|MF_NOGRAVITY|MF_RUNSPAWNFUNC|MF_NOCLIPHEIGHT
+
+State S_ULTRABOLT1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_ULTRABOLT2
+Action A_FindTarget
+Var1 = MT_EGGANIMUS_EX
+Var2 = 0
+
+State S_ULTRABOLT2
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_ULTRABOLT3
+Action A_SetFuse
+Var1 = 210
+Var2 = 1
+
+State S_ULTRABOLT3
+SpriteName = THUN
+SpriteFrame = A|FF_ANIMATE
+Duration = 20
+Next = S_ULTRABOLT4
+Action None
+Var1 = 2
+Var2 = 2
+
+State S_ULTRABOLT4
+SpriteName = THUN
+SpriteFrame = A|FF_ANIMATE
+Duration = 1
+Next = S_ULTRABOLT5
+Action A_PlaySound
+Var1 = sfx_litng2
+Var2 = 0
+
+State S_ULTRABOLT5
+SpriteName = THUN
+SpriteFrame = A
+Duration = 1
+Next = S_ULTRABOLT6
+Action A_TrapShot
+Var1 = MT_ULTRARETALIATORFREE
+Var2 = -20*FRACUNIT
+
+State S_ULTRABOLT6
+SpriteName = THUN
+SpriteFrame = A
+Duration = 1
+Next = S_ULTRABOLT3
+Action A_ChangeAngleRelative
+Var1 = 30
+Var2 = 30

@@ -1,0 +1,86 @@
+Freeslot
+S_OLDCRAWLA_STND
+S_OLDCRAWLA_RUN1
+S_OLDCRAWLA_RUN2
+S_OLDCRAWLA_RUN3
+S_OLDCRAWLA_RUN4
+S_OLDCRAWLA_RUN5
+S_OLDCRAWLA_RUN6
+S_OLDCRAWLA_RUN7
+SPR_OPOS
+
+State S_OLDCRAWLA_STND
+SpriteName = RCRW
+SpriteFrame = A
+Duration = 5
+Next = S_OLDCRAWLA_STND
+Action A_Look
+
+State S_OLDCRAWLA_RUN1
+SpriteName = RCRW
+SpriteFrame = A
+Duration = 5
+Next = S_OLDCRAWLA_RUN2
+Action = A_Chase
+
+State S_OLDCRAWLA_RUN2
+SpriteName = RCRW
+SpriteFrame = B
+Duration = 5
+Next = S_OLDCRAWLA_RUN3
+Action = A_Chase
+
+State S_OLDCRAWLA_RUN3
+SpriteName = RCRW
+SpriteFrame = C
+Duration = 5
+Next = S_OLDCRAWLA_RUN4
+Action = A_Chase
+
+State S_OLDCRAWLA_RUN4
+SpriteName = RCRW
+SpriteFrame = D
+Duration = 5
+Next = S_OLDCRAWLA_RUN5
+Action = A_Chase
+
+State S_OLDCRAWLA_RUN5
+SpriteName = RCRW
+SpriteFrame = E
+Duration = 5
+Next = S_OLDCRAWLA_RUN6
+Action = A_Chase
+
+State S_OLDCRAWLA_RUN6
+SpriteName = RCRW
+SpriteFrame = F
+Duration = 5
+Next = S_OLDCRAWLA_RUN1
+Action = A_Chase
+
+
+Object MT_OLDCRAWLA
+MapThingNum = 3107
+SpawnState = S_OLDCRAWLA_STND
+SpawnHealth = 300
+SeeState = S_OLDCRAWLA_RUN1
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainState = S_NULL
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_pop
+ActiveSound = sfx_None
+RaiseState = S_NULL
+ReactionTime = 35
+PainChance = 200
+Speed = 1
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+Flags = MF_ENEMY|MF_SPECIAL|MF_BOSS

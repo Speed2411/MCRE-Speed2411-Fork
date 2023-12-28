@@ -1,0 +1,72 @@
+freeslot
+SPR_UBUZ
+S_UBUZLOOK1
+S_UBUZLOOK2
+S_UBUZMOVE1
+S_UBUZMOVE2
+
+# Unused Cyan Buzz
+State S_UBUZLOOK1
+SpriteName = UBUZ
+SpriteFrame = A
+Duration = 1
+Next = S_UBUZLOOK2
+Action = A_Look
+Var1 = 0
+Var2 = 0
+
+State S_UBUZLOOK2
+SpriteName = UBUZ
+SpriteFrame = B
+Duration = 1
+Next = S_UBUZLOOK1
+Action = A_Look
+Var1 = 0
+Var2 = 0
+
+State S_UBUZMOVE1
+SpriteName = UBUZ
+SpriteFrame = A
+Duration = 1
+Next = S_UBUZMOVE2
+Action = A_BuzzFly
+Var1 = sfx_buzz4
+Var2 = 0
+
+State S_UBUZMOVE2
+SpriteName = UBUZ
+SpriteFrame = B
+Duration = 1
+Next = S_UBUZMOVE1
+Action = A_BuzzFly
+Var1 = 0
+Var2 = 0
+ 
+Object MT_ULTRABUZZ
+#$Name Cyan Buzz
+#$Sprite UBUZA1
+#$Category Enemies
+MapThingNum = 2304
+SpawnState = S_UBUZLOOK1
+SpawnHealth = 1
+SeeState = S_UBUZMOVE1
+SeeSound = sfx_None
+ReactionTime = 2
+AttackSound = sfx_None
+PainState = S_NULL
+PainChance = 200
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD_FLICKY
+XDeathState = S_NULL
+DeathSound = sfx_pop
+Speed = 16*FRACUNIT
+Radius = 20*FRACUNIT
+Height = 24*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+ActiveSound = sfx_None
+Flags = MF_SLIDEME|MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY
+RaiseState = S_NULL

@@ -1,0 +1,1318 @@
+#------------------------------------------------------------------------------------
+# Configuration File for Mystic Realm
+#------------------------------------------------------------------------------------
+# Mystic Realm: Community Edition, a level pack for Sonic Robo Blast 2 Version 2.2
+#------------------------------------------------------------------------------------
+# This is the Mystic Realm SOC, or SRB2 Object Configuration. Originally all the data
+#  was stored here in MAINCFG, but now SRB2 supports splitting the SOC into multiple
+#  lumps for organization.
+# All text after the hash is a comment, and is ignored by SRB2 when it reads the
+#  file.
+#------------------------------------------------------------------------------------
+
+# This line tells the game what version this mod is intended for.
+
+SRB2 220
+
+# MainCFG section, sets various global variables and what files for saved data.
+
+Maincfg Category
+IntroToPlay = 1
+NumDemos = 4
+DemoDelayTime = 60*TICRATE
+TitlePicsMode = NONE
+LoopTitle = true
+TitleScrollSpeed = 20
+TitlePicsScalesAvailable = 4,5
+TitleMap = T0
+TutorialMap = 0
+CustomVersion = CE 0.4.3
+SPStage_Start = 99
+SPMarathon_Start = A1
+UseBlackRock = true
+TutorialMap = RD
+Gamedata = sl_mrce-beta.dat
+
+# Clear removes any vanilla configuration information
+
+Clear All
+
+# Unlockables explanation: 
+#  https://wiki.srb2.org/wiki/Custom_unlockables_and_emblems
+
+# Condition: clear JCZ3
+ConditionSet 1
+Condition1 = MapBeaten A3
+
+# Condition: clear VFZ3
+ConditionSet 2
+Condition1 = MapBeaten A9
+
+# Condition: beat the game (clear AGZ3 or DWZ)
+ConditionSet 3
+Condition1 = GameClear
+
+# Condition: beat the game w/ all emeralds (clear DWZ)
+ConditionSet 4
+Condition1 = AllEmeralds
+
+# Condition: obtain 5 emblems
+ConditionSet 5
+Condition1 = TotalEmblems 5
+
+# Condition: obtain 30 emblems
+ConditionSet 6
+Condition1 = TotalEmblems 30
+
+# Condition: obtain 60 emblems
+ConditionSet 7
+Condition1 = TotalEmblems 60
+
+# Condition: obtain 90 emblems
+ConditionSet 8
+Condition1 = TotalEmblems 90
+
+# Condition: obtain 100 emblems
+ConditionSet 9
+Condition1 = TotalEmblems 100
+
+# Condition: obtain 150 emblems
+ConditionSet 10
+Condition1 = TotalEmblems 150
+
+# Condition: find the inner sanctum an obtain a hyper form
+ConditionSet 11
+Condition1 = MapAllEmeralds 130
+
+
+#----------------------------------------------------#
+
+
+# Record Attack
+
+Unlockable 1
+Name = Record Attack
+Objective = Complete Jade Coast Zone
+Type = RecordAttack
+ConditionSet = 1
+
+Unlockable 2
+Name = Sound Test
+Objective = Complete Verdant Forest Zone
+Type = SoundTest
+Height = 20
+ConditionSet = 2
+Var = 2
+
+
+# Stages
+
+#Unlockable 3
+#Name = Golden Sands Zone
+#Objective = Get 5 emblems
+#ConditionSet = 5
+#Type = Warp
+#Var = BT
+
+Unlockable 4
+Name = Primordial Abyss Zone
+Objective = Get 100 emblems
+ConditionSet = 9
+Type = Warp
+Var = BU
+
+
+# Level Selects
+
+Unlockable 5
+Name = Level Select
+Height = 50
+Objective = Beat the game
+ConditionSet = 3
+Type = LevelSelect
+Var = 1
+
+Unlockable 6
+Name = Secret Levels
+Objective = Unlock a secret level
+Height = 60
+ConditionSet = 5
+Type = LevelSelect
+Var = 2
+NoCecho = true
+
+# Emblem Hints
+
+Unlockable 7
+Name = Emblem Hints
+Objective = Get 30 emblems
+Height = 0
+ConditionSet = -1
+Type = EmblemHints
+
+Unlockable 8
+Name = Emblem Radar
+Objective = Get 60 emblems
+Height = 0
+ConditionSet = 7
+Type = ItemFinder
+
+
+# Other
+
+Unlockable 9
+Name = Play Credits
+Objective = Complete the game
+Height = 100
+ConditionSet = 3
+Type = Warp
+Var = 98
+NoCecho = true
+
+Unlockable 10
+Name = Second Quest
+Objective = Complete the game with all emeralds
+ConditionSet = 4
+NoChecklist = true
+Type = None
+
+Unlockable 11
+Name = Making of Mystic Realm
+Objective = Get 90 emblems
+Height = 90
+ConditionSet = 8
+Type = Warp
+Var = A0
+
+Unlockable 12
+Name = Pandora's Box
+Objective = Get 150 emblems
+Type = Pandora
+ConditionSet = 10
+
+# Emblem Data. 
+#  https://wiki.srb2.org/wiki/Custom_unlockables_and_emblems
+
+ExtraEmblem 1
+Name = Game Complete
+Objective = Complete 1P Mode
+ConditionSet = 3
+SPRITE = F
+COLOR = SKINCOLOR_LAVENDER
+
+ExtraEmblem 2
+Name = All Emerald Clear
+Objective = Complete 1P Mode w/ All Emeralds
+ConditionSet = 4
+SPRITE = H
+COLOR = SKINCOLOR_GREEN
+
+Emblem
+Type = Time
+Var = 35*TICRATE
+MapNum = A1
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 300
+MapNum = A1
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = This one is easy.\\It's in a circle of rings.\\Just run straight ahead.
+Type = Global
+Tag = 0
+MapNum = A1
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = High above the goal.\\Fly or climb up to the cave.\\The prize lies inside.
+Type = Global
+Tag = 1
+MapNum = A1
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = It's a common trope:\\A secret hidden behind\\the lone waterfall.
+Type = Global
+Tag = 2
+MapNum = A1
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = A bridge tunnel lies above.\\You ever wondered what lies\\on top?.
+Type = Global
+Tag = 3
+MapNum = A1
+Sprite = D
+Color = SKINCOLOR_PURPLE
+
+Emblem
+Hint = A small lake.\\Don't take a dip.\\Look up and you shall see.
+Type = Global
+Tag = 4
+MapNum = A1
+Sprite = E
+Color = SKINCOLOR_ORANGE
+
+Emblem
+Type = Time
+Var = 50*TICRATE
+MapNum = A2
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 400
+MapNum = A2
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = You cannot progress\\without going in a cave.\\Try searching high first.
+Type = Global
+Tag = 0
+MapNum = A2
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = A giant waterfall from\\above. Follow it down into\\a small cave.
+Type = Global
+Tag = 1
+MapNum = A2
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = I climbed so far up,\\I can see my house from here!\\...Well, it's someone's house.
+Type = Global
+Tag = 2
+MapNum = A2
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = Inside the coral cave.\\Spindash across the\\water into springs.
+Type = Global
+Tag = 3
+MapNum = A2
+Sprite = D
+Color = SKINCOLOR_PURPLE
+
+Emblem
+Hint = Two paths become one.\\turn back to find another.\\Follow to the shrine.
+Type = Global
+Tag = 4
+MapNum = A2
+Sprite = I
+Color = SKINCOLOR_BLACK
+
+Emblem
+Type = Score
+Var = 10000
+MapNum = A3
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Type = Time
+Var = 30*TICRATE
+MapNum = A3
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Time
+Var = 120*TICRATE
+MapNum = A4
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 500
+MapNum = A4
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Jump on the platform,\\turn left, then go through the goop.\\It's right at the start.
+Type = Global
+Tag = 0
+MapNum = A4
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = After a small tunnel,\\look up for a small cliff\\Some awaits at the top.
+Type = Global
+Tag = 1
+MapNum = A4
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = A twin goop falls.\\Where does it come from?\\Only one wait to find out?
+Type = Global
+Tag = 2
+MapNum = A4
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = Inside a cave.\\Tons of falling goop.\\One of them seems different.
+Type = Global
+Tag = 3
+MapNum = A4
+Sprite = D
+Color = SKINCOLOR_PURPLE
+
+Emblem
+Hint = Find a tunnel in\\the room full of moving goop.\\Jump when it's lowest.
+Type = Global
+Tag = 4
+MapNum = A4
+Sprite = I
+Color = SKINCOLOR_BLACK
+
+Emblem
+Type = Score
+Var = 10000
+MapNum = A6
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Type = Time
+Var = 30*TICRATE
+MapNum = A6
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Time
+Var = 40*TICRATE
+MapNum = A7
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 250
+MapNum = A7
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Inside a big tree.\\Normally you would go down.\\But instead, go up.
+Type = Global
+Tag = 0
+MapNum = A7
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = It's between two trees,\\in the deep part of a lake.\\Near a whirlwind shield.
+Type = Global
+Tag = 1
+MapNum = A7
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Up above a lake,\\there is a hole in the trees.\\Fly or use a spring.
+Type = Global
+Tag = 2
+MapNum = A7
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Time
+Var = 50*TICRATE
+MapNum = A8
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 200
+MapNum = A8
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = After jumping down,\\Amongst roots and glowing ponds.\\The village Tree Shrine.
+Type = Global
+Tag = 3
+MapNum = A8
+Sprite = I
+Color = SKINCOLOR_BLACK
+
+Emblem
+Type = Score
+Var = 10000
+MapNum = A9
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Type = Time
+Var = 20*TICRATE
+MapNum = A9
+Sprite = T
+Color = SKINCOLOR_GREY
+
+
+Emblem
+Type = Time
+Var = 105*TICRATE
+MapNum = AA
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 400
+MapNum = AA
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Soon after the start,\\near the top of a big machine,\\right behind a torch.
+Type = Global
+Tag = 0
+MapNum = AA
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = The crawlas are digging everywhere!\\What are they looking for?\\try checking their holes.
+Type = Global
+Tag = 1
+MapNum = AA
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Red spring to great heights,\\then turn around and jump through\\the hole in the wall.
+Type = Global
+Tag = 2
+MapNum = AA
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = A locked metal door,\\3 yellow buttons might open it,\\but where are they?
+Type = Global
+Tag = 3
+MapNum = AA
+Sprite = D
+Color = SKINCOLOR_PURPLE
+
+Emblem
+Hint = Check around the cliffs\\before you go through the caves.\\A secret tunnel.
+Type = Global
+Tag = 4
+MapNum = AA
+Sprite = H
+Color = SKINCOLOR_YELLOW
+
+
+Emblem
+Type = Time
+Var = 105*TICRATE
+MapNum = AB
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 400
+MapNum = AB
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Type = Global
+Tag = 0
+MapNum = AB
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Type = Global
+Tag = 1
+MapNum = AB
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Type = Global
+Tag = 2
+MapNum = AB
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Global
+Tag = 3
+MapNum = AB
+Sprite = D
+Color = SKINCOLOR_PURPLE
+
+Emblem
+Type = Global
+Tag = 4
+MapNum = AB
+Sprite = I
+Color = SKINCOLOR_BLACK
+
+Emblem
+Type = Score
+Var = 10000
+MapNum = AC
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Type = Time
+Var = 30*TICRATE
+MapNum = AC
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Time
+Var = 150*TICRATE
+MapNum = AD
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 450
+MapNum = AD
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = You better not go straight through the waterfall.
+Type = Global
+Tag = 0
+MapNum = AD
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = There's something at the top of the freezing water cave.
+Type = Global
+Tag = 1
+MapNum = AD
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Hidden passage underneath\\a big lake. You may also need a\\Water Shield and a powerful punch!
+Type = Global
+Tag = 2
+MapNum = AD
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = Take a cautious look at the small lake.
+Type = Global
+Tag = 3
+MapNum = AD
+Sprite = D
+Color = SKINCOLOR_PURPLE
+
+Emblem
+Hint = Find a way to climb up to the well,\\located in the final pathway,\\with the jerboa's powers.
+Type = Global
+Tag = 4
+MapNum = AD
+Sprite = E
+Color = SKINCOLOR_ORANGE
+
+Emblem
+Type = Time
+Var = 30*TICRATE
+MapNum = AE
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 200
+MapNum = AE
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = A flowing river\\covered by a sheet of ice.\\Secrets underneath.
+Type = Global
+Tag = 0
+MapNum = AE
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = A dangerous jump\\in an underwater path.\\A hole in the ice.
+Type = Global
+Tag = 1
+MapNum = AE
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = A hole in the ice\\right before the mystic shrine.\\There's good stuff down there.
+Type = Global
+Tag = 2
+MapNum = AE
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = There's snow on the ice\\just as soon as you can see\\Eggman's ugly face.
+Type = Global
+Tag = 3
+MapNum = AE
+Sprite = I
+Color = SKINCOLOR_BLACK
+
+Emblem
+Type = Score
+Var = 10000
+MapNum = AF
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Type = Time
+Var = 30*TICRATE
+MapNum = AF
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Time
+Var = 80*TICRATE
+MapNum = AG
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 300
+MapNum = AG
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = The most sunken part.\\A deep, little island in\\the ruined left path.
+Type = Global
+Tag = 0
+MapNum = AG
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Near the first post, check\\out the rightmost waterfall.\\Where does it come from?
+Type = Global
+Tag = 1
+MapNum = AG
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = The last red button\\will unlock a door that is\\near the last starpost.
+Type = Global
+Tag = 2
+MapNum = AG
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Time
+Var = 50*TICRATE
+MapNum = AH
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 250
+MapNum = AH
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = On the lower path,\\right before the last big room,\\look behind the crates.
+Type = Global
+Tag = 0
+MapNum = AH
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = On the upper path,\\right before the last big room,\\look behind the crates.
+Type = Global
+Tag = 1
+MapNum = AH
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Buttons unlock doors;\\the last one opens a door\\to one more button.
+Type = Global
+Tag = 2
+MapNum = AH
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = See the grey boxes\\just before the final jump?\\Go around the side.
+Type = Global
+Tag = 3
+MapNum = AH
+Sprite = I
+Color = SKINCOLOR_BLACK
+
+Emblem
+Type = Score
+Var = 10000
+MapNum = AI
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Type = Time
+Var = 30*TICRATE
+MapNum = AI
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Time
+Var = 20*TICRATE
+MapNum = AJ
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 150
+MapNum = AJ
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Triangle buttons\\on both the left and right paths\\will open a door.
+Type = Global
+Tag = 3
+MapNum = AK
+Sprite = I
+Color = SKINCOLOR_BLACK
+
+Emblem
+Type = Time
+Var = 70*TICRATE
+MapNum = AK
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 300
+MapNum = AK
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = A chandelier hangs\\from the ceiling of a room\\where two paths converge.
+Type = Global
+Tag = 0
+MapNum = AK
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = The second left path's\\top entrance is blocked with bars.\\Try going around.
+Type = Global
+Tag = 1
+MapNum = AK
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Beginning fountain,\\second left and right paths, and\\the final temple.
+Type = Global
+Tag = 2
+MapNum = AK
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Time
+Var = 70*TICRATE
+MapNum = AL
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Hint = There is a way to\\get outside of the main room.\\Look for a small hole.
+Type = Global
+Tag = 0
+MapNum = AL
+Sprite = G
+Color = SKINCOLOR_YELLOW
+
+Emblem
+Type = Score
+Var = 10000
+MapNum = AM
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Type = Time
+Var = 30*TICRATE
+MapNum = AM
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Time
+Var = 45*TICRATE
+MapNum = AN
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 225
+MapNum = AN
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = When you cross a bridge,\\jump to a platform below.\\There lies your emblem.
+Type = Global
+Tag = 0
+MapNum = AN
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Three ring monitors,\\on a rock in a cavern.\\You'll need to climb up.
+Type = Global
+Tag = 1
+MapNum = AN
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Flying off a ramp.\\Before the checkpoint, look back.\\Jump and break some spikes.
+Type = Global
+Tag = 2
+MapNum = AN
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = Bounce from a plateau\\and go flying through the sky\\to reach the platform.
+Type = Global
+Tag = 3
+MapNum = AN
+Sprite = D
+Color = SKINCOLOR_PURPLE
+
+Emblem
+Hint = When life gives you a\\big old ramp to slide off of,\\get mad! Rebound back!
+Type = Global
+Tag = 4
+MapNum = AN
+Sprite = E
+Color = SKINCOLOR_ORANGE
+
+Emblem
+Type = Time
+Var = 40*TICRATE
+MapNum = AO
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 150
+MapNum = AO
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Go out the side door\\and climb over the big wall.\\Flying will work too.
+Type = Global
+Tag = 0
+MapNum = AO
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = At the first starpost,\\turn to your right. You will see\\a crushing gauntlet.
+Type = Global
+Tag = 1
+MapNum = AO
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = At the second post,\\turn to your right. You will see\\a puddle of goop.
+Type = Global
+Tag = 2
+MapNum = AO
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Time
+Var = 60*TICRATE
+MapNum = AP
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 50
+MapNum = AP
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Well, so far so good.\\You've made it to the star post.\\Why not look around?
+Type = Global
+Tag = 0
+MapNum = AP
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Emerald in sight...\\But don't be in such a rush.\\Take a look around.
+Type = Global
+Tag = 1
+MapNum = AP
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Alright! You did it!\\You made it through the forest!\\But go back for this...
+Type = Global
+Tag = 2
+MapNum = AP
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Time
+Var = 70*TICRATE
+MapNum = AQ
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 200
+MapNum = AQ
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Just beyond crushers,\\and underneath an orange pipe.\\Not far from the start.
+Type = Global
+Tag = 0
+MapNum = AQ
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Go where you can find\\Attraction in the corner.\\Listen for some steam.
+Type = Global
+Tag = 1
+MapNum = AQ
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Emerald in sight!\\Lava flows from the ceiling,\\look behind the falls.
+Type = Global
+Tag = 2
+MapNum = AQ
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Time
+Var = 60*TICRATE
+MapNum = AR
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 150
+MapNum = AR
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Taking the left path,\\look behind a pillar at\\the second star post.
+Type = Global
+Tag = 0
+MapNum = AR
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Taking the right path,\\look behind a pillar at\\the second star post.
+Type = Global
+Tag = 1
+MapNum = AR
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Look along the walls\\in the last big room that's filled\\with pillars and springs.
+Type = Global
+Tag = 2
+MapNum = AR
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Time
+Var = 70*TICRATE
+MapNum = AS
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 200
+MapNum = AS
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Sitting on top of\\the first turret you see when\\you go to the left.
+Type = Global
+Tag = 0
+MapNum = AS
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Double trouble bridge.\\Jump down to get to safety,\\and grab some goodies.
+Type = Global
+Tag = 1
+MapNum = AS
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = Acid flowing out\\of the building near the end.\\Better bring a shield.
+Type = Global
+Tag = 2
+MapNum = AS
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = Find a loose statue,\\push it down a dried up stream.\\A secret button!
+Type = Global
+Tag = 3
+MapNum = AT
+Sprite = I
+Color = SKINCOLOR_BLACK
+
+Emblem
+Type = Time
+Var = 70*TICRATE
+MapNum = AT
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 200
+MapNum = AT
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Water flowing out\\of a really big fountain.\\This one is easy.
+Type = Global
+Tag = 0
+MapNum = AT
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Look for this one by\\climbing up a waterfall.\\The one on the left.
+Type = Global
+Tag = 1
+MapNum = AT
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = An elevator\\ride would be way too easy.\\Take the long way up.
+Type = Global
+Tag = 2
+MapNum = AT
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Score
+Var = 100000
+MapNum = AU
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Hint = How did this get here?\\Knuckles is gonna be pissed.\\Better not break it.
+Type = Global
+Tag = 0
+MapNum = AU
+Sprite = G
+Color = SKINCOLOR_YELLOW
+
+Emblem
+Type = Score
+Var = 200000
+MapNum = AV
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Hint = Welcome to Warp Zone!\\...Wait, that's from some other game.\\Enjoy some free stuff!
+Type = Global
+Tag = 0
+MapNum = AV
+Sprite = J
+Color = SKINCOLOR_YELLOW
+
+Emblem
+Type = Time
+Var = 60*TICRATE
+MapNum = AW
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 30
+MapNum = AW
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = In the first trial,\\jump from the portal down to\\the pillars below.
+Type = Global
+Tag = 0
+MapNum = AW
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = The second trial,\\after using the third spring,\\you can jump to it.
+Type = Global
+Tag = 1
+MapNum = AW
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = In the third trial,\\use the final springs to get\\on to the pillars.
+Type = Global
+Tag = 2
+MapNum = AW
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Type = Time
+Var = 100*TICRATE
+MapNum = AX
+Sprite = T
+Color = SKINCOLOR_GREY
+
+Emblem
+Type = Rings
+Var = 30
+MapNum = AX
+Sprite = R
+Color = SKINCOLOR_GOLD
+
+Emblem
+Hint = Springs give extra height\\when you are under water.\\Careful not to fall!
+Type = Global
+Tag = 0
+MapNum = AX
+Sprite = A
+Color = SKINCOLOR_BLUE
+
+Emblem
+Hint = Bring another nuke,\\you might end up needing it\\for another switch.
+Type = Global
+Tag = 1
+MapNum = AX
+Sprite = B
+Color = SKINCOLOR_RED
+
+Emblem
+Hint = The only way in\\is a well-timed double jump.\\Watch out for the blocks!
+Type = Global
+Tag = 2
+MapNum = AX
+Sprite = C
+Color = SKINCOLOR_EMERALD
+
+Emblem
+Hint = Red springs at the back,\\then use the rising platforms.\\The last mystic shrine.
+Type = Global
+Tag = 3
+MapNum = AX
+Sprite = I
+Color = SKINCOLOR_BLACK
+
+Emblem
+Hint = Well, this is the end.\\The door to the Mystic Realm.\\What might lay beyond?
+Type = Global
+Tag = 4
+MapNum = AX
+Sprite = H
+Color = SKINCOLOR_YELLOW
+
+Emblem
+Type = Score
+Var = 10000
+MapNum = AZ
+Sprite = S
+Color = SKINCOLOR_BROWN
+
+Emblem
+Type = Time
+Var = 160*TICRATE
+MapNum = AZ
+Sprite = T
+Color = SKINCOLOR_GREY

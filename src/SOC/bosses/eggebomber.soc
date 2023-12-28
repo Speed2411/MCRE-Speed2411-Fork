@@ -1,0 +1,329 @@
+Freeslot
+S_EGGEBOMBER_STND
+S_EGGEBOMBER_PAIN1
+S_EGGEBOMBER_PAIN2
+S_EGGEBOMBER_PAIN3
+S_EGGEBOMBER_LATK1
+S_EGGEBOMBER_LATK2
+S_EGGEBOMBER_LATK3
+S_EGGEBOMBER_LATK4
+S_EGGEBOMBER_LATK5
+S_EGGEBOMBER_LATK6
+S_EGGEBOMBER_LATK7
+S_EGGEBOMBER_LATK8
+S_EGGEBOMBER_MATK1
+S_EGGEBOMBER_MATK2
+S_EGGEBOMBER_MATK3
+S_EGGEBOMBER_MATK4
+S_EGGEBOMBER_MATK5
+S_EGGEBOMBER_MATK6
+S_EGGEBOMBER_MATKE1
+S_EGGEBOMBER_MATKE2
+S_EGGEBOMBER_MATKE3
+S_EGGEBOMBER_RATK1
+S_EGGEBOMBER_RATK2
+S_EGGEBOMBER_RATK3
+S_EGGEBOMBER_RATK4
+S_EGGEBOMBER_RATK5
+S_EGGEBOMBER_RATK6
+S_EGGEBOMBER_RATK7
+S_EGGEBOMBER_RATK8
+S_EGGEBOMBER_RATKE
+S_EGGEBOMBER_DIE1
+S_EGGEBOMBER_DIE2
+S_EGGEBOMBER_DIE3
+S_EGGEBOMBER_DIE4
+S_EGGEBOMBER_FLEE1
+S_EGGEBOMBER_FLEE2
+
+State S_EGGEBOMBER_STND
+SpriteName = EGGP
+SpriteFrame = A
+Duration = 1
+Next = S_EGGEBOMBER_STND
+Action A_Boss1Chase
+
+State S_EGGEBOMBER_LATK1
+SpriteName = EGGP
+SpriteFrame = B
+Duration = 3
+Next = S_EGGEBOMBER_LATK2
+
+State S_EGGEBOMBER_LATK2
+SpriteName = EGGP
+SpriteFrame = C
+Duration = 15
+Next = S_EGGEBOMBER_LATK3
+
+State S_EGGEBOMBER_LATK3
+SpriteName = EGGP
+SpriteFrame = D
+Duration = 2
+Next = S_EGGEBOMBER_LATK4
+
+State S_EGGEBOMBER_LATK4
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 2
+Next = S_EGGEBOMBER_LATK5
+
+State S_EGGEBOMBER_LATK5
+SpriteName = EGGP
+SpriteFrame = F
+Duration = 20
+Next = S_EGGEBOMBER_LATK6
+Action A_FireShot
+Var1 = MT_EBOMB
+
+State S_EGGEBOMBER_LATK6
+SpriteName = EGGP
+SpriteFrame = F
+Duration = 20
+Next = S_EGGEBOMBER_LATK7
+Action A_FireShot
+Var1 = MT_EBOMB
+
+State S_EGGEBOMBER_LATK7
+SpriteName = EGGP
+SpriteFrame = F
+Duration = 22
+Next = S_EGGEBOMBER_STND
+Action A_FireShot
+Var1 = MT_EBOMB
+
+State S_EGGEBOMBER_MATK1
+SpriteName = EGGP
+SpriteFrame = B
+Duration = 3
+Next = S_EGGEBOMBER_MATK2
+
+State S_EGGEBOMBER_MATK2
+SpriteName = EGGP
+SpriteFrame = C
+Duration = 15
+Next = S_EGGEBOMBER_MATK3
+
+State S_EGGEBOMBER_MATK3
+SpriteName = EGGP
+SpriteFrame = D
+Duration = 2
+Next = S_EGGEBOMBER_MATK4
+
+State S_EGGEBOMBER_MATK4
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 2
+Next = S_EGGEBOMBER_MATKE1
+
+State S_EGGEBOMBER_MATK5
+SpriteName = EGGP
+SpriteFrame = G
+Duration = 15
+Next = S_EGGEBOMBER_MATK6
+Action A_MultiShot
+Var1 = MT_TORPEDO*65536+20
+Var2 = -20
+
+State S_EGGEBOMBER_MATK6
+SpriteName = EGGP
+SpriteFrame = 
+Duration = 35
+Next = S_EGGEBOMBER_STND
+Action A_MultiShot
+Var1 = MT_TORPEDO*65536+20
+Var2 = -20
+
+State S_EGGEBOMBER_MATKE1
+SpriteName = EGGP
+SpriteFrame = G
+Duration = 20
+Next = S_EGGEBOMBER_MATKE2
+Action A_DualAction
+Var1 = S_EGGEBOMBER_MATKE3
+Var2 = S_EGGEBOMBER_MATK5
+
+State S_EGGEBOMBER_MATKE2
+SpriteName = EGGP
+SpriteFrame = G
+Duration = 20
+Next = S_EGGEBOMBER_STND
+Action A_DualAction
+Var1 = S_EGGEBOMBER_MATKE3
+Var2 = S_EGGEBOMBER_MATK6
+
+State S_EGGEBOMBER_MATKE3
+SpriteName = EGGP
+SpriteFrame = G
+Duration = 20
+Next = S_NULL
+Action A_PlaySound
+Var1 = 122
+Var2 = 1
+
+State S_EGGEBOMBER_RATK2
+SpriteName = EGGP
+SpriteFrame = B
+Duration = 3
+Next = S_EGGEBOMBER_RATK3
+
+State S_EGGEBOMBER_RATK3
+SpriteName = EGGP
+SpriteFrame = C
+Duration = 15
+Next = S_EGGEBOMBER_RATK4
+
+State S_EGGEBOMBER_RATK4
+SpriteName = EGGP
+SpriteFrame = D
+Duration = 2
+Next = S_EGGEBOMBER_RATK5
+
+State S_EGGEBOMBER_RATK5
+SpriteName = EGGP
+SpriteFrame = E
+Duration = 2
+Next = S_EGGEBOMBER_RATKE
+
+State S_EGGEBOMBER_RATK6
+SpriteName = EGGP
+SpriteFrame = G
+Duration = 10
+Next = S_EGGEBOMBER_RATK7
+Action A_MultiShot
+Var1 = MT_TORPEDO*65536+30
+Var2 = -20
+
+State S_EGGEBOMBER_RATK8
+SpriteName = EGGP
+SpriteFrame = F
+Duration = 10
+Next = S_EGGEBOMBER_RATK7
+Action A_FireShot
+Var1 = MT_EBOMB
+
+State S_EGGEBOMBER_RATK7
+SpriteName = EGGP
+SpriteFrame = G
+Duration = 1
+Next = S_EGGEBOMBER_STND
+Action A_Repeat
+Var1 = 4
+Var2 = S_EGGEBOMBER_RATK8
+
+State S_EGGEBOMBER_RATK1
+SpriteName = EGGP
+SpriteFrame = G
+Duration = 20
+Next = S_NULL
+Action A_PlaySound
+Var1 = 122
+Var2 = 1
+
+State S_EGGEBOMBER_RATKE
+SpriteName = EGGP
+SpriteFrame = G
+Duration = 20
+Next = S_EGGEBOMBER_RATK7
+Action A_DualAction
+Var1 = S_EGGEBOMBER_RATK1
+Var2 = S_EGGEBOMBER_RATK6
+
+State S_EGGEBOMBER_PAIN2
+SpriteName = EGGP
+SpriteFrame = N
+Duration = 0
+Next = S_EGGEBOMBER_PAIN3
+Action A_FireShot
+Var1 = MT_TORPEDO
+
+State S_EGGEBOMBER_PAIN1
+SpriteName = EGGP
+SpriteFrame = N
+Duration = 30
+Next = S_EGGEBOMBER_PAIN2
+Action A_Pain
+
+State S_EGGEBOMBER_PAIN3
+SpriteName = EGGP
+SpriteFrame = N
+Duration = 10
+Next = S_EGGEBOMBER_STND
+Action A_SkullAttack
+Var1 = 2
+Var2 = 1
+
+State S_EGGEBOMBER_DIE1
+SpriteName = EGGP
+SpriteFrame = O
+Duration = 2
+Next = S_EGGEBOMBER_DIE2
+Action A_Fall
+
+State S_EGGEBOMBER_DIE2
+SpriteName = EGGP
+SpriteFrame = O
+Duration = 2
+Next = S_EGGEBOMBER_DIE3
+Action A_BossScream
+
+State S_EGGEBOMBER_DIE3
+SpriteName = EGGP
+SpriteFrame = O
+Duration = 0
+Next = S_EGGEBOMBER_DIE4
+Action A_Repeat
+Var1 = 17
+Var2 = S_EGGEBOMBER_DIE2
+
+State S_EGGEBOMBER_DIE4
+SpriteName = EGGP
+SpriteFrame = O
+Duration = -1
+Next = S_NULL
+Action A_BossDeath
+
+State S_EGGEBOMBER_FLEE1
+SpriteName = EGGP
+SpriteFrame = P
+Duration = 2
+Next = S_EGGEBOMBER_FLEE2
+Action A_BossScream
+
+State S_EGGEBOMBER_FLEE2
+SpriteName = EGGP
+SpriteFrame = Q
+Duration = 2
+Next = S_EGGEBOMBER_FLEE1
+Action A_BossScream
+
+Object MT_EGGEBOMBER
+MapThingNum = 2999
+SpawnState = S_EGGEBOMBER_STND
+SpawnHealth = 8
+ReactionTime = 20
+SeeState = S_EGGEBOMBER_STND
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainState = S_EGGEBOMBER_PAIN1
+PainChance = 0
+PainSound = sfx_dmpain
+MeleeState = S_EGGEBOMBER_LATK1
+MissileState = S_EGGEBOMBER_MATK1						
+DeathState = S_EGGEBOMBER_DIE1
+XDeathState = S_EGGEBOMBER_FLEE1
+RaiseState = S_EGGEBOMBER_RATK2			
+DeathSound = sfx_s3kb4
+Speed = 7
+Radius = 50*FRACUNIT
+Height = 86*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 3
+ActiveSound = sfx_None
+Flags =	MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_BOSS
+
+Object MT_SHOCKWAVE
+SeeSound = sfx_None
+
+Object MT_TORPEDO
+SeeSound = sfx_None

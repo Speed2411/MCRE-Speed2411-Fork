@@ -1,0 +1,1613 @@
+# this happens to also contain some MR objects as well but eh it's mostly bosses
+# Object configuration. Here is where the "OC" of "SOC" comes in. Kinda hard to read, really.
+
+# Crystal object that emits a BRIGHT sprite like MT_FLAME
+
+freeslot
+MT_BLUECRYSTAL_BRIGHT
+S_BLUECRYSTAL_BRIGHT
+
+Object MT_BLUECRYSTAL_BRIGHT
+#$Name Blue Crystal (Full-bright)
+#$Sprite BCRYA1
+#$Category Mystic Realm Objects
+MapThingNum = 2998
+SpawnState = S_BLUECRYSTAL_BRIGHT
+SpawnHealth = 1000
+SeeState = S_NULL
+SeeSound = sfx_none
+ReactionTime = 8
+AttackSound = sfx_none
+PainState = S_NULL
+PainChance = 0
+PainSound = sfx_none
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+DeathSound = sfx_none
+Speed = 0
+Radius = 8*FRACUNIT
+Height = 16*FRACUNIT
+DispOffset = 0
+Mass = 4
+Damage = 0
+ActiveSound = sfx_none
+Flags = MF_NOBLOCKMAP|MF_NOCLIP|MF_SCENERY|MF_NOTHINK
+RaiseState = S_NULL
+
+State S_BLUECRYSTAL_BRIGHT
+SpriteName = BCRY
+SpriteFrame = FF_TRANS30|FF_FULLBRIGHT
+Duration = -1
+Next = S_NULL
+Action = none
+Var1 = 0
+Var2 = 0
+
+#[2006] <Mystic> 
+# Custom bosses. SOC by Prime 2.0. Thanks to AJ for putting up with the harassment.
+# This section is pretty much impossible to read without using the SOC editor.
+
+
+#[2010] <Prime 2.0>
+# Back in 2006 when Mystic wrote that, it very well may have been true.
+# The "impossible to read" part, that is. Horribly, HORRIBLY fragmented,
+# sparsely commented with only the bare bones of labeling, and with
+# completely useless stuff everywhere, the original Mystic Realm SOC
+# was an absolutely indecipherable mess.
+#
+# But, during the process of porting it to 2.0.X I was given the opportunity
+# and reason to change that. As of now, the objects and states are in a logical
+# order, and employ a standardized system of documentation.
+#
+# Objects are now arranged as
+#
+## MT_ObjectName - Full object name, notes
+##  Object Description
+#<Object Configuration entry>
+## {Flags: Flags listing}
+#
+# States are now arranged as 
+#
+## ObjectName_StateName - [Object config state marker (if applicable)] State Description
+#<State entry>
+##  [Reference action pointers/markers (if applicable)]
+## {Next: Name of nextstate if nexstate is not self or next sequential number}
+#
+# 1 linebreak is given between states of the same sequence, 2 between states
+# belonging to different sequences but from the same object, and 3 between states
+# belonging to different objects, or the nearest comment pertaining to the next state.
+#
+# Using the information provided by this system along with uses of Ctrl+F while in notepad,
+# browsing and maybe even understanding the script should be a snap!
+#
+# All that said, a friendly reminder: Bosses and custom projectiles shown in this SOC
+# are not free to use, and require my expressed permission.
+# Second Quest enemies from Chaotic Darkness likewise belong to JJames19119.
+
+#[2014] <Prime 2.0>
+#
+# I would just like to point something out here: Mystic Realm is over a decade old.
+# These bosses will be too, not terribly long from now. A lot has changed over that time...
+# most relevant to this section being the fact that most of the standard documentation up there
+# is now rendered moot by the more natural form given by SOC enumerations. 
+
+
+FREESLOT
+SPR_TRL2
+SPR_WCRY
+S_BossXChaseA
+S_BossXChaseB
+S_Boss_Stand
+S_Boss_Flee1
+S_Boss_Flee2
+S_Boss_Flee3
+S_Boss_Flee4
+S_Boss_Flee5
+S_Boss_Flee6
+S_FBoss_Pain1
+S_FBoss_Pain2
+S_FBoss_DashCombo1
+S_FBoss_DashCombo2
+S_FBoss_DashCombo3
+S_FBoss_DashCombo4
+S_FBoss_RapidFrisbee1
+S_FBoss_RapidFrisbee2
+S_FBoss_RapidFrisbee3
+S_FBoss_RapidFrisbee4
+S_FBoss_RapidFrisbee5
+S_FBoss_RapidFrisbee6
+S_FBoss_RapidFrisbee7
+S_FBoss_RapidFrisbee8
+S_FBoss_RapidFrisbee9
+S_FBoss_RapidFrisbee10
+S_FBoss_RapidFrisbee11
+S_FBoss_RapidFrisbee12
+S_FBoss_RapidFrisbee13
+S_FBoss_RapidFrisbee14
+S_FBoss_RapidFrisbee15
+S_FBoss_RapidFrisbee16
+S_FBoss_Panic1
+S_FBoss_Panic2
+S_XBoss_TriSpark1
+S_XBoss_TriSpark2
+S_XBoss_TriSpark3
+S_XBoss_TriSpark4
+S_XBoss_TriSpark5
+S_XBoss_TriSpark6
+S_XBoss_TriSpark7
+S_XBoss_TriSpark8
+S_XBoss_STF1
+S_XBoss_STF2
+S_XBoss_STF3
+S_XBoss_STF4
+S_XBoss_Panic1
+S_XBoss_Panic2
+S_XBoss_Pain1
+S_XBoss_Pain2
+S_XBoss_Pain3
+S_XBoss_Pain4
+S_XBoss_Pain5
+MT_SparkMortar
+S_SparkMortar_Prep1
+S_SparkMortar_Prep2
+S_SparkMortar_1
+S_SparkMortar_2
+S_SparkMortar_3
+S_SparkMortar_4
+S_SparkMortar_Explode
+MT_SparkHelper
+S_SparkHelper_Prep
+S_SparkHelper_1
+S_SparkHelper_2
+MT_SparkDebris
+S_SparkDebris
+S_SparkDebris_Wait1
+S_SparkDebris_Wait2
+S_SparkDebris_Wait3
+S_SparkDebris_Wait4
+S_SparkDebris_Wait5
+S_SparkDebris_Wait6
+S_SparkDebris_Wait7
+S_SparkDebris_Wait8
+S_SparkDebris_Wait9
+S_SparkDebris_Wait10
+S_SparkDebris_Wait11
+S_SparkDebris_Wait12
+S_SparkDebris_Wait13
+S_SparkDebris_Fire1
+S_SparkDebris_Fire2
+MT_STLaser
+MT_STLaser2
+S_STLaser
+S_STLaserQExplode1
+S_STLaserQExplode2
+MT_TLaser2
+MT_WCrystal
+S_WCrystal_Prep1
+S_WCrystal_Prep2
+S_WCrystal_Prep3
+S_WCrystal_Orbit
+MT_CBuffer
+S_CBuffer_Prep1
+S_CBuffer_Prep2
+S_CBuffer_1
+S_CBuffer_2
+MT_CRocket
+S_CRocket_1
+S_CRocket_2
+MT_RocketFume
+S_RocketFume_Prep
+S_RocketFume_1
+S_RocketFume_2
+S_URing_1
+S_URing_2
+
+
+
+
+# MT_FBoss - Egg Fighter. Boss of Aerial Garden and Prismatic Angel.
+#  Uses rapidfire frisbee attack, DashCombo, and uses Spark Mortar when in pinch.
+Thing MT_FBoss
+#$Name Egg Fighter
+#$Sprite EGGMA1
+#$Category Mystic Realm Objects
+MAPTHINGNUM = 251
+SPAWNSTATE = S_Boss_Stand
+SPAWNHEALTH = 8
+SEESTATE = S_Boss_Stand
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = S_FBoss_Pain1
+PAINCHANCE = 71
+PAINSOUND = SFX_dmpain
+MELEESTATE = S_FBoss_DashCombo1
+MISSILESTATE = S_FBoss_RapidFrisbee1
+DEATHSTATE = S_EGGMOBILE_DIE1
+DEATHSOUND = SFX_cybdth
+XDEATHSTATE = S_Boss_Flee1
+SPEED = 5
+RADIUS = 42*FRACUNIT
+HEIGHT = 82*FRACUNIT
+MASS = 0
+DAMAGE = 3
+ACTIVESOUND = SFX_telept
+RAISESTATE = S_FBoss_Panic1
+FLAGS = MF_Special|MF_Shootable|MF_Boss|MF_NoGravity|MF_Float
+
+
+# MT_FBoss2 - Egg Fighter, PAZ version
+#  Same as FBoss, but exhibits normal fleeing behavior.
+Thing MT_FBoss2
+#$Name Egg Fighter (PAZ)
+#$Sprite EGGMA1
+#$Category Mystic Realm Objects
+MAPTHINGNUM = 254
+SPAWNSTATE = S_Boss_Stand
+SPAWNHEALTH = 8
+SEESTATE = S_Boss_Stand
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = S_FBoss_Pain1
+PAINCHANCE = 71
+PAINSOUND = SFX_dmpain
+MELEESTATE = S_FBoss_DashCombo1
+MISSILESTATE = S_FBoss_RapidFrisbee1
+DEATHSTATE = S_EGGMOBILE_DIE1
+DEATHSOUND = SFX_cybdth
+XDEATHSTATE = S_EGGMOBILE_FLEE1
+SPEED = 5
+RADIUS = 24*FRACUNIT
+HEIGHT = 48*FRACUNIT
+MASS = 0
+DAMAGE = 3
+ACTIVESOUND = SFX_telept
+RAISESTATE = S_FBoss_Panic1
+FLAGS = MF_Special|MF_Shootable|MF_Boss|MF_NoGravity|MF_Float
+
+
+# MT_XBoss - Eggmobile X. Boss of Mystic Realm Zone.
+#  Shoots STF, Spark Mortar, rings when in pinch(grumble), and spawns weapon crystals when hurt. Dashes frequently.
+Thing MT_XBoss
+#$Name Egg Mobile X
+#$Sprite EGGMA1
+#$Category Mystic Realm Objects
+MAPTHINGNUM = 252
+SPAWNSTATE = S_Boss_Stand
+SPAWNHEALTH = 12
+SEESTATE = S_Boss_Stand
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = S_XBoss_Pain1
+PAINCHANCE = 71
+PAINSOUND = SFX_dmpain
+MELEESTATE = S_XBoss_STF1
+MISSILESTATE = S_XBoss_TriSpark1
+DEATHSTATE = S_EGGMOBILE_DIE1
+DEATHSOUND = SFX_cybdth
+XDEATHSTATE = S_Boss_Flee1
+SPEED = 6
+RADIUS = 42*FRACUNIT
+HEIGHT = 80*FRACUNIT
+MASS = 0
+DAMAGE = 3
+ACTIVESOUND = SFX_telept
+RAISESTATE = S_XBoss_Panic1
+FLAGS = MF_Special|MF_Shootable|MF_Boss|MF_NoGravity|MF_Float
+
+
+
+# MT_WCrystal - Weapons Crystal
+#  Spawned by and orbits Eggmobile X, and uses a buffer to fire at the player in intervals.
+Thing MT_WCrystal
+MAPTHINGNUM = -1
+SPAWNSTATE = S_WCrystal_Prep1
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_NULL
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 10*FRACUNIT
+RADIUS = 12*FRACUNIT
+HEIGHT = 36*FRACUNIT+34193
+MASS = 100
+DAMAGE = 1
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoGravity|MF_RunSpawnFunc
+
+
+#[2006] <Prime 2.0>
+# Since having the crystal itself shoot(and renew its target) would make it change its
+# position, instead I had it spawn something that would shoot for it, thus preserving the
+# rotational cycle around eggman. Also of note is that A_SpikeBallRotate resets if it is interrupted by ANYTHING.
+
+# MT_CBuffer - Crystal Buffer.
+#  Fires CRockets at the player to make it look like the weapons crystal is doing it.
+Thing MT_CBuffer
+MAPTHINGNUM = -1
+SPAWNSTATE = S_CBuffer_Prep1
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_NULL
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 8
+RADIUS = FRACUNIT
+HEIGHT = FRACUNIT
+MASS = 16
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoSector|MF_NoBlockmap|MF_NoGravity|MF_Noclip|MF_Scenery|MF_RunSpawnFunc
+
+
+# MT_CRocket - Crystal roc-oh who am I kidding, it's a freaking Crit rocket.
+#  Supersonic-repulsing rocket fired by Crystal Buffer. Has a rocketfume to make it look cool!
+Thing MT_CRocket
+MAPTHINGNUM = -1
+SPAWNSTATE = S_CRocket_1
+SPAWNHEALTH = 1000
+SEESTATE = S_CRocket_1
+SEESOUND = SFX_rlaunc
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_NULL
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 24*FRACUNIT+37856
+RADIUS = 8*FRACUNIT
+HEIGHT = 8*FRACUNIT
+MASS = 100
+DAMAGE = 20
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoBlockmap|MF_NoGravity|MF_Missile|MF_RunSpawnFunc
+
+
+# MT_RocketFume - Jetfume object for the Crit Rocket
+Thing MT_RocketFume
+MAPTHINGNUM = -1
+SPAWNSTATE = S_RocketFume_Prep
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_NULL
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 1
+RADIUS = 4*FRACUNIT
+HEIGHT = 4*FRACUNIT
+MASS = 4
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoBlockmap|MF_NoGravity|MF_Noclip|MF_RunSpawnFunc
+
+
+# MT_URing - Ultimate mode ring
+#  Spawns a ring, even in ultimate mode. Used in Mystic Realm Zone.
+Thing MT_URing
+#$Name Ultimate Mode Ring
+#$Sprite RINGA0
+#$Category Mystic Realm Objects
+MAPTHINGNUM = 260
+SPAWNSTATE = S_URing_1
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 44
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_SPRK1
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 60*FRACUNIT
+RADIUS = 16*FRACUNIT
+HEIGHT = 24*FRACUNIT
+MASS = 100
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoGravity|MF_SlideMe
+
+
+# MT_SparkMortar - Spark Mortar, the unmatched custom projectile!
+#  Exploding projectile that "chases" the player with its explosion. Shot using A_SuperFireShot.
+Thing MT_SparkMortar
+MAPTHINGNUM = -1
+SPAWNSTATE = S_SparkMortar_Prep1
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = sfx_s3k66
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_SparkMortar_Explode
+DEATHSOUND = sfx_s3k4e
+XDEATHSTATE = 0
+SPEED = 20*FRACUNIT
+RADIUS = 12*FRACUNIT
+HEIGHT = 8*FRACUNIT
+MASS = 100
+DAMAGE = 20
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoBlockmap|MF_NoGravity|MF_Missile|MF_RunSpawnFunc
+
+
+#[2006] <Prime 2.0>
+#   I decided to do a bit of a re-write of the spark mortar effect. So rather than having some
+#   25 states to make a full cycle of spawning the sparks and alternating between sprites,
+#   it spawns an object that makes the invincibility sparks for it(while cape chasing) so that it only
+#   has to do the sprite alternations. Which is nice. Very nice.
+
+# MT_SparkHelper - Mortar Spark Helper
+#  Spawns invincibility sparks for spark mortar.
+Thing MT_SparkHelper
+MAPTHINGNUM = -1
+SPAWNSTATE = S_SparkHelper_Prep
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_NULL
+DEATHSOUND = 0
+XDEATHSTATE = 0
+SPEED = 8
+RADIUS = FRACUNIT
+HEIGHT = FRACUNIT
+MASS = 16
+DAMAGE = 0
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoSector|MF_NoBlockmap|MF_NoGravity|MF_Noclip|MF_Scenery|MF_RunSpawnFunc
+
+
+# MT_SparkDebris - Spark Mortar Shrapnel
+#  Shoots a projectile at the player when it dies at explosion radius.
+Thing MT_SparkDebris
+MAPTHINGNUM = -1
+SPAWNSTATE = S_SparkDebris
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = SFX_pop
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_SparkDebris_Wait1
+DEATHSOUND = SFX_trfire
+XDEATHSTATE = S_SparkDebris_Wait1
+SPEED = 60*FRACUNIT
+RADIUS = 16*FRACUNIT
+HEIGHT = 24*FRACUNIT
+MASS = 100
+DAMAGE = 1
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoBlockMap|MF_NoGravity|MF_Missile
+
+
+# MT_STLaser - Spark Turret Laser. 
+#  It's Blue! Faster than normal turretfire, used only with "super" firing actions. Mortar shrapnel fires this.
+Thing MT_STLaser
+MAPTHINGNUM = -1
+SPAWNSTATE = S_STLaser
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = 0
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_STLaserQExplode1
+DEATHSOUND = SFX_turhit
+XDEATHSTATE = 0
+SPEED = 60*FRACUNIT
+RADIUS = 12*FRACUNIT
+HEIGHT = 24*FRACUNIT
+MASS = 100
+DAMAGE = 1
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoBlockMap|MF_NoGravity|MF_Missile
+
+
+# MT_STLaser2 - Super Turret Laser. 
+#  It's just like STLaser, except it has a firing sound. Used by Eggmobile X. shrapnel fire this.
+Thing MT_STLaser2
+MAPTHINGNUM = -1
+SPAWNSTATE = S_STLaser
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = SFX_trfire
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_STLaserQExplode1
+DEATHSOUND = SFX_turhit
+XDEATHSTATE = 0
+SPEED = 60*FRACUNIT
+RADIUS = 12*FRACUNIT
+HEIGHT = 24*FRACUNIT
+MASS = 100
+DAMAGE = 1
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoBlockMap|MF_NoGravity|MF_Missile
+
+
+# MT_TLaser2 - Turret Laser. 
+#  It's just like regular turretfire, but it makes a firing sound from custom objects. Fired by Egg Fighter.
+Thing MT_TLaser2
+MAPTHINGNUM = -1
+SPAWNSTATE = S_TURRETLASER
+SPAWNHEALTH = 1000
+SEESTATE = 0
+SEESOUND = SFX_trfire
+REACTIONTIME = 8
+ATTACKSOUND = 0
+PAINSTATE = 0
+PAINCHANCE = 0
+PAINSOUND = 0
+MELEESTATE = 0
+MISSILESTATE = 0
+DEATHSTATE = S_TurretLaserExplode1
+DEATHSOUND = SFX_turhit
+XDEATHSTATE = 0
+SPEED = 50*FRACUNIT
+RADIUS = 12*FRACUNIT
+HEIGHT = 24*FRACUNIT
+MASS = 100
+DAMAGE = 1
+ACTIVESOUND = 0
+RAISESTATE = 0
+FLAGS = MF_NoBlockMap|MF_NoGravity|MF_Missile
+
+
+
+# Spark Mortar death sound
+SOUND sfx_s3k4e
+PRIORITY = 64
+FLAGS = 16
+
+
+# Spark Mortar firing sound
+SOUND sfx_s3k66
+PRIORITY = 64
+FLAGS = 16
+
+
+# Spark Mortar charging sound
+SOUND sfx_s3k84
+PRIORITY = 64
+FLAGS = 16
+
+
+# TriSpark charging sound
+SOUND sfx_s3k8e
+PRIORITY = 64
+FLAGS = 16
+
+
+
+
+#################### Custom bosses block
+#################### 3 objects,  330 - 332
+#################### 48 frames, 1851 - 1900
+
+
+# DualAction references for custom boss standing frames.
+FRAME S_BossXChaseA
+ACTION A_TurretStop
+VAR1 = 1
+
+FRAME S_BossXChaseB
+ACTION A_Boss1Chase
+
+
+# [Spawn][See] Shared stand state for Egg Fighter & Eggmobile X. Cancels turretfire.
+FRAME S_Boss_Stand
+spritename = EGGM
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_Boss_Stand
+ACTION A_DualAction
+VAR1 = S_BossXChaseA
+VAR2 = S_BossXChaseB
+#  [DualAction: S_BossXChaseA(TurretStop), S_BossXChaseB(Boss1Chase)]
+#  [Ref2: FBoss_Pain1, XBoss_Pain1]
+
+
+# EggFighter-specific states start here.
+
+# FBoss_Pain1 - [Pain] Egg Fighter has been hit, halts turretfire.
+FRAME S_FBoss_Pain1
+spritename = EGGM
+SPRITESUBNUMBER = T
+DURATION = 24
+NEXT = S_FBoss_Pain2
+ACTION A_DualAction
+VAR1 = S_EGGMOBILE_PAIN
+VAR2 = S_Boss_Stand
+#  [DualAction: S_EGGMOBILE_PAIN(Pain), Boss_Stand(TurretStop)]
+
+# FBoss_Pain2 - Eggman dashes away from the player; we did it here first, folks!
+FRAME S_FBoss_Pain2
+spritename = EGGM
+SPRITESUBNUMBER = T
+DURATION = 30
+NEXT = S_Boss_Stand
+ACTION A_Skullattack
+VAR1 = 1
+
+
+#  S_DashCombo - Egg Fighter uses Turretfire, and then dashes towards you while still using it!
+
+# [Melee] Eggman telegraphs the attack by raising his right hand.
+FRAME S_FBoss_DashCombo1
+spritename = EGGM
+SPRITESUBNUMBER = 3
+DURATION = 50
+NEXT = S_FBoss_DashCombo2
+ACTION None
+VAR1 = 0
+VAR2 = 0
+
+# Eggman uses turretfire
+FRAME S_FBoss_DashCombo2
+spritename = EGGM
+SPRITESUBNUMBER = 4
+DURATION = 15
+NEXT = S_FBoss_DashCombo3
+ACTION A_TurretFire
+VAR1 = MT_TLaser2
+VAR2 = 2048
+
+# Eggman Prepares to dash
+FRAME S_FBoss_DashCombo3
+spritename = EGGM
+SPRITESUBNUMBER = 3
+DURATION = 15
+NEXT = S_FBoss_DashCombo4
+ACTION none
+
+# Eggman dashes towards the player, and returns to Stand
+FRAME S_FBoss_DashCombo4
+spritename = EGGM
+SPRITESUBNUMBER = 4
+DURATION = 35
+NEXT = S_Boss_Stand
+ACTION A_SkullAttack
+VAR1 = 0
+
+
+#  S_RapidFrisbee - A surprise attack! Eggman fires (almost) like normal, but then follows up with several quick shots.
+
+# 1 - [Missile] Eggman telegraphs the attack by raising his right hand.
+FRAME S_FBoss_RapidFrisbee1
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 15
+NEXT = S_FBoss_RapidFrisbee2
+ACTION None
+
+# 2 - Eggman shoots right! But he isn't done yet...
+FRAME S_FBoss_RapidFrisbee2
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 35
+NEXT = S_FBoss_RapidFrisbee3
+ACTION A_BossFireShot
+VAR1 = MT_Rocket
+VAR2 = 1
+
+# 3 - Eggman telegraphs the coming barrage: he fires LLRRLLR. 2 tics in between each shot.
+FRAME S_FBoss_RapidFrisbee3
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee4
+ACTION None
+
+# 4 - Shoots frisbee left (1)
+FRAME S_FBoss_RapidFrisbee4
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee5
+ACTION A_BossFireShot
+VAR1 = MT_Rocket
+VAR2 = 0
+
+# 5
+FRAME S_FBoss_RapidFrisbee5
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee6
+ACTION None
+
+# 6 - Shoots frisbee left (2)
+FRAME S_FBoss_RapidFrisbee6
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee7
+ACTION A_BossFireShot
+VAR1 = MT_Rocket
+VAR2 = 0
+
+# 7
+FRAME S_FBoss_RapidFrisbee7
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee8
+ACTION None
+
+# 8 - Shoots frisbee right (3)
+FRAME S_FBoss_RapidFrisbee8
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee9
+ACTION A_BossFireShot
+VAR1 = MT_Rocket
+VAR2 = 1
+
+# 9
+FRAME S_FBoss_RapidFrisbee9
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee10
+ACTION None
+
+# 10 - Shoots frisbee right (4)
+FRAME S_FBoss_RapidFrisbee10
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee11
+ACTION A_BossFireShot
+VAR1 = MT_Rocket
+VAR2 = 1
+
+# 11
+FRAME S_FBoss_RapidFrisbee11
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee12
+ACTION None
+
+# 12 - Shoots frisbee left (5)
+FRAME S_FBoss_RapidFrisbee12
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee13
+ACTION A_BossFireShot
+VAR1 = MT_Rocket
+VAR2 = 0
+
+# 13
+FRAME S_FBoss_RapidFrisbee13
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee14
+ACTION None
+
+# 14 - Shoots frisbee left (6)
+FRAME S_FBoss_RapidFrisbee14
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee15
+ACTION A_BossFireShot
+VAR1 = MT_Rocket
+VAR2 = 0
+
+# 15
+FRAME S_FBoss_RapidFrisbee15
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 2
+NEXT = S_FBoss_RapidFrisbee16
+ACTION None
+
+# 16 - Shoots frisbee right (7) and returns to stand.
+FRAME S_FBoss_RapidFrisbee16
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 30
+NEXT = S_Boss_Stand
+ACTION A_BossFireShot
+VAR1 = MT_Rocket
+VAR2 = 1
+
+
+#  S_FBoss_Panic - Spark Mortar. Fires an exploding projectile, with a homing explosion!
+
+# [Raise] Makes a charging sound
+FRAME S_FBoss_Panic1
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 45
+NEXT = S_FBoss_Panic2
+ACTION A_PlaySound
+VAR1 = sfx_s3k84
+VAR2 = 1
+
+# FBoss_Panic2 - Fires the Spark Mortar, then transitions into DashCombo.
+FRAME S_FBoss_Panic2
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 5
+NEXT = S_FBoss_DashCombo1
+ACTION A_SuperFireShot
+VAR1 = MT_SparkMortar
+VAR2 = 0
+
+
+
+#  XBoss - States specific to Eggmobile X- start here.
+
+
+
+#  S_TriSpark - Eggmobile X Fires 3 Spark Mortars and dashes backwards.
+
+# [Missile] Eggman telegraphs the attack by raising his right hand.
+FRAME S_XBoss_TriSpark1
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 30
+NEXT = S_XBoss_TriSpark2
+ACTION A_PlaySound
+VAR1 = sfx_s3k8e
+VAR2 = 1
+
+# Fires Spark Mortar (1)
+FRAME S_XBoss_TriSpark2
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 5
+NEXT = S_XBoss_TriSpark3
+ACTION A_SuperFireShot
+VAR1 = MT_SparkMortar
+VAR2 = 0
+
+FRAME S_XBoss_TriSpark3
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 5
+NEXT = S_XBoss_TriSpark4
+ACTION None
+
+# Fires Spark Mortar (2)
+FRAME S_XBoss_TriSpark4
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 5
+NEXT = S_XBoss_TriSpark5
+ACTION A_SuperFireShot
+VAR1 = MT_SparkMortar
+VAR2 = 0
+
+FRAME S_XBoss_TriSpark5
+spritename = EGGM
+SPRITESUBNUMBER = 13
+DURATION = 5
+NEXT = S_XBoss_TriSpark6
+ACTION None
+
+# Fires Spark Mortar (3)
+FRAME S_XBoss_TriSpark6
+spritename = EGGM
+SPRITESUBNUMBER = 14
+DURATION = 5
+NEXT = S_XBoss_TriSpark7
+ACTION A_SuperFireShot
+VAR1 = MT_SparkMortar
+VAR2 = 0
+
+FRAME S_XBoss_TriSpark7
+spritename = EGGM
+SPRITESUBNUMBER = 3
+DURATION = 5
+NEXT = S_XBoss_TriSpark8
+ACTION None
+
+# Eggman dashes away from the player.
+FRAME S_XBoss_TriSpark8
+spritename = EGGM
+SPRITESUBNUMBER = 4
+DURATION = 5
+NEXT = S_Boss_Stand
+ACTION A_SkullAttack
+VAR1 = 1
+
+
+#  S_STF - SuperTurretFire. Eggmobile X fires supersonic-repulsing blue turretfire while dashing sideways.
+
+# [Melee] Eggman telegraphs the attack by raising his left hand
+FRAME S_XBoss_STF1
+spritename = EGGM
+SPRITESUBNUMBER = 3
+DURATION = 30
+NEXT = S_XBoss_STF2
+ACTION None
+
+# Begins firing Blue turretfire
+FRAME S_XBoss_STF2
+spritename = EGGM
+SPRITESUBNUMBER = 4
+DURATION = 15
+NEXT = S_XBoss_STF3
+ACTION A_SuperTurretFire
+VAR1 = MT_STLaser2
+VAR2 = 2048
+
+FRAME S_XBoss_STF3
+spritename = EGGM
+SPRITESUBNUMBER = 3
+DURATION = 10
+NEXT = S_XBoss_STF4
+ACTION None
+
+# Eggman dashes sideways.
+FRAME S_XBoss_STF4
+spritename = EGGM
+SPRITESUBNUMBER = 4
+DURATION = 60
+NEXT = S_Boss_Stand
+ACTION A_SkullAttack
+VAR1 = 2
+
+
+#  S_XBoss_Panic - Eggmobile X tosses some Auto-rings at you because I couldn't get the original idea to work right.
+
+# XBoss_Panic1 - [Raise] Eggman telegraphs the attack by raising his left hand
+FRAME S_XBoss_Panic1
+spritename = EGGM
+SPRITESUBNUMBER = 3
+DURATION = 30
+NEXT = S_XBoss_Panic2
+ACTION None
+
+# XBoss_Panic2 - Fires Auto-rings. Dashes sideways next.
+FRAME S_XBoss_Panic2
+spritename = EGGM
+SPRITESUBNUMBER = 4
+DURATION = 10
+NEXT = S_XBoss_STF3
+ACTION A_SuperTurretFire
+VAR1 = MT_THROWNAUTOMATIC
+VAR2 = 4096
+
+
+#  S_XBoss_Pain - Eggmobile X summons a weapons crystal to assist him.
+
+# [Pain] You hit Eggmobile X! Halts turretfire, plays pain sound, zero duration.
+FRAME S_XBoss_Pain1
+spritename = EGGM
+SPRITESUBNUMBER = T
+DURATION = 0
+NEXT = S_XBoss_Pain2
+ACTION A_DualAction
+VAR1 = S_EGGMOBILE_PAIN
+VAR2 = S_Boss_Stand
+#  [DualAction: S_EGGMOBILE_PAIN(Pain), Boss_Stand(TurretStop)]
+
+# Causes Eggman to Recoil from your hit. Standing in the middle is harder now.
+FRAME S_XBoss_Pain2
+spritename = EGGM
+SPRITESUBNUMBER = T
+DURATION = 10
+NEXT = S_XBoss_Pain3
+ACTION A_Thrust
+VAR1 = -4
+VAR2 = 0
+
+
+# Decellerates by one by replacing momentum
+FRAME S_XBoss_Pain3
+spritename = EGGM
+SPRITESUBNUMBER = 3
+DURATION = 5
+NEXT = S_XBoss_Pain4
+ACTION A_Thrust
+VAR1 = -2
+VAR2 = 1
+
+# Stops by cancelling out remaining moemntum
+FRAME S_XBoss_Pain4
+spritename = EGGM
+SPRITESUBNUMBER = 3
+DURATION = 5
+NEXT = S_XBoss_Pain5
+ACTION A_Thrust
+VAR1 = 2
+VAR2 = 0
+
+# Spawns a weapons crystal to assist Eggman, there'll be 11 of them by the end of the fight!
+FRAME S_XBoss_Pain5
+spritename = EGGM
+SPRITESUBNUMBER = 4
+DURATION = 4
+NEXT = S_Boss_Stand
+ACTION A_SpawnObjectRelative
+VAR1 = 0
+VAR2 = MT_WCrystal
+
+
+# S_Flee - The final bosses make an explosive exit so that last victory is particularly satisfying.
+
+# [XDeath] 3 explosions and 6 tics before swapping to sweat frame
+FRAME S_Boss_Flee1
+spritename = EGGM
+SPRITESUBNUMBER = 21
+DURATION = 2
+NEXT = S_Boss_Flee2
+ACTION A_BossScream
+
+# No sweat, Explosion 2
+FRAME S_Boss_Flee2
+spritename = EGGM
+SPRITESUBNUMBER = 21
+DURATION = 2
+NEXT = S_Boss_Flee3
+ACTION A_BossScream
+
+# No sweat, Explosion 3
+FRAME S_Boss_Flee3
+spritename = EGGM
+SPRITESUBNUMBER = 21
+DURATION = 1
+NEXT = S_Boss_Flee4
+ACTION A_BossScream
+
+# Eggman is sweating, and will continue for 3 frames/6 tics.
+FRAME S_Boss_Flee4
+spritename = EGGM
+SPRITESUBNUMBER = 21
+DURATION = 1
+NEXT = S_Boss_Flee5
+ACTION A_BossDeath
+
+# Sweat, Explosion 2
+FRAME S_Boss_Flee5
+spritename = EGGM
+SPRITESUBNUMBER = 21
+DURATION = 2
+NEXT = S_Boss_Flee6
+ACTION A_BossScream
+
+# Sweat, Explosion 3.
+FRAME S_Boss_Flee6
+spritename = EGGM
+SPRITESUBNUMBER = 21
+DURATION = 2
+NEXT = S_Boss_Flee1
+ACTION A_BossScream
+
+
+
+#################### Custom weapons block (44 frames)
+#################### 9 Objects:  333 - 336, 339 - 343
+#################### 42 Frames: 1901 - 1944
+
+
+
+# [Spawn] Adds the "act like a rail ring" flags2 value to give the projectile greater knockback.
+FRAME S_SparkMortar_Prep1
+spritename = SSPK
+SPRITESUBNUMBER = 32768
+DURATION = 1
+NEXT = S_SparkMortar_Prep2
+ACTION A_SetObjectFlags2
+VAR1 = MF2_RAILRING
+VAR2 = 2
+
+# Spawns SparkHelper
+FRAME S_SparkMortar_Prep2
+spritename = SSPK
+SPRITESUBNUMBER = 32768
+DURATION = 1
+NEXT = S_SparkMortar_1
+ACTION A_SpawnObjectRelative
+VAR1 = 0
+VAR2 = MT_SparkHelper
+
+# 4 Frame SuperSpark sprite loop
+FRAME S_SparkMortar_1
+spritename = SSPK
+SPRITESUBNUMBER = 32769
+DURATION = 2
+NEXT = S_SparkMortar_2
+ACTION None
+
+FRAME S_SparkMortar_2
+spritename = SSPK
+SPRITESUBNUMBER = 32770
+DURATION = 2
+NEXT = S_SparkMortar_3
+ACTION None
+
+FRAME S_SparkMortar_3
+spritename = SSPK
+SPRITESUBNUMBER = 32769
+DURATION = 2
+NEXT = S_SparkMortar_4
+ACTION None
+
+# Animation loops
+FRAME S_SparkMortar_4
+spritename = SSPK
+SPRITESUBNUMBER = 32768
+DURATION = 2
+NEXT = S_SparkMortar_1
+ACTION None
+
+
+# [Death] Spawns shrapnel like a 1.09 bomb ring and heads to xplod frames
+FRAME S_SparkMortar_Explode
+SpriteName = NULL
+SPRITESUBNUMBER = 0
+DURATION = 40
+NEXT = S_NULL
+ACTION A_OldRingExplode
+Var1 = MT_SparkDebris
+
+
+
+# SparkHelper_Prep - [Spawn] Sets Spark Mortar to Tracer
+FRAME S_SparkHelper_Prep
+SpriteName = NULL
+SPRITESUBNUMBER = 0
+DURATION = 5
+NEXT = S_SparkHelper_1
+ACTION A_FindTracer
+VAR1 = MT_SparkMortar
+VAR2 = 0
+
+# SparkHelper_1 - Zero duration, capechases Spark Mortar; Capechase tracer reference
+FRAME S_SparkHelper_1
+SpriteName = NULL
+SPRITESUBNUMBER = 0
+DURATION = 0
+NEXT = S_SparkHelper_2
+ACTION A_CapeChase
+Var1 = 1
+Var2 = 0
+#  [Ref1: CBuffer_Chase1]
+
+# SparkHelper_2 - Spawns invincibility spark, waits 5 tics before repeating
+FRAME S_SparkHelper_2
+SpriteName = NULL
+SPRITESUBNUMBER = 0
+DURATION = 5
+NEXT = S_SparkHelper_1
+ACTION A_SpawnObjectRelative
+VAR1 = 0
+VAR2 = MT_IVSP
+# {Next: SparkHelper_1}
+
+
+
+# SparkDebris - [Spawn] Spawned with A_OldRingExplode, so it'll die when it reaches the end radius.
+FRAME S_SparkDebris
+spritename = TRLS
+SPRITESUBNUMBER = 0
+DURATION = -1
+NEXT = 0
+ACTION None
+
+
+# SparkDebris_Wait1 - [Death] Death animation until SparkDebris_Fire1
+FRAME S_SparkDebris_Wait1
+spritename = TRLS
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_SparkDebris_Wait2
+ACTION None
+
+FRAME S_SparkDebris_Wait2
+spritename = TRL2
+SPRITESUBNUMBER = 32768
+DURATION = 1
+NEXT = S_SparkDebris_Wait3
+ACTION None
+
+FRAME S_SparkDebris_Wait3
+spritename = TRLS
+SPRITESUBNUMBER = 1
+DURATION = 1
+NEXT = S_SparkDebris_Wait4
+ACTION None
+
+FRAME S_SparkDebris_Wait4
+spritename = TRL2
+SPRITESUBNUMBER = 32769
+DURATION = 1
+NEXT = S_SparkDebris_Wait5
+ACTION None
+
+FRAME S_SparkDebris_Wait5
+spritename = TRLS
+SPRITESUBNUMBER = 2
+DURATION = 1
+NEXT = S_SparkDebris_Wait6
+ACTION None
+
+FRAME S_SparkDebris_Wait6
+spritename = TRL2
+SPRITESUBNUMBER = 32770
+DURATION = 1
+NEXT = S_SparkDebris_Wait7
+ACTION None
+
+# loop the first 6 frames
+FRAME S_SparkDebris_Wait7
+spritename = TRLS
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_SparkDebris_Fire1
+ACTION A_Repeat
+VAR1 = 1
+VAR2 = S_SparkDebris_Wait1
+
+# Shrapnel finds the nearest player and sets it to Target.
+FRAME S_SparkDebris_Fire1
+spritename = TRL2
+SPRITESUBNUMBER = 32768
+DURATION = 1
+NEXT = S_SparkDebris_Fire2
+ACTION A_FindTarget
+Var1 = MT_PLAYER
+Var2 = 0
+#  [Ref2: CBuffer_1]
+
+# Shrapnel fires STLaser at target and dissapears, making it look like it homed in.
+FRAME S_SparkDebris_Fire2
+spritename = TRLS
+SPRITESUBNUMBER = 1
+DURATION = 2
+NEXT = S_NULL
+ACTION A_SuperFireShot
+VAR1 = MT_STLaser
+VAR2 = 0
+
+
+
+# [Spawn] Supersonic-repulsing blue turret laser.
+FRAME S_STLaser
+spritename = TRL2
+SPRITESUBNUMBER = 32768
+DURATION = 1
+NEXT = S_STLaser
+ACTION None
+
+
+# [Death] Laser has hit something.
+FRAME S_STLaserQExplode1
+spritename = TRL2
+SPRITESUBNUMBER = 32769
+DURATION = 2
+NEXT = S_STLaserQExplode2
+ACTION None
+
+# Finishes death animation, dissapears
+FRAME S_STLaserQExplode2
+spritename = TRL2
+SPRITESUBNUMBER = 32770
+DURATION = 2
+NEXT = S_NULL
+ACTION None
+
+
+#####################
+
+
+#  Weapons Crystal - Orbits eggman while a buffer object capechases it and fires at the player.
+
+# [Spawn] Waits first tic before performing any actions
+FRAME S_WCrystal_Prep1
+spritename = WCRY
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_WCrystal_Prep2
+ACTION none
+
+# Spawns Crystal Buffer
+FRAME S_WCrystal_Prep2
+spritename = WCRY
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_WCrystal_Prep3
+ACTION A_SpawnObjectRelative
+VAR1 = 0
+VAR2 = MT_CBuffer
+
+# Sets Eggmobile X as its target
+FRAME S_WCrystal_Prep3
+spritename = WCRY
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_WCrystal_Orbit
+ACTION A_FindTarget
+VAR1 = MT_XBoss
+VAR2 = 0
+
+# Orbits around eggman while the buffer does the work.
+FRAME S_WCrystal_Orbit
+spritename = WCRY
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_WCrystal_Orbit
+ACTION A_RotateSpikeBall
+
+
+
+#  Crit Buffer - Fires crit rockets for the weapons crystal, letting it use SpikeBallRotate uninterrupted.
+
+# [Spawn] Waits a tic before performing actions
+FRAME S_CBuffer_Prep1
+SpriteName = NULL
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_CBuffer_Prep2
+ACTION none
+
+# Sets Weapons Crystal as its tracer, 49 tics(50 tics with spawn)
+FRAME S_CBuffer_Prep2
+SpriteName = NULL
+SPRITESUBNUMBER = 0
+DURATION = 54
+NEXT = S_CBuffer_1
+ACTION A_FindTracer
+Var1 = MT_WCrystal
+Var2 = 0
+
+# Uses DualAction to capechase Tracer and set Target to the nearest player; zero duration.
+FRAME S_CBuffer_1
+SpriteName = NULL
+SPRITESUBNUMBER = 0
+DURATION = 0
+NEXT = S_CBuffer_2
+ACTION A_DualAction
+Var1 = S_SparkHelper_1
+Var2 = S_SparkDebris_Fire1
+#  [DualAction: SparkHelper_1(Capechase), SparkDebris_Fire1(SetTarget)] 
+
+# Fires CRocket at Target, waits 50 tics
+FRAME S_CBuffer_2
+SpriteName = NULL
+SPRITESUBNUMBER = 0
+DURATION = 55
+NEXT = S_CBuffer_1
+ACTION A_SuperFireShot
+Var1 = MT_CRocket
+Var2 = 0
+
+
+
+# CritRocket: Rocket-propelled Supersonic-repulsing torpedo
+
+# [Spawn][See] Spawns jetfume object
+FRAME S_CRocket_1
+spritename = TORP
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_CRocket_2
+ACTION A_SpawnObjectRelative
+Var1 = 0
+Var2 = MT_RocketFume
+
+# Sets Eggmobile X to target so it doesn't hurt him.
+FRAME S_CRocket_2
+spritename = TORP
+SPRITESUBNUMBER = 0
+DURATION = 0
+NEXT = S_TORPEDO
+ACTION A_FindTarget
+VAR1 = MT_XBoss
+VAR2 = 0
+
+
+
+# [Spawn] Sets tracer to CRocket MT_CRocket
+FRAME S_RocketFume_Prep
+spritename = JETF
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_RocketFume_1
+ACTION A_FindTracer
+VAR1 = MT_CRocket
+VAR2 = 0
+
+# Jetfume animation 1
+FRAME S_RocketFume_1
+SpriteName = NULL
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_RocketFume_2
+ACTION A_CapeChase
+VAR1 = -8*FRACUNIT+1
+VAR2 = -24*FRACUNIT
+
+# Jetfume animation 2
+FRAME S_RocketFume_2
+spritename = JETF
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_RocketFume_1
+ACTION A_CapeChase
+VAR1 = -8*FRACUNIT+1
+VAR2 = -24*FRACUNIT
+
+
+
+# URing_1 - [Spawn] While some objects can act on spawn with the proper flags, none can do so on map load.
+FRAME S_URing_1
+spritename = RING
+SPRITESUBNUMBER = 0
+DURATION = 1
+NEXT = S_URing_2
+ACTION None
+
+# URing_2 - After waiting, spawns a ring. Did you notice the animation delay before looking here?
+FRAME S_URing_2
+spritename = RING
+SPRITESUBNUMBER = 0
+DURATION = 0
+NEXT = S_NULL
+ACTION A_SpawnObjectRelative
+VAR1 = 0
+VAR2 = MT_RING
+
+
+
+# ====== Porting Changelog ======
+#
+# -- v3 (2010.Feb.18) ---
+#
+# MAPCG: quicksand - red floor fixed, now renders QUIKNOAN with ripple effect.
+# MAPAV: yellow springs in 3rd room were fixed.
+# MAPAV: old hard mode-only platforms were "turned off". Map geometry was kept, though.
+# MAPB5: old easy mode-only FOF (sector 136) was "turned off". Map geometry was kept, though.
+# MAPB7,B8 and B9: linedef texture TOMBST3 causes SigSegv, so replaced with ACZWALP.
+# General: SOC spike added, now spikes have collision. See Porting SOC v3.
+#
+# -- v4 (2010.Mar.20) ---
+#
+# MAPAK: door opening now plays sound 78 (linedef 4846 and 4862 - Linedef type 414). Was 138.
+# MAPAL: elevator trigger now plays sound 78 (linedef 1139 - Linedef type 414). Was 138.
+# MAPBB: old easy mode-only FOFs (several sectors near sector 61) were "turned off". Map geometry was kept, though.
+# MAPBK: door opening now plays sound 78 (linedef 4802 and 4818 - Linef type 414). Was 138.
+# MAPBK: old easy mode-only FOF (sector 492) was "turned off". Map geometry was kept, though.
+# MAPBL: elevator trigger now plays sound 78 (linedef 1139 - Linedef type 414). Was 138.
+# MAPBL: old easy mode-only FOFs (sector 193 and 197) were "turned off". Map geometry was kept, though.
+# MAPBS: linedef texture OTHZW2W (not ported) replaced with THZWAL02. Near sector 593.
+# MAPC3,6,9,C: map now exists upon defeating the boss.
+# MAPCF: map now exists upon defeating all bosses.
+# MAPCI-CO: MR's special stages now accessible and SKYNUM fixed.
+#
+# -- v5 (2010.Sep.19) ---
+#
+# MAPAA,B,C,Q: lava is now liquid. 'Block Enemies' linedef flag was added making lava FOFs act
+#  like it originally was.
+# MAPBA,B,C,Q: idem.
+# MAPC7,8,9: ibidem.
+# MAPBU: (original error, fixing) Custom exit was fixed (sector 21), MAPBV is now accessible. 
+# MAPA5,B5: (original error, won't fix) there's an invisible platform in sector 26. Same happened with SRB2 v1.09.4.
+# MAPBY: the boss no longer gets stuck over inivisible FOF.
+#
+# -- v8 (2010.Nov.07) ---
+#
+# General: all weapon rings were removed since they serve no purpose in the new Match system.
+# General: all Thing Types 4242 were removed (remnants from old difficulty modes).
+# General: all Mystic Realm's Things Types in the maps are now working and with new Thing Type numbers.
+# General: all colormaps fixed for v2.0. Verdant Forest, Mudhole Karst, Vulcan Forge and Nitric Citadel are
+#  approximations.
+# General: Jetty-Syn Striker and Jetty-Syn Cannoneer's sprites were included.
+# General: Jetty-Syn Striker and Jetty-Syn Cannoneer's fully working.
+# MAINCFG: fully ported and MAINCFG comments updated where applicable.
+# MAINCFG: SpStage_End added to make the save slots turn into level selects upon finishing.
+# MAINCFG: emblems put in the correct order. All old game saves will be incompatible.
+# MAINCFG: perfect bonus disabled in boss stages, except Mystic Realm Zone.
+# MAPAK,AL,BK,BL: door opening now plays sound 291 (sfx_fre001), original MR sound.
+# MAPAY,BY: (original error, fixing) unclosed sector 1 x 145, linedef 559, causing visual error.
+# MAPAZ,BZ: invisible solid FOF added around the emerald to make the emblem collectible.
+# MAPB7,B8 and B9: linedef texture TOMBST3 was fixed, reverting texture replacement. See Porting v3.
+# MAPBR: Blue Buzzes received 4 FU in their Z position. It prevents them from being destroyed by death pits.
+# MAPCA,B: wrong Music fixed.
+#
+# -- v9 (2010.Dec.6)
+#
+# General: SOC re-organized and commented.
+# General: Bosses fully working.
+# General: Small tweaks here and there to boss behavior/animations.
+# General: Egg Crystal is now known as Eggmobile X, mapthingnumber is now 209.
+# General: Egg Fighter now has PAZ3 version with mapthingnumber 208.
+# General: New sounds for bosses & projectiles.
+# General: Spikes (floor) are now solid. Maps AG,AH,AT,BG,BH,BT and CG.
+# General: Ultimate-mode compatible ring implemented, mapthingnumber 210.
+# MAPAY: old normal-mode rings are back.
+# MAPAY,BY: Normal rings replaced with ultimate-mode compatible rings.
+# MAPAI,AX,BI,BX: In-game death pits were replaced with intangible death pit FOFs, death pits no longer kill bosses.
+# MAPC1-CG: Thing layout purge.
+#
+#
+# -- v10 (2014.Apr.19)
+#
+# SOC ported to 2.1
+# Various map fixes
+#
+#
+# -- v11 (2020.Jul.01)
+#
+# SOC ported to 2.2
+# Remade Master Emerald
+#  
+# 
+# End of Porting Changelog.

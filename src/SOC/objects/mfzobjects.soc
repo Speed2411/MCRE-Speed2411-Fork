@@ -1,0 +1,140 @@
+freeslot
+SPR_ICSK
+S_ICICLE1
+S_ICICLE2
+S_ICICLE3
+S_ICICLE4
+S_ICICLE5
+S_ICICLE6
+S_ICICLE7
+MT_ICICLEPAINSPAWN
+S_ICICLEPAIN1
+S_FRPI
+SPR_FRPI
+
+#MFZ Tree
+
+Object MT_MFZTREE
+#$Sprite FRPIA0
+MapThingNum = 140
+SpawnState = S_FRPI
+SpawnHealth = 1000
+ReactionTime = 8
+SeeState = S_NULL
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_NULL
+XDeathState = S_NULL
+Radius = 18*FRACUNIT
+Height = 628*FRACUNIT
+Flags = MF_SOLID|MF_SCENERY|MF_NOTHINK
+
+State S_FRPI
+SpriteName = FRPI
+SpriteFrame = A
+Duration = -1
+Next = S_NULL
+Action = None
+Var1 = 0
+Var2 = 0
+
+#Icicle Spawner
+
+Object MT_ICICLEPAINSPAWN
+#$Sprite USPKA0
+MapThingNum = 141
+SpawnHealth = 1000
+ReactionTime = 8
+SpawnState = S_ICICLEPAIN1
+SeeState = S_NULL
+Speed = 2*TICRATE
+Radius = 8*FRACUNIT
+Height = 32*FRACUNIT
+DeathState = S_NULL
+Flags = MF_NOBLOCKMAP|MF_NOGRAVITY|MF_SCENERY|MF_NOCLIPHEIGHT
+
+State S_ICICLEPAIN1
+SpriteName = NULL
+SpriteFrame = A
+Duration = 1
+Next = S_ICICLEPAIN1
+Action = A_SpawnIcicle
+Var1 = 0
+Var2 = 0
+
+#Icicle
+
+Object MT_ICICLE
+MapThingNum = -1
+SpawnHealth = 1000
+ReactionTime = 8
+SpawnState = S_ICICLE1
+SeeState = S_NULL
+Speed = 2*TICRATE
+Radius = 8*FRACUNIT
+Height = 32*FRACUNIT
+DeathState = S_NULL
+PainSound = sfx_s1dfal
+Mass = 4
+Flags = MF_PAIN|MF_NOGRAVITY
+
+State S_ICICLE1
+SpriteName = ICSK
+SpriteFrame = D|FF_FULLBRIGHT
+Duration = 4
+Next = S_ICICLE2
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_ICICLE2
+SpriteName = ICSK
+SpriteFrame = C|FF_FULLBRIGHT
+Duration = 4
+Next = S_ICICLE3
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_ICICLE3
+SpriteName = ICSK
+SpriteFrame = B|FF_FULLBRIGHT
+Duration = 2
+Next = S_ICICLE4
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_ICICLE4
+SpriteName = ICSK
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 2
+Next = S_ICICLE5
+Action = None
+Var1 = 0
+Var2 = 0
+
+State S_ICICLE5
+SpriteName = ICSK
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 1
+Next = S_ICICLE6
+Action = A_SetObjectFlags
+Var1 = MF_NOGRAVITY
+Var2 = 1
+
+State S_ICICLE6
+SpriteName = ICSK
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = 1
+Next = S_ICICLE7
+Action = A_Pain
+
+State S_ICICLE7
+SpriteName = ICSK
+SpriteFrame = A|FF_FULLBRIGHT
+Duration = -1
+Next = S_NULL
+Action = None
+Var1 = 0
+Var2 = 0

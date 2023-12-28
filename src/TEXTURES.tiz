@@ -1,0 +1,11 @@
+Texture "SKY95", 1024, 512
+{
+	Patch "TIZSKY", 0, 0
+	Patch "TIZSKY", 512, 0
+	Patch "TIZSKY", 256, 0
+	Patch "TIZSKY", 768, 0
+	Patch "TIZSKY", 128, 0
+	Patch "TIZSKY", 640, 0
+	Patch "TIZSKY", 384, 0
+	Patch "TIZSKY", 896, 0
+}

@@ -1,0 +1,74 @@
+Freeslot
+S_JUMPERCRAWLA_STND
+S_JUMPERCRAWLA_JUMPE1
+S_JUMPERCRAWLA_JUMPE2
+S_JUMPERCRAWLA_JUMP1
+S_JUMPERCRAWLA_JUMP2
+S_JUMPERCRAWLA_JUMP3
+MT_JUMPERCRAWLA
+
+State S_JUMPERCRAWLA_STND
+SpriteName = POSS
+SpriteFrame = A
+Duration = 5
+Next = S_JUMPERCRAWLA_STND
+Action A_Look
+
+State S_JUMPERCRAWLA_JUMPE1
+SpriteName = POSS
+SpriteFrame = A
+Duration = 5
+Next = S_JUMPERCRAWLA_JUMPE2
+Action A_ZThrust
+Var1 = -30
+
+State S_JUMPERCRAWLA_JUMPE2
+SpriteName = POSS
+SpriteFrame = A
+Duration = 5
+Next = S_JUMPERCRAWLA_JUMP1
+Action A_SetObjectFlags
+Var1 = MF_NOGRAVITY
+Var2 = 1
+
+State S_JUMPERCRAWLA_JUMP1
+SpriteName = POSS
+SpriteFrame = A
+Duration = 2
+Next = S_JUMPERCRAWLA_JUMP2
+Action = A_FaceTarget
+
+State S_JUMPERCRAWLA_JUMP2
+SpriteName = POSS
+SpriteFrame = A
+Duration = 35
+Next = S_JUMPERCRAWLA_JUMP1
+Action A_BunnyHop
+Var1 = 8
+Var2 = 15
+
+Object MT_JUMPERCRAWLA
+MapThingNum = 3102
+SpawnState = S_JUMPERCRAWLA_STND
+SpawnHealth = 1
+SeeState = S_JUMPERCRAWLA_JUMPE1
+SeeSound = sfx_None
+AttackSound = sfx_None
+PainState = S_NULL
+PainSound = sfx_None
+MeleeState = S_NULL
+MissileState = S_NULL
+DeathState = S_XPLD1
+XDeathState = S_NULL
+DeathSound = sfx_pop
+ActiveSound = sfx_None
+RaiseState = S_NULL
+ReactionTime = 35
+PainChance = 200
+Speed = 0
+Radius = 24*FRACUNIT
+Height = 32*FRACUNIT
+DispOffset = 0
+Mass = 100
+Damage = 0
+Flags = MF_ENEMY|MF_SPECIAL|MF_SHOOTABLE|MF_NOGRAVITY|MF_SPAWNCEILING
