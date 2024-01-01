@@ -626,7 +626,7 @@ Level AO
 Levelname = Rainstorm Keep
 Act = 0
 Keywords = RKZ
-Music = MP_RAI
+Music = RKZ
 NextLevel = A6
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 FlickyList = Rabbit,Ram
