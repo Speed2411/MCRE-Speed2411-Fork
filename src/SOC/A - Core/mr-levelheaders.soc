@@ -689,6 +689,28 @@ Lua.lcredits = "Mystic"
 Lua.timerankings = 90, 105, 120, 150, 180, 210
 lua.levelrankings = 35000, 30000, 25000, 20000, 10000
 
+Level CQ
+Levelname = Infernal Bastion
+Act = 0
+Keywords = BFZ
+Music = MP_VUL
+NextLevel = AC
+TypeOfLevel = Singleplayer,Co-op,Competition,Race
+FlickyList = Chicken,Bat
+Weather = 0
+SkyNum = 1
+RecordAttack = true
+LevelSelect = 2
+SelectHeading = Emerald Stages
+SaveGame = true
+TitleCardActDiamond = MYSTIC2
+TitleCardZigZagText = MYSTIC1
+Lua.mcredits = "Marcos ,clairebun"
+Lua.lcredits = "Mystic" 
+#"Kanna" if their work is added they replace "Mystic"
+Lua.timerankings = 90, 105, 120, 150, 180, 210
+lua.levelrankings = 35000, 30000, 25000, 20000, 10000
+
 Level AR
 Levelname = Silver Cavern
 Act = 0
