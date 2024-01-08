@@ -671,7 +671,7 @@ Level AQ
 Levelname = Vulkan Forge
 Act = 0
 Keywords = BFZ
-Music = MP_VUL
+Music = VULK
 NextLevel = AC
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 FlickyList = Chicken,Bat
@@ -693,7 +693,7 @@ Level CQ
 Levelname = Infernal Bastion
 Act = 0
 Keywords = BFZ
-Music = MP_VUL
+Music = VULK
 NextLevel = AC
 TypeOfLevel = Singleplayer,Co-op,Competition,Race
 FlickyList = Chicken,Bat
